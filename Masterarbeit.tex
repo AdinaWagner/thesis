@@ -261,10 +261,8 @@ February $3^{rd}$, 2019
 %\clearpage
 
 
-\pagenumbering{Roman}
-\setcounter{page}{1}	% Beginn der Textseitenzaehlung
+%---- Eigenständigkeitserklärung -----------------
 
-% ------- Sperrvermerk ------------------------
 
 \chapter*{Statutory Declaration}
 \addcontentsline{toc}{section}{Statutory Declaration}
@@ -373,7 +371,7 @@ $\phantom{mmmm..}$  (Adina Wagner)
 \nomenclature{}{}
 \nomenclature{}{}
 \nomenclature{}{}
-\nomenclature{}{}
+\nomenclature{MF}{Magnification Factor}
 \nomenclature{}{}
 \nomenclature{}{}
 \nomenclature{GLM}{General linear model}
@@ -394,21 +392,12 @@ $\phantom{mmmm..}$  (Adina Wagner)
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{section}{Acknowledgements}
 
-I am thankful to a large number of people who supported and challenged me on the path of my master thesis completion and beyond. First and most important of all, I would like to thank my scientific supervisor J.-Prof. Dr. Michael Hanke of the Psychoinformatics Lab. It has been an incredible adventure, beginning with an inspiring lecture series on fMRI, resulting in a year of teaching assistance for Statistics I \& II, the Brainhack Magdeburg, this Masters Thesis, and a research stay in the US that would not have been possible without him. I attribute much of my personal growth and scientific advancement of the past 1.5 years to him, and I am very grateful to continue pursuing my academic career as a PhD student under his supervision.
-Secondly, I am grateful to Prof. Dr. Pollmann for agreeing to be the second assessor of my Masters Thesis, and for valuable discussions and insights with regard to the thesis.
-I cannot overstate the importance of Prof. Yaroslav Halchenko, whom I want to thank deeply for his agreement to supervise and mentor me on a four month research stay at Jim Haxbys Lab at Dartmouth College, NH, USA. His and Michaels passion for open science, open-source software, and scientific integrity and reproducibility will continue to be my source of inspiration and motivation throughout my scientific career.
-I further am grateful to Prof. Jim Haxby for welcoming me in his lab in Dartmouth, as well as Prof. Ida Gobbini, Vassiki Chauhan, Kyle Meyer and Feilong Ma for their company and advice throughout my stay in the US.
- 
-\bigskip
-
-This Masters Thesis would not have been possible without the methodological discussions, programming tutorials, and most importantly friendship of Alexander Waite, Dr. Emanuele Porcu, Benjamin Poldrack and Christian Häusler. All members of the Psychoinformatics Lab have contributed to the most welcoming, fun, and empowering work environment I ever been a part of, and despite my daily commute, this wonderful lab became a family for me.
-
-\bigskip
-
-All of my studies, in Germany and abroad, were mainly funded by the German Academic Foundation. The ideal and financial support since 2013 enabled me to become the person I am today. I am thankful to all of my referees, Dr. Ludwig, Dr. Köhne, and Dr. Chwalleck, for the insightful discussions, and my mentors, Prof. Enders and Prof. Fink, for their assistance and guidance, and to Dr. Julius and Prof. Zimmermann, whom I was honored to meet and work with several times during my involvement in various projects within the German Academic Foundation. 
-
-\bigskip
-
+I am thankful to a large number of people who supported and challenged me on the path of my master thesis completion and beyond. First and most important of all, I would like to thank my scientific supervisor J.-Prof. Dr. Michael Hanke of the Psychoinformatics Lab. He introduced me to the mesmerizing field of Psychoinformatics and has provided me with more opportunities I can recall to take root in it. A list of things that would not have been possible without him would span pages. I attribute much of my personal growth and scientific advancement of the past 1.5 years to him, and I am very grateful to continue pursuing my academic career as a PhD student under his supervision. \newline
+Secondly, I am grateful to Prof. Dr. Pollmann for agreeing to be the second assessor of my Masters Thesis, and for valuable discussions and insights with regard to the thesis.\newline
+I cannot overstate the importance of Prof. Yaroslav Halchenko, whom I want to thank deeply for his agreement to supervise and mentor me on a four month research stay at Jim Haxbys Lab at Dartmouth College, NH, USA. His and Michaels passion for open science, open-source software, and scientific integrity and reproducibility will continue to be my source of inspiration and motivation throughout my scientific career.\newline
+I further am grateful to Prof. Jim Haxby for welcoming me in his lab in Dartmouth, as well as Prof. Ida Gobbini, Vassiki Chauhan, Kyle Meyer and Feilong Ma for their company and advice throughout my stay in the US. \newline
+This Masters Thesis would not have been possible without the methodological discussions, programming tutorials, and most importantly friendship of Alexander Waite, Dr. Emanuele Porcu, Benjamin Poldrack, Christian Häusler and Asim Dar. All members of the Psychoinformatics Lab have contributed to the most welcoming, fun, and empowering work environment I have ever been a part of, and despite my daily commute, this wonderful lab became a family for me. \newline
+All of my studies, in Germany and abroad, were mainly funded by the German Academic Foundation. The ideal and financial support since 2013 enabled me to become the person I am today. I am thankful to all of my referees, Dr. Ludwig, Dr. Trebesius, Dr. Köhne, and Dr. Chwalleck, for the insightful discussions, and my mentors, Prof. Enders and Prof. Fink, for their assistance and guidance, and to Dr. Julius and Prof. Zimmermann, whom I was honored to meet and work with several times during my involvement in various projects within the German Academic Foundation. \newline
 Last but not least I am heartily grateful to my parents and friends for their patience, their support, their steady encouragement and constant moral guidance. Especially Gunnar Behrens, who was my anchor throughout seven busy years.
 
 
@@ -443,15 +432,18 @@ In parallel, eye gaze data of participants were utilized both to derive a measur
 
 In complex natural environments, attention is necessary to handle an excess of information despite limited neural computing power (Carrasco, 2011). It serves as a filter to select potential behaviorally or cognitively relevant cues from the continuous stream of information, and as a gatekeeper to discard irrelevant stimuli in order to prevent sensory overload (Bellebaum, Thoma \& Baum, 2012). Visual attention provides this filtering function for visual perception: Relevant visual stimuli are prioritized and hence attended while less important aspects of a scene are neglected. In this way, visual attention is crucial for the selection of cognitive and behavioral strategies for interacting with the environment (Siegelbaum \& Hudspeth, 2000).
 \newline
-One integral functional region involved in both the selection and attendance of behaviorally relevant aspects of the visual environment are the frontal eye fields. [CITATION NEEDED]
+One integral functional region involved in both the selection and attendance of behaviorally relevant aspects of the visual environment are the frontal eye fields. They serve core functions in the movement of the eyes [CITATION NEEDED] and within the dorsal endogenous attention system (Corbetta \& Shulman, 2002; Corbetta, Patel \& Shulman, 2008). 
 
-[WHAT IS THE RELEVANCE FOR THIS STUDY?]
+[WHAT IS THE RELEVANCE FOR THIS STUDY?][What is not yet understood]
 [WHY DO WE NEED TO LOCALIZE THE FEF?]
 [TODO]  \\
 
-\section{The visuospatial attention network}
+In the following chapter I will give an overview of the literature for the fundamentally relevant construct of visuospatial attention, its underlying neuroanatomical foundation, and the frontal eye fields in particular, as well as its relation to the movements of the eye. Furthermore, I will outline current localization paradigms and elaborate on their potential shortcomings, and introduce a new way of localization.
+
+\section{Visuospatial attention}
 The exogenous (greek \textit{exo} = outside, \textit{genein} = to produce) visual attention, also referred to as involuntary or bottom-up controlled, visual attention, is driven by the context-dependent saliency of external stimuli (Itti \& Koch, 2001). If the physical visual properties like color, luminance, motion or contrasts of a stimulus are are conspicuous enough given the context they are in, they are able to capture the visual attention even if the observer doesn’t intent to orient attention to it (Chica, Bartholomeo \& Lupiánez, 2013). According to Corbetta and Shulmans (2002) attention framework, a ventral attention network consisting of the tempoparietal junction (TPJ)/superior temporal sulcus and gyrus (STS, STG), the medial/inferior frontal gyri (MFG/IFG), and the ventral part of the supramarginal gyrus (SMG) processes attentional selection based on such exogenous cues (Figure \ref{fig:Networks}, orange areas), if they are behaviorally relevant (Downar, Crawley, Mikulis \& Davis, 2001). While there is some differential evidence for the TPJ (see Vossel, Geng \& Fink, 2014, for a short overview) a majority of studies showed a lateralization of the ventral system to the right hemisphere (Corbetta \& Shulman, 2002; Fox, Corbetta, Synder, Vincent \& Raichle, 2006; Corbetta, Patel \& Shulman, 2008). \newline 
 The endogenous (greek \textit{endo} = within) visual attention, also termed voluntary or top-down controlled visual attention, on the other hand is controlled by selection criteria that depend on cognitive factors such as requirements of the current task, prior experiences or expectations (Itti \& Koch, 2001). This goal-directed selection is controlled by a dorsal frontoparietal network including the intraparietal sulcus (IPS) and superior parietal lobule (SPL), and the dorsal frontal cortex along the precentral sulcus, near or at the fronal eye field (FEF) and the supplementary eye field of each hemisphere (SEF; figure \ref{fig:Networks}, blue areas; Corbetta \& Shulman, 2002; Corbetta, Patel \& Shulman, 2008). Endogenous attention is usually drawn to only weakly salient stimuli that would not evoke exogenous attention but are relevant for current cognitive aims. As such, whereas exogenous attention is a rapid, automatic orientating response, endogenous attention in contrast is a voluntary and controlled process of information monitoring (Carrasco, 2011).
+
 \begin{figure}
 	\includegraphics[scale=0.4]{img/attentionnetworks.png}
 	\caption[Dorsal and ventral attention networks]
@@ -460,9 +452,248 @@ The endogenous (greek \textit{endo} = within) visual attention, also termed volu
 \end{figure}
 
 \subsection{The frontal eye fields}
+A core part of the dorsal attention system are the FEF. In humans, the FEF is located in the rostral bank of a portion of the precentral sulcus at the caudal end of the middle frontal gyrus. It is primarily involved with transforming sensory signal into motor commands for intentional conjugate visual exploration to the contralateral visual space, and it is active in the disengagement from fixation that must precede each refixation saccade (Goodwin, 2007; Tehovnik et al., 2000). Early insights about its function stem from stimulation studies with primates. Low-intensity electrical stimulation of the FEF in the bank of the arcuate sulcus in monkeys elicits saccadic eye movements directed contralateral to the stimulated hemisphere (Tehovnik et al., 2000; Schall, 2009). Early work by Bruce and colleagues (1985) found that saccades elicited by stimulation at a particular region have a particular direction and amplitude that is independent of the orientation of the eyes. It further revealed a gradient of saccadic amplitudes from lateral to medial sites of the FEF: The more medially the stimulation of the primate arcuate sulcus, the larger the saccadic amplitude (Bruce et al., 1985). Hence, the ventrolateral portion of the FEF is generating shorter saccades, while the mediodorsal portion is generating longer saccades. Stimulation studies in primates and high resolution fMRI experiments in humans further revealed that while the FEF is best known for its role in the generation of rapid saccadic gaze shifts, it also contains zones that are involved in the  control of other types of eye movements, among them pursuit, fixation, and vergence (changes of the depth of the gaze) eye movements (Krauzlis, 2013): Stimulation of the frontal pursuitzone in the fundus elicits pursuit eye movements directed ipsilateral to the stimulated hemisphere (Schall, 2009). The intracortical stimulation of several subareas within the FEF, among others a region within the pre-arcuate cortex in rhesus monkeys, immediately rostral to the saccade related anterior bank of the arcuate sulcus, triggers vergence movements, and shows the areas involvement in accomodation and the sensorimotor transformations required for these movements (Crosby et al., 1952, cited by Vernet, Quentin, Chanes, Mitsumasu \& Valero-Cabre, 2014). The FEF, therefore, seems to play a crucial role in all kinds of eye movements. \newline
+However, as its involvement in the dorsal attention network suggests, the FEF is further involved in a number of aspects of higher cognition, such as visuospatial attention, visual awareness, and perceptual modulation.  In a human rTMS study, Muggleton and colleagues (2003) found rTMS at 10Hz for 500ms over the right FEF impaired only those subtypes of visual search where a visual target is neither salient nor predictable, and hence involving endogenous visuospatial attention. More evidence for the involvement of the FEF in higher cognitive functions necessary for target selection was found in primates (Thompson \& Bichot, 2005). \newline
+As such, the involvement of the FEF in the various types of eye movements is modulated by the cognitive context (Vernet, Quentin, Chanes, Mitsumasu \& Valero-Cabre, 2014).
+The connectivity of the FEF with visual areas caudal to the central sulcus is topographically organized. The more ventrolateral portion of the FEF, which is responsible for generating shorter saccades, is interconnected with the perifoveal representation in retinotopically organized areas, from areas that represent central vision in the inferotemporal cortex and from other areas having no retinotopic order. In contrast, the mediodorsal FEF, which is responsible for generating longer saccades, is interconnected with the peripheral visual field representation of retinotopically organized areas, from areas that emphasize peripheral vision or are multimodal and from other areas that have no retinotopic order (Schall, 2009).
+
+
 \section{Movements of the eye}
+A central feature of the human retina is the fovea centralis, a specialised region about 1.5mm in diameter in the center of the retina (Benninghoff \& Drenckhahn, 2004). It serves only the central 1 degree of the visual field, but due to possessing the highest amount of cones of the retina, and an asymmetric distribution of ganglion cell density across the retina that advantages foveal information, it provides the greatest visual acuity (Perry \& Cowey, 1985). This asymmetry is propagated in the cortical representation of visual inputs from the retina. The magnification factor (MF), the linear extent of cortex devoted to each linear degree on the retina (Daniel \& Whitteridge, 1961), increases monotonically from periphal to foveal vision (Daniel \& Whitterage, 1961). As a result, in almost all visual brain areas, both cortically and subcortically, the fovea has the greatest representation. Full visual acuity can therefore only occur at the fovea. 
+Due to this constraint, humans need the ability to, first, align the fovea rapidly to an object of interest and, second, keep the fovea aligned to it for a sufficient amount of time in order to maximize the efficiency of foveal vision and perceive objects of interest in greatest detail. An exploration of a visual scene is hence performed in a stepwise manner and requires the described sequence of eye movements to sequentially explore all areas of interest. To accomplish this, the human eye is capable of a number of different eye movements. A selection of important eye movements will be introduced briefly in this section. \newline
+In its most simple form, the sequence consists of rapid eye-movements, so called \textit{saccades}, redirecting the fovea from one object of interest to the next, followed by phases of \textit{fixation} that keep the fovea aligned for visual analysis. As saccades reach speeds of up to 500 degrees/sec, small, corrective post-saccadic oscillations, so called \textit{glissades}, correct minor deviations of saccade target and actual saccade endpoint. Additionally, \textit{smooth pursuits} enable a viewer to track moving objects, while \textit{vergence} movements are necessary for accommodating different depths (Holmqvist \& Nyström, 2011). The following table \ref{table:eyemovements} provides an overview of these movements and their characteristics. 
+  
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{lC{3cm}C{3cm}C{3cm}}
+			\thickhline 
+			\textbf{Type}	& \textbf{Duration(ms)} & \textbf{Amplitude (degrees)} & \textbf{Velocity (degrees / sec)} \\ \hline
+			Fixation 		& 200-300  & -  &  - \\
+			Saccade 		& 30-80   & 4-20  & 30-500 \\
+			Glissade			& 10-40   & 0.5-2  & 20-140 \\
+			Smooth pursuit			& -  & -  &  10-30 \\ \thickhline
+		\end{tabular}
+		\caption[Movements of the eye]{\small{An overview of major types of eye movements and their characteristics, taken from Holmqvist \& Nyström (2011).}}
+		\label{table:eyemovements}
+	\end{center}
+\end{table}
+
+Note, however, that most work on eye movements was conducted on static stimuli, and eye movements on moving images could possess differential characteristics. Dorr, Martinez, Gegenfurtner and Barth (2010) for example investigated fixation characteristics differentially for varying stimuli and found Hollywood movies to elicit longer fixations (mean: 354ms, median: 253ms) than static images. \newline
+Saccadic eye movements are controlled by a number of highly interconnected brain regions, among them cortical structures in frontal and parietal areas such as the frontal and supplementary eye field (FEF, SEF) and lateral intraparietal area (LIP), as well as subcortical structures such as the basal ganglia, thalamus, cerebellum, reticular formation, and superior colliculus (Munoz, 2002, see figure \ref{saccregions}). In the cortex, the frontal eye fields (FEF) are seen as the principal region involved in oculomotor control (Leichtnetz \& Goldberg, 1988).
+
+\begin{figure}
+	\includegraphics[scale=0.5]{img/saccregions.png}
+	\caption[Regions involved in saccadic eye movements]{\small{Brain areas involved in the control of saccadic eye movements in monkey (left) and human. \textit{Cb}: Cerebellum, CN: Caudate nucleus, \textit{DLPFC}: dorsolateral prefrontal cortex, \textit{FEF}: Frontal eye field, \textit{LIP}: Lateral intraparietal area; \textit{RF}: Reticular formation, \textit{SC}: superior colliculus, \textit{SEF}: supplementary eye field, \textit{Snr}: substantia nigra pars reticularis, \textit{Th}: Thalamus. (Taken from Munoz, 2002)}}
+\end{figure}
 
 \section{title}
+
+\section{Insights on function and location from naturalistic stimulation}
+Visuospatial attention is usually studied by means of highly controlled experimental tasks, such as Posner’s (1980) cueing paradigm or simple visual search tasks. While well controllable, these conventional laboratory experiments suffer from a lack of ecological validity and fail to evoke realistic competing demands for visuospatial attention. As Hasson and colleagues (2004) noted, controlled experimental settings bear little resemblance to natural viewing for at least four reasons: 1) Lack of complex visual scenes (i.e. presentation of visual stimuli in isolation), 2) Lack of (complex) movement, 3) Lack of unconstrained eye movement, and 4) Lack of interactions between vision and additional modalities, context and emotional valence. Naturalistic stimulation such as watching movie clips, in contrast, does not suffer from these shortcomings and, as Hasson, Malach and Heeger (2010) showed, does also not lack experimental control. During the past decade, therefore, while static images have been an object of interest in the analysis of gaze distribution and attention from the early works of Yarbus (1967) onwards, movies or videos became a promising stimulus choice as well. They contain interesting, multisensory stimuli and are more representative of natural vision arrays than static pictures. As movie content constantly changes and includes both salient elements such as motion, as well as top-down components from the attempts to comprehend and interpret the content (Ross \& Kowler, 2011), movies represent an ideal possibility to study the dynamic and complex interplay of attention networks ecologically valid   (e.g. in Hasson, Nir, Levy, Furhmann \& Malach, 2004; Carmi \& Itti, 2006; Tseng, Carmi, Cameron, Munoz \& Itti, 2009; Dorr, Martinetz, Gegenfurtner \& Barth, 2010). \newline
+Localization of areas such as the FEF in turn is most reliably conducted via micro-stimulation in animals. Localization through non-invasive methods in humans is more challenging, but studies employing positron emission tomography (PET) (e.g. Paus, 1996, Kawashima et al., 1998), magneto-encephalography (MEG) (e.g. Ioannides et al., 2004), fMRI (e.g. Petit \& Haxby; Connolly, Goodale, Menon \& Munoz, 2002), and transcranial magnetic stimulation (TMS) (see Vernet et al., 2014, for an overview) were able to shed light on the possible location of the FEF in humans.  However, an overall view of this literature also reveals the large variability of reported localizations between studies (see e.g. Paus, 1996; Vernet et al. 2014, for overviews). The methods for FEF localization usually are behavioral paradigms with either general oculomotor tasks (Paus, 1996), or more specific oculomotor task such as instructed fixations, pro- and antisaccades (Connolly et al., 2002) or tracking of horizontal step stimuli (Alkan, Biswal \& Alvarez, 2011). While capable of localization, the resulting movements are not performed under unconstrained conditions and it remains unknown whether uncontrolled eye movements under naturalistic viewing behavior can be capable of providing similar location information as well, if not even additional information when taking cognitive context such as attention deployment into account.\newline
+Therefore [ELABORATE ON WHY FEF ARE IDEAL TO STUDY UTILIZATION OF EYEMOVEMENTS; VISUOSPATIAL ATTENTION (shedding more light on the role of the FEF under differential attentional modes), LOCALIZATION]
+The thesis at hand therefore has the following objectives:
+- Investigate a plausible method to utilize eye movements for the analysis of fMRI data with regard to visuospatial attention
+- Derive, implement, and test a novel method of localization
+- Combine both subgoals for a localization of the FEF with eye gaze and attention measures
+
+Due to its ready availability coming from the Psychoinformatics Lab itself, its incredible data richness, and its employment of naturalistic stimuli in form of a Hollywood movie, the studyforrest datasets were selected as the data basis of the analysis.
+
+\section{Utilizing eye movements in the study of attentional deployment}
+[Something about overt and covert attention here]
+[something about attentional focus following eyegaze here]
+[now bridge to scanpaths]
+\subsection{Scanpaths}
+The term scanpath refers to the trace of eye-movements in space and time (Holmqvist \& Nyström, 2011). In its most simple form, it is formed by a succession of fixations and saccades that define the particular sequence in which the eyes explore a visual scene (Anderson, Anderson, Kingstone \& Bischof, 2015). As opposed to other measures that summarize eye gaze, such as heatmaps, and as  emphasized by Nytröm \& Holmqvist (2011), the order of eye-movements is relevant - a different order of elements in the representational sequence of eye-movements constitutes a different scanpath. \newline
+The analysis of scanpaths has been used for decades to gain insights into the viewers’ mental processes, especially those concerning visuo-spatial attention. Yarbus (1967) wrote: 
+
+\begin{quotation}
+\footnotesize{„Eye-movements reflect the human thought processes; so the observer‘s thoughts may be followed to some extent from records of eye-movements (the thought accompanying the examination of the particular object). It is easy to determine from these records which elements attract the observer‘s eye (and, consequently, his thought), in what order, and how often“.}
+\end{quotation}
+
+Following this reasoning, the comparison of scanpaths of different subjects constitutes a measure of similarity in the different subjects’ attentional processes and adds a useful dimension to the traditional analysis of eye-tracking data. In recent years, many approaches for scanpath comparisons were developed and implemented in various software solutions. Among them are methods based on (semantic) areas of interest (AOIs) such as the \textit{Levenshtein distance} (Levenshtein, 1966), or an improved generalization of it in \textit{ScanMatch} (Christino, Mathot, Theeuwes \& Gilchrist, 2010), methods based on attention maps such as \textit{AMAP} (Ouerhani, von Wartburg, Hugli \& Muri, 2004), methods employing machine learning algorithms such as \textit{SMAC with HMM} (Coutrot, Hslao \& Chan, 2018), or methods based on vector-geometry such as \textit{MultiMatch} (Jarodzka, Holmqvist \& Nyström, 2010). The latter method has been developed specifically to overcome known shortcomings of many previous methods that limit their informative value, stemming from a loss of information due to the use of coarse aggregate measures of eye movement, susceptibility of the results of a comparison to influential data points due to arbitrary classifications, or both. The method does not rely on AOIs and hence achieves a finer level of detail in scanpath comparison. It takes temporal order, location in space, durations of fixations, and the shape of eye-movements into account, and is thus a comprehensive evaluation of multiple scanpath characteristics. In evaluations with simulated and actual eye-tracking data, the method was found to be robust against spatial noise, sensitive to position, order and fixation duration, and outperformed the ScanMatch method in AOI border cases (Dewhurst et al., 2012). In a comprehensive test of eleven common scanpath comparison methods on static real-life photographies, MultiMatch was found to be robust in general, however with high differences in the duration measure depending on the viewing time for the stimuli (Anderson, Anderson, Kingstone \& Bischof, 2015). As it additionally was successfully used to study mental activity involved in perceiving visual input by others (French, Glady \& Thibaut, 2017) already, the MultiMatch method was chosen to be employed in the current thesis to derive a measure for attentional processes of participants during movie watching. 
+The original implementation, however, only existed as a Matlab toolbox shared upon request by the corresponding author of the respective publication (Dewhurst et al., 2012). This reliance on closed-source software and barriers in retrieval of the software\footnote{While acquisition of the toolbox via e-mail was prompt and complication-free, later correspondence with several of the authors was an odyssey of expired email addresses, changed affiliations and digital communication allegedly lost in the void of the Internet.} hinder the wider usage and potential improvement of the method. A publicly available, open-source implementation however would instead facilitate scientific work. Therefore, the method was ported from Matlab into Python and transformed into the pip-installable module multimatch\footnote{The module can be install via ```pip install multimatch```. A corresponding publication (Wagner \& Hanke) in the Journal of Open Source Software (JOSS) in currently under review. The sourcecode can be found at github.com/AdinaWagner/multimatch}.
+
+\section{Localization based on sensitivities weights}
+Something about the main idea behind this approach here
+
+\subsection{Classification Analysis in Machine Learning}
+Machine learning refers to the study and construction of software that can learn from data without being explicitly programmed. Especially in the data-rich environment of neuroimaging, machine learning algorithms and techniques have gained immensely in popularity and significance as for their ability to detect hidden patterns and trends in the data (Vogt, 2018). For clarity, two sets of terms used in machine learning are defined at this point.
+The terms “variable”, “feature”, “attribute” or “dimension” are used interchangeably to refer to different information pieces about the sample and can be thought of as the columns of a dataset. In the given thesis, each timepoint of a brainscan is a feature. The terms “sample” or “instance” on the other hand are used interchangeably to refer to different data entities and can be thought of as the rows of a dataset. In this thesis, one sample may be the activation of a voxel. For every feature (timepoint) the sample (voxel) will display a particular activation.
+The general approach for implementing machine learning systems is to train a model on a subset of data (the training set) and test the model on a previously unseen subset of data (the test set) to see how well it generalizes from what it learned. A machine learning model is subsequently evaluated based on its performance on the training and the test set (Nguyen \& Zeigermann, 2018). 
+One particular category of machine learning techniques is classification. In classification, the goal of an analyses is to predict a category of an outcome. An easily comprehensible example may be predicting the weather (sunny, cloudy, rainy) on different days (samples) based on different weather features (air pressure, wind speed, humidity, temperature). One famous historic example of such classification problems is the identification of hand-written digits in the postal system to make zip codes machine readable (Le Cun, Boser, Denker, Handerson, Howard, Hubbard \& Jackel, 1990).  In brain imaging in turn, an example may be the classification of voxels to functional regions (Nastase, Guntupalli, Haxby \& Halchenko, 2016). 
+Classification is generally a supervised machine learning problem. In supervised ML, the classification model, often termed classifier, is trained on a subset of data in which the target (= the outcome the model is predicting) is provided, i.e. the data is „labeled“. The successive test dataset the classifier is applied to is unlabeled.
+
+
+
+\chapter{Methods}\label{par:methods}
+
+The following method section attempts to give a concise description of this thesis' data basis, fMRI and eye-tracking, and the employed and developed methods, MultiMatch and sensitivity analysis. 
+
+\section{Data basis}
+
+Data stems from the 2016 released extension of the studyforrest dataset (Hanke et al., 2016; Sengupta et al., 2016; all data and code publicly available at https://github.com/psycho-informatics-de/studyforrest-data-phase2). In this extension, $N = 15$ right-handed participants (age range 21 – 39 years, mean age 29.4 years, six female, normal or corrected-to-normal vision), who had previously participated in the studyforrest project, watched the audio-visual movie “Forrest Gump” (R. Zemeckis, Paramount Pictures, 1994) during simultaneous fMRI and eye-tracking recording, and underwent a traditional localizer paradigm for higher visual areas: The fusiform face area (FFA), the occipital face area (OFA), the extrastriate body area (EBA), the hippocampal place area (PPA), the lateral occipital complex (LOC) and early visual cortex (Sengupta et al., 2016).
+
+\subsection{Stimulus material}
+
+Stimulus material for the audiovisual movie was the German dubbed version of Forrest Gump, overlaid with a German audio-description (Koop, Michalski, Beckmann, Meinhardt \& Benecke, produced by Bayrischer Rundfunk, 2009), originally broadcast as an additional audio track for visually impaired recipients on Swiss public television. The additional audio track consists of a male narrator describing the visual content of a scene between dialogs, off-screen-speech or any other relevant audio-content of the movie (Hanke et al., 2014). The video track for the movie stimulus was re-encoded from Blu-ray into H.264 video (1280 x 720 at 25 frames per second (fps)). In accordance to the procedure in an earlier phase of the studyforrest project, the movie was shortened by removing a few scenes less relevant for the major plot to keep the fMRI recording session under two hours. The shortened movie was then segmented into eight segments of roughly the 15 minutes of length (for an overview on segment duration, final stimulus content and detailed procedures see Hanke et al., 2014). Stimulus material for the localizer paradigm consisted of 24 unique grayscale images for each of six different categories (faces, bodies, houses, scenes, everyday objects, and scrambled images) at a resolution of 400x400px, matched in luminance, and displayed at 10x10 degrees of visual angle (Sengupta et al., 2016).
+
+\subsection{Procedures}
+Functional MRI data acquisition for the audio visual movie was undertaken in two consecutive recording sessions on the same day, with a break of flexible duration. Within each session, four movie segments were presented in chronological order (Hanke et al., 2016).  Prior to each segment an eye-tracker calibration with a 13-point sequence and accuracy validation was performed.
+Segments were succeeded by another accuracy validation and participants were asked to rate their experience (“How deeply did you get into the story?”) on a scale from 1 (not at all) to 4 (a lot). Visual stimuli were projected on to a screen inside the bore of the magnet using an LCD projector, and presented to the subjects thought a front-reflective mirror on top of the head
+coil at a viewing distance of 63cm. The screen dimensions were 26.5cm x 21.2cm at a resolution of 1280 x 1024 px with a 60Hz video refresh rate (Sengupta et al., 2016). Eye-tracking was performed with an Eyelink 1000 (software version 4.594) using monocular corneal reflection and pupil tracking with a temporal resolution of eye gaze recordings of 1000Hz. The camera was mounted at an approximate distance of 100cm to the left eye of subjects, which was illuminated
+by an infrared light source (Hanke et al., 2016). Movie presentation and eye-tracking were synchronized by starting the eye gaze recording as soon as the stimulus computer received the first fMRI trigger signal. Timings of subsequent trigger pulses and onsets of every movie frame
+were logged. Using a 3 Tesla Philips Achieve dStream MRI scanner with a 32 channel head coil, T2*-weighted echo-planar images (gradient-echo, TR = 2s, echo time = 30ms, flip angle = 90) were acquired during movie watching. For the eight segments, 451, 441, 438, 488, 462, 439, 542, and 338 volumes were acquired, respectively (Hanke et al., 2016).
+
+In the localizer paradigm, participants viewed the different object categories in a total of four block-design runs, with two 16s blocks per stimulus category. The order of the individual images per category differed across runs and participants, but the sequence of category blocks was the same for every run and participant. Localizers for higher visual areas (FFA, OFA, PPA, LOC, EBA, and early visual cortex) were obtained by the original authers of the studyforrest extension by means of the two-level GLM analysis on contrasts of activation between objectcategories (for details, see Sengupta et al., 2016).
+
+\subsection{Preprocessing of eye-tracking data}
+Eye-tracking data were normalized such that all gaze coordinates are in native movie frame pixels, with the top-left corner of the movie frame located at (0, 0) and the lower-right corner located at (1280, 546) (Hanke et al., 2016). The amount of unusable data, primarily due to signal loss due to eye blinks, ranged from less than 1 to 15\% for 13 of the 15 in-scanner subjects (the other two subjects’ data contained 85 and 36\% of data loss, respectively). More contiguous data was yielded in the laboratory acquisition. In-scanner acquisition had an approximate spatial uncertainty of 40px according to the calibration procedure. \newline
+The raw eye tracking data was classified into different eye movements. For this, based on an adaptive, velocity-based algorithm proposed by Nyström and Holmqvist (2010), Dar, Wagner and  Hanke (in preparation) implemented a data-driven algorithm for robust eye movement detection for natural viewing (REMoDNaV) in Python, independent of this thesis\footnote{The sourcecode can be found at github.com/psychoinformatics-de/remodnav}. All results of this algorithm are publicly available at [URL here]. The algorithm categorizes the raw data into the eye movement categories saccades, fixations, post-saccadic oscillations (glissades), and disregards any unclassifiable data (such as blinks). The eye events are reported together with their start- and end coordinates, their onsets and duration in seconds, their velocity and the average pupil size.
+
+\subsection{Extraction and processing of eye tracking data}
+
+For the extraction of saccadic eye events, the results where filtered to include only saccades. For the computation of event files following the BIDS standard (Gorgolewski et al., 2016), the Cartesian coordinates of the saccades were transformed into Polar coordinates (angle and length). Based on their angle, saccades were classed into event types describing eight different orientations in the visual field. Saccade onsets and durations were extracted from the REMoDNaV output. The resulting event file per run hence contained the onset, duration, amplitude (length) and direction of saccades. \newline
+
+
+\section{MultiMatch}
+For the purpose of this thesis, the MultiMatch method for scanpath comparison (Jarodzka, Holmqvist \& Nyström, 2010) was ported into Python for further use on the preprocessed eye movement data. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch}. \newline 
+The method takes two n x 3 fixation vectors of two scanpaths with x-coordinates, y-coordinates, and duration of fixations as columns as its input. Based on the coordinates and durations of fixations, the scanpaths are represented as geometric vector sequences as shown in figure \ref{fig:Polar_to_cartesian}:
+
+\begin{figure}[H]
+		\includegraphics[scale=0.35]{img/scanpathconversion.png}
+		\caption[Geometric representation of eye movements]
+		{\small{\textit{A: Geometric scanpath representation.} An idealized saccade is represented as the shortest distance between two fixations. The Cartesian coordinates (x, y) of the fixations are thus the starting and ending points of a saccade. The length of a saccade in x (or y) direction is computed as the difference in x (or y) coordinates of starting and ending point. \newline
+		\textit{B: Length and angle computation.} Length from the coordinate origin, rho, is computed as the Euclidean norm by means of the Pythagorean theorem: $r = \sqrt{ x^2 + y^2}$. The angle in radians, theta, is computed as a variation of the arctangent function as the angle from positive x axis to the point (x, y), with positive values denoting counterclockwise angle from positive x axis and negative values denoting clockwise angles: $\theta = arctan2(x, y)$.}}
+		\label{fig:Polar_to_cartesian}
+\end{figure}
+
+To reduce complexity, the scanpaths are simplified according to angle and amplitude (length) in an iterative procedure. Two or more saccades are grouped together if angles between two consecutive saccades are below an angular threshold \textit{TDir}, or if the amplitude of successive saccades is below a length threshold \textit{TAmp}, as long as intermediate fixations of the saccades are shorter than a duration threshold, \textit{TDur}. As such, small, locally contained saccades, and saccades in the same general direction are summed to form larger, less complex saccades. \newline
+In order to find pairings of saccade vectors to compare, the simplified scanpaths are temporally aligned. The aim is to not necessarily align two saccade vectors that constitute the same component in  their respective vector sequence, but those two vectors that are the most similar while still preserving temporal order. In this way, a stray saccade in one of the two scanpaths does not lead to an overall low similarity rating, and it is further possible to compare scanpaths of unequal length.  To do so, all possible pairings of saccades are evaluated in similarity by the vector differences between all pairings (shape: The vector differences between each element $i$ in scanpath $S1 = {u_1, u_2, \ldots, u_m}$ and each element $j$ in scanpath $S2 = {v_1, v_2, \ldots, v_n}$ are computed an stored in a Matrix $M$ as weights that denote similarity, with low weights corresponding to high similarity. In a next step, an adjacency matrix is build, defining the rules on which connection between matrix elements are allowed to preserve the temporal order of saccades. Together, matrices M and the adjacency matrix constitute a matrix representation of a directed, weighted graph (\ref{fig:directedgraph}). Elements of the matrix are nodes, the connection rules constitute edges and the weights define the cost associated with each connection. 
+In the generic example in figure \ref{fig:directedgraph} the edge between node (1, 1) and node (1, 2) has an associated weight, or cost, of $w_2$. 
+
+
+\begin{figure}
+	\includegraphics[scale=0.4]{img/weightedgraph.png}
+	\caption[Scanpath alignment as a shortest-path-problem]
+	{\small{The elements of two hypothetical scanpaths (left) are used to compute vector differences between all possible pairings as weights $w_1, \ldots, w_6$ in a Matrix $M$ (right). Green arrows indicate connection rules defined by an adjacency matrix. Taken from Jarodzka, Holmqvist \& Nyström, 2010.}}
+	\label{fig:directedgraph}
+\end{figure}
+
+A Dijkstra algorithm (Dijksta, 1959) is used to find the shortest path from the top left node, the first two saccade vectors, to the bottom right node, the last two saccade vectors. “Shortest” path is defined as the connection between nodes with the lowest possible sum of weights. The path returned by the Dijkstra algorithm is a sequence of indexes, denoting pairings of saccade vectors from each scanpath, and as such the desired alignment of scanpaths (Dewhurst et al., 2012).  Finally, in a last step, five measures of scanpath similarity (see figure \ref{fig:simmeasures}) are computed for a multidimensional similarity evaluation. This is done by performing simple vector arithmetic on all aligned saccade pairs $(u_i, v_j)$, normalizing the results according to a certain metric, and taking the median of the results. All five measures are in range [0; 1] with higher values indicating higher similarity between scanpaths on the given dimension. \newline
+
+\begin{figure}
+	\includegraphics[scale=0.5]{img/simmeasures.png}
+	\caption[Similarity measures]{\small{\textbf{Shape}: Vector difference between aligned scanpaths, normalised by 2x the screen diagonal. \textbf{Length}: Difference in vector lengths, normalized by the screen diagonal. \textbf{Angle}: Angular distance between saccade vectors, normalized by $\pi$. \textbf{Position}: Position difference of fixation, normalized by the screen diagonal. \textbf{Duration}: Duration differences of aligned fixations, normalized against maximum duration within the comparison.}}
+	\label{fig:simmeasures}
+\end{figure}
+
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwInOut{Output}{Output}
+	
+	\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
+	\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0;1]}
+	\For{each fixvector}
+	{ 
+		\For{fix in fixvector}
+		{
+			fixation\_x, fixation\_y, fixation\_dur = $x, y, duration$ \;
+			saccade\_x(y) = fixation\_x(y)$_{fix}$ $-$ fixation\_x(y)$_{fix+1}$ \;
+			saccade\_lenx(leny) = fixation\_x(y) $-$ saccade\_x(y)\;
+			saccade\_rho, saccade\_theta = cartesian2polar(saccade\_lenx, saccade\_leny) \;
+			\textbf{eyedata} = [fixation\_x, fixation\_y, fixation\_dur, saccade\_x, saccade\_y, \newline saccade\_lenx, saccade\_leny, saccade\_rho, saccade\_theta]
+		}
+		\While{simplification is still possible}{
+			\If{angle(saccade$_{i}$, saccade$_{i+1}) < TDir$ \bfseries{and} $fixation\_dur < TDur$}
+			{combine saccades}
+			\If{saccade\_rho$_i$, saccade\_rho$_{i+1}$) < TAmp \textbf{and} fixation\_dur $<$ TDur}{combine saccades}
+		}
+		\For{pair of (simplified) scanpaths $S1 = \{u_1, \ldots, u_m\}, S2 = \{v_1, \ldots, v_n\}$}
+		{
+			calculate M: Matrix of saccadelength differences between each $i \in S1$ and  $j \in S2$\;
+			create a directed graph with elements of M as weights $w_1, \ldots, w_i$\;
+			align scanpaths with $min(\sum w)$ from $M(0,0)$ to $M(n,m)$ via Dijkstra algorithm\;
+		}
+		\For{pair($u_i,v_i$) in aligned scanpaths}
+		{
+			angular difference = angle($u_i, v_1$)\;
+			position difference = $\sqrt{(x(u_i) - x(v_i))^2 + (y(u_i) - y(v_i))^2}$ \;
+			vector difference = $\sqrt{(len\_x(u_i) - len\_x(v_i))^2 + (len\_y(u_i) - len\_y(v_i))^2}$\;
+			length difference = $abs(rho(u_i) - rho(v_i))$\;
+			duration difference = $abs(dur(u_i)-dur(v_i))$ \;
+		}
+		normalize angular difference by $\pi$\;
+		normalize vector difference by 2x the screen diagonal (maximum theoretical distance)\;
+		normalize length difference by the screen diagonal\;
+		normalize position difference by the screen diagonal\;
+		normalize duration difference by maximal duration difference in the scanpaths\;
+		\textbf{return} median for each similarity measure
+	}
+	return \textbf{similarity measures}
+	\caption{The MultiMatch Algorithm}
+	\label{algo:multimatch}
+\end{algorithm}
+
+\subsection{MultiMatch and the studyforrest dataset: multimatch\_forrest}
+The extraction and processing of eye events for further use with multimatch to estimate a measure of exogenous attentional control included several considerations based on findings and known caveats in eye tracking and attention research with dynamic scenes. These considerations were implemented as additional functionality of the multimatch module to natively work with the studyforrest dataset as a data basis in the function \textit{multimatch\_forrest}. The additional functions are distributed along with the main algorithm in the multimatch module and are mainly concerned with automatic scanpath extraction from the approximately 15 minutes spanning and several eye-movement categories containing eye-tracking event files by user-defined rules. An overview in pseudocode can be found in algorithm \ref{algo:multimatch_forrest}. \newline
+First, as the stimulus was dynamic, the start and end of pursuit movements were relabeled as fixations. This was done to accomodate the fact that most areas of interest in a movie are in motion, and what would be a fixation while viewing a static image would likely be a slow pursuit during movie watching. A different consideration concerned the selection of scanpaths from the ~15 minute segments, as their length is unsuitably long to derive a continuous attention measure or do a scanpath comparison on. It has been shown that subjects gazes have a bias towards the center in Hollywood movies (Tseng, Carmi, Cameron, Munoz \& Itti, 2009). This bias can at least in part be traced back to a strong center bias directly after cuts in dynamic scenes. Carmi and Itti (2006) found the highest degree of exogenous attentional control (i.e. maximal inter-observer similarity in gaze as recorded via eye-tracking) in a moving collage of 50 heterogeneous video clips directly after cuts to new, semantically unrelated scenes. Without isolating cuts it therefore can not be disentangled whether the contribution of visual features of the movie on scanpaths stems from exogenous control from a movie element or from the sudden occurrence of a new scene after a cut. To not introduce such a confound in the eye-tracking data, the data was cut into shots that did not contain cuts to different scenes, relying on a location annotation by Häusler and Hanke (2016). The location annotation contained a detailed description of the timing of each of the 870 shots of the movie as well as information about the depicted location in different levels of abstraction. A shot is defined as a movie sequence between two cuts. In a first step, all consecutive short shots to the same locale (e.g. two consecutive, short movie shots in Forrest's bedroom, without any cuts containing semantically unrelated content) were grouped together. A “short” shot was defined as being shorter than the median length of 4.92s. This increased the median length of shots from 4.92s to 7.019s. These elongated shots are henceforth referred to as snippets. In a next step, within the scanpath comparison, the onset and offset times of the resulting snippets were extracted for every snippet longer than 4.92s. To not introduce an influence of snippet length into the similarity results, as longer movie snippets will be more likely to be less similar than short ones, scanpath lengths were standardized to approximately 4.92s seconds (the original median length). To further evade any problems associated with the center bias, scanpaths were extracted from the end of the snippet: The last oculomotor event within the range of the snippet marked the end of a scanpath. As such, scanpaths began maximally distant to the snippet onset.
+As the eye movements of participants are interindividually different and don't correspond exactly to snippet timing, the precise onsets and resulting exact durations were computed as well, and stored for later use as regressors.
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwInOut{Output}{Output}
+	
+	\Input{REMoDNaV eye movement datafiles per run, movie location annotation per run, desired length to elongate shots to \textit{ldur}, desired scanpath length \textit{dur}}
+	\Output{One n x 3 fixation vector (x, y, duration) per shot > dur}
+	{
+		\If{$event_{row}$ == pursuit}
+		{
+			regard start and end points of pursuit as fixation
+		}
+	}
+	\For{row in REMoDNaV datafile}
+	{
+		\If{$event_{row}$ == fixation}{
+			extract x-, y-coordinate, duration}
+		\If{x, y < 0 or x > 1280 or y < 720}{discard as out-of-bound gaze}
+	}
+	\For{row in annotation}
+	{
+		\If{($locale_{row} == locale_{row+1}$) and ($duration_{row}, duration_{row+1} < ldur$)}
+		{combine to one shot}
+	}
+	\For{row in annotation}
+	{
+		\If{$duration_{row}$ > dur)}
+		{extract shotonset and offset time}
+	}
+	\For{i in length(onset)}
+	{fixvector$_i$ = REMoDNaV[REMoDNaV$_{onset} > onset_i$; REMoDNaV$_{onset}$ < offset$_i$]
+	}
+	return $\{$fixvector$_1$, \ldots, fixvector$_i$$\}$, onsets, durations
+	\caption{The studyforrest specific functions of multimatch}
+	\label{algo:multimatch_forrest}
+\end{algorithm}
+
+
+
+
+
+
+\chapter{Results}
+
+\subsection{Eye movements}
+In order to check the validity of the eye-movement extraction with REMoDNaV, the mean and median duration of extracted fixations were compared to the results of Gegenfurtner et al. (2010). Fixations as found by REMoDNaV had a length of mean = 0.326s, median = 0.256s, which corresponds closely to the aforementioned study's results (0.354s and 0.253s, respectively). Moreover, a comparison of algorithm performance and human coding in the spirit of Anderson et al. (2017) by Dar, Wagner and Hanke (in preparation) showed the highest degree of concordance of all contemporary algorithms used in Anderson et al. (2010).
+
+\bigskip
+
+
+
+
+
+\section{Gunnar}
 
 Macro stress testing is an incremental part of managing a bank's risk and assessing the vulnerability of financial institutions to macroeconomic shocks. 
 It examines the impact of adverse scenarios on the bank's capital. 
@@ -572,31 +803,6 @@ The impact of the downturn scenario on the default rates is then calculated as
 impact_t = \frac{\widehat{DR}_{stress,t} - \widehat{DR}_{baseline,t}}{\widehat{DR}_{baseline,t}},
 \end{equation}
 where $\widehat{DR}_{baseline,t}$ and $\widehat{DR}_{stress,t}$ denote the predicted average default rate in the stress and the baseline scenario in the prognosis year $t$, respectively. As an example, let the predicted baseline default rate be $\widehat{DR}_{baseline,t} = 2$ \% and the predicted downturn default rate be $\widehat{DR}_{stress,t} = 3$ \%. Then, the impact of the downturn scenario in year $t$ is $+50$ \%. Thus, all probabilities of default of the complete portfolio in (\ref{EL}) are shifted upwards by 50 \% to assess the total impact on the expected loss.
-
-
-
-
-\section{Movements of the eye}
-
-\subsection{Scanpaths}
-The term scanpath refers to the trace of eye-movements in space and time (Holmqvist \& Nyström, 2011). In its most simple form, it is formed by a succession of fixations and saccades that define the particular sequence in which the eyes explore a visual scene (Anderson, Anderson, Kingstone \& Bischof, 2015). As opposed to other measures that summarize eye gaze, such as heatmaps, and as  emphasized by Nytröm \& Holmqvist (2011), the order of eye-movements is relevant - a different order of elements in the representational sequence of eye-movements constitutes a different scanpath. \newline
-For many decades it has been known that the analysis of scanpaths leads to insights on the viewers’ mental processes, especially those concerning visuo-spatial attention. Yarbus (1967) wrote: 
-\begin{quotation}
-\footnotesize{„Eye-movements reflect the human thought processes; so the observer‘s thoughts may be followed to some extent from records of eye-movements (the thought accompanying the examination of the particular object). It is easy to determine from these records which elements attract the observer‘s eye (and, consequently, his thought), in what order, and how often“.}
-\end{quotation}
-
-Following this reasoning, the comparison of scanpaths of different subjects constitutes a measure of similarity in the different subjects’ attentional processes and adds a useful dimension to the traditional analysis of eye-tracking data. In recent years, many approaches for scanpath comparisons were developed and implemented in various software solutions. Among them are methods based on (semantic) areas of interest (AOIs) such as the \textit{Levenshtein distance} (Levenshtein, 1966), or an improved generalization of it in \textit{ScanMatch} (Christino, Mathot, Theeuwes \& Gilchrist, 2010), methods based on attention maps such as textit{AMAP} (Ouerhani, von Wartburg, Hugli \& Muri, 2004), methods employing machine learning algorithms such as textit{SMAC with HMM} (Coutrot, Hslao \& Chan, 2018), or methods based on vector-geometry such as \textit{MultiMatch} (Jarodzka, Holmqvist \& Nyström, 2010). The latter method has been developed specifically to overcome known shortcomings of many previous methods that limit their informative value, stemming from a loss of information due to the use of coarse aggregate measures of eye movement, susceptibility of the results of a comparison to influential data points due to arbitrary classifications, or both. The method does not rely on AOIs and hence achieves a finer level of detail in scanpath comparison. It takes temporal order, location in space, durations of fixations, and the shape of eye-movements into account, and is thus a comprehensive evaluation of multiple scanpath characteristics. In evaluations with simulated and actual eye-tracking data, the method was found to be robust against spatial noise, sensitive to position, order and fixation duration, and outperformed the ScanMatch method in AOI border cases (Dewhurst et al., 2012). In a comprehensive test of eleven common scanpath comparison methods on static real-life photographies, MultiMatch was found to be robust in general, however with high differences in the duration measure depending on the viewing time for the stimuli (Anderson, Anderson, Kingstone \& Bischof, 2015). As it additionally was successfully used to study mental activity involved in perceiving visual input by others (French, Glady \& Thibaut, 2017) already, the MultiMatch method was chosen to be employed in the current thesis to derive a measure for attentional processes of participants during movie watching. \newline
-The original implementation, however, only existed as a Matlab toolbox shared upon request by the corresponding author of the respective publication (Dewhurst et al., 2012). This reliance on closed-source software and barriers in retrieval of the software\footnote{While acquisition of the toolbox via e-mail was prompt and complication-free, later correspondence with several of the authors was an odyssey of expired email addresses, changed affiliations and digital communication allegedly lost in the void of the Internet.} hinder the wider usage and potential improvement of the method. A publicly available, open-source implementation however would instead facilitate scientific work. Therefore, the method was ported from Matlab into Python and transformed into the pip-installable module multimatch\footnote{The module can be install via ```pip install multimatch```. A corresponding publication (Wagner \& Hanke) in the Journal of Open Source Software (JOSS) in currently under review. The sourcecode can be found at github.com/AdinaWagner/multimatch}.
-
-\section{Localization based on sensitivities weights}
-Something about the main idea behind this approach here
-
-\subsection{Classification Analysis in Machine Learning}
-Machine learning refers to the study and construction of software that can learn from data without being explicitly programmed. Especially in the data-rich environment of neuroimaging, machine learning algorithms and techniques have gained immensely in popularity and significance as for their ability to detect hidden patterns and trends in the data (Vogt, 2018). For clarity, two sets of terms used in machine learning are defined at this point.
-The terms “variable”, “feature”, “attribute” or “dimension” are used interchangeably to refer to different information pieces about the sample and can be thought of as the columns of a dataset. In the given thesis, each timepoint of a brainscan is a feature. The terms “sample” or “instance” on the other hand are used interchangeably to refer to different data entities and can be thought of as the rows of a dataset. In this thesis, one sample may be the activation of a voxel. For every feature (timepoint) the sample (voxel) will display a particular activation.
-The general approach for implementing machine learning systems is to train a model on a subset of data (the training set) and test the model on a previously unseen subset of data (the test set) to see how well it generalizes from what it learned. A machine learning model is subsequently evaluated based on its performance on the training and the test set (Nguyen \& Zeigermann, 2018). 
-One particular category of machine learning techniques is classification. In classification, the goal of an analyses is to predict a category of an outcome. An easily comprehensible example may be predicting the weather (sunny, cloudy, rainy) on different days (samples) based on different weather features (air pressure, wind speed, humidity, temperature). One famous historic example of such classification problems is the identification of hand-written digits in the postal system to make zip codes machine readable (Le Cun, Boser, Denker, Handerson, Howard, Hubbard \& Jackel, 1990).  In brain imaging in turn, an example may be the classification of voxels to functional regions (Nastase, Guntupalli, Haxby \& Halchenko, 2016). 
-Classification is generally a supervised machine learning problem. In supervised ML, the classification model, often termed classifier, is trained on a subset of data in which the target (= the outcome the model is predicting) is provided, i.e. the data is „labeled“. The successive test dataset the classifier is applied to is unlabeled.
 
 
 
@@ -765,67 +971,6 @@ Analogously, parameters for multi-year scenarios are available. Table \ref{table
 
 
 
-\chapter{Methods}\label{par:methods}
-
-The following method section attempts to give a concise description of this thesis' data basis and the employed and developed methods. Since a large part of the methodological foundations of this thesis stems from other authors works, for the sake of elaboration on the novel work done in this thesis, the interested reader is referred to the respective publications for all pre-existing works.  
-
-\section{Data basis}
-
-Data stems from the 2016 released extension of the studyforrest dataset (Hanke et al., 2016; Sengupta et al., 2016; all data and code publicly available at https://github.com/psycho-informatics-de/studyforrest-data-phase2). In this extension, $N = 15$ right-handed participants (age range 21 – 39 years, mean age 29.4 years, six female, normal or corrected-to-normal vision), who had previously participated in the studyforrest project, watched the audio-visual movie “Forrest Gump” (R. Zemeckis, Paramount Pictures, 1994) during simultaneous fMRI and eye-tracking recording, and underwent a traditional localizer paradigm for higher visual areas: The fusiform face area (FFA), the occipital face area (OFA), the extrastriate body area (EBA), the hippocampal place area (PPA), the lateral occipital complex (LOC) and early visual cortex (Sengupta et al., 2016).
-
-\subsection{Stimulus material}
-
-Stimulus material for the audiovisual movie was the German dubbed version of Forrest Gump, overlaid with a German audio-description (Koop, Michalski, Beckmann, Meinhardt \& Benecke, produced by Bayrischer Rundfunk, 2009), originally broadcast as an additional audio track for visually impaired recipients on Swiss public television. The additional audio track consists of a male narrator describing the visual content of a scene between dialogs, off-screen-speech or any other relevant audio-content of the movie (Hanke et al., 2014). The video track for the movie stimulus was re-encoded from Blu-ray into H.264 video (1280 x 720 at 25 frames per second (fps)). In accordance to the procedure in an earlier phase of the studyforrest project, the movie was shortened by removing a few scenes less relevant for the major plot to keep the fMRI recording session under two hours. The shortened movie was then segmented into eight segments of roughly the 15 minutes of length (for an overview on segment duration, final stimulus content and detailed procedures see Hanke et al., 2014). Stimulus material for the localizer paradigm consisted of 24 unique grayscale images for each of six different categories (faces, bodies, houses, scenes, everyday objects, and scrambled images) at a resolution of 400x400px, matched in luminance, and displayed at 10x10 degrees of visual angle (Sengupta et al., 2016).
-
-\subsection{Procedures}
-Functional MRI data acquisition for the audio visual movie was undertaken in two consecutive recording sessions on the same day, with a break of flexible duration. Within each session, four movie segments were presented in chronological order (Hanke et al., 2016).  Prior to each segment an eye-tracker calibration with a 13-point sequence and accuracy validation was performed.
-Segments were succeeded by another accuracy validation and participants were asked to rate their experience (“How deeply did you get into the story?”) on a scale from 1 (not at all) to 4 (a lot). Visual stimuli were projected on to a screen inside the bore of the magnet using an LCD projector, and presented to the subjects thought a front-reflective mirror on top of the head
-coil at a viewing distance of 63cm. The screen dimensions were 26.5cm x 21.2cm at a resolution of 1280 x 1024 px with a 60Hz video refresh rate (Sengupta et al., 2016). Eye-tracking was performed with an Eyelink 1000 (software version 4.594) using monocular corneal reflection and pupil tracking with a temporal resolution of eye gaze recordings of 1000Hz. The camera was mounted at an approximate distance of 100cm to the left eye of subjects, which was illuminated
-by an infrared light source (Hanke et al., 2016). Movie presentation and eye-tracking were synchronized by starting the eye gaze recording as soon as the stimulus computer received the first fMRI trigger signal. Timings of subsequent trigger pulses and onsets of every movie frame
-were logged. Using a 3 Tesla Philips Achieve dStream MRI scanner with a 32 channel head coil, T2*-weighted echo-planar images (gradient-echo, TR = 2s, echo time = 30ms, flip angle = 90) were acquired during movie watching. For the eight segments, 451, 441, 438, 488, 462, 439, 542, and 338 volumes were acquired, respectively (Hanke et al., 2016).
-
-In the localizer paradigm, participants viewed the different object categories in a total of four block-design runs, with two 16s blocks per stimulus category. The order of the individual images per category differed across runs and participants, but the sequence of category blocks was the same for every run and participant. Localizers for higher visual areas (FFA, OFA, PPA, LOC, EBA, and early visual cortex) were obtained by the original authers of the studyforrest extension by means of the two-level GLM analysis on contrasts of activation between objectcategories (for details, see Sengupta et al., 2016).
-
-\subsection{Eye-tracking data}
-Eye-tracking data were normalized to such that all gaze coordinates are in native movie frame pixels, with the top-left corner of the movie frame located at (0, 0) and the lower-right corner located at (1280, 546) (Hanke et al., 2016). The amount of unusable data, primarily due to signal loss due to eye blinks, ranged from less than 1 to 15\% for 13 of the 15 in-scanner subjects (the other two subjects’ data contained 85 and 36\% of data loss, respectively). More contiguous data was yielded in the laboratory acquisition. In-scanner acquisition had an approximate spatial uncertainty of 40px according to the calibration procedure. \newline
-The raw eye tracking data was classified into different eye movements. For this, based on an adaptive, velocity-based algorithm proposed by Nyström and Holmqvist (2010), Dar, Wagner and  Hanke (in preparation) implemented a data-driven algorithm for robust eye movement detection for natural viewing (REMoDNaV) in Python, independent of this thesis\footnote{The sourcecode can be found at github.com/psychoinformatics-de/remodnav}. All results of this algorithm are publicly available at [URL here]. The algorithm categorizes the raw data into the eye movement categories saccades, fixations, post-saccadic oscillations (glissades), and disregards any unclassifiable data (such as blinks). The eye events are reported together with their start- and end coordinates, their onsets and duration in seconds, their velocity and the average pupil size.
-
-
-\subsection{MultiMatch}
-For the purpose of this thesis, the MultiMatch method for scanpath comparison (Jarodzka, Holmqvist \& Nyström, 2010) was ported into Python for further use on the preprocessed eye movement data. The method takes n x 3 fixation vectors of two scanpaths with x- and y-coordinates of the fixations and their duration as columns as its input. In a first step, based on the coordinates and durations of fixations, the scanpaths are represented as geometric vector sequences:
-An idealized saccade is represented as the shortest distance between two fixations. The Cartesian coordinates of the fixations are thus the starting and ending points of a saccade. The length of a saccade in x (or y) direction is computed as the difference in x (or y) coordinates of starting and ending point.  To represent a saccade as a vector in two-dimensional space, the lengths in x and y directions are transformed into polar coordinates \textit{Rho} (length from coordinate origin) and \textit{Theta} (polar angle in radians)  by means of trigonometry as shown in Figure
- \ref{fig:Polar_to_cartesian}. 
-
-\begin{figure}[H]
-		\includegraphics[scale=0.4]{img/Polar_to_cartesian.png}
-		\caption[Geometric representation of eye movements]
-		{\small{Cartesian coordinates x and y are computed as the differences between coordinates of two consecutive fixations in x and y direction, respectively, and determine the end point (x, y) of the saccade vector. The length from the coordinate origin, rho, is computed as the Euclidean norm by means of the Pythagorean theorem: $r = \sqrt{ x^2 + y^2}$. The angle in radians, theta, is computed as a variation of the arctangent function as the angle from positive x axis to the point (x, y), with positive values denoting counterclockwise angle from positive x axis and negative values denoting clockwise angles: $\theta = arctan2(x, y)$.}}
-		\label{fig:Polar_to_cartesian}
-\end{figure}
-
-To reduce complexity, the scanpaths are simplified according to angle and amplitude (length) in an iterative procedure. Two or more saccades are grouped together if angles between two consecutive saccades are below an angular threshold \textit{TDir}, or if the amplitude of successive saccades is below a length threshold \textit{TAmp}, as long as intermediate fixations of the saccades are shorter than a duration threshold, \textit{TDur}. As such, small, locally contained saccades, and saccades in the same general direction are summed to form larger, less complex saccades (Dewhurst et al., 2012). This process is repeated until no further simplifications are made. Thresholds can be set according to use case, but the original simplification algorithm implements an angular threshold of 45 degrees and an amplitude threshold of 10\% of the screen diagonal (Jarodzka, Holmqvist \& Nyström, 2010). \newline
-In a third step, the simplified scanpaths are temporally aligned in order to find pairings of saccade vectors to compare. The aim is to not necessarily align two saccade vectors that constitute the same component in  their respective vector sequence, but those two vectors that are the most similar while still preserving temporal order. In this way, a stray saccade in one of the two scanpaths does not lead to an overall low similarity rating, and it is further possible to compare scanpaths of unequal length.  To do so, all possible pairings of saccades are evaluated in similarity by the vector differences between all pairings (shape). More formally, the vector difference between each element $i$ in scanpath $S1 = {u_1, u_2, \ldots, u_m}$ and each element $j$ in scanpath $S2 = {v_1, v_2, \ldots, v_n}$ is computed an stored in a Matrix $M$. The components of $M$ are the weights that denote similarity, with low weights corresponding to high similarity. In a next step, an adjacency matrix of size M is build. The adjacency matrix defines rules on which connection between matrix elements are allowed: In order to take temporal sequence of saccades into account, connections can only be made to the right, below or below-right. Together, matrices M and the adjacency matrix constitute a matrix representation of a directed, weighted graph (\ref{fig:directedgraph}). Elements of the matrix are nodes, the connection rules constitute edges and the weights define the cost associated with each connection. 
-In the generic example in figure \ref{fig:directedgraph} the edge between node (1, 1) and node (1, 2) has an associated weight, or cost, of $w_2$. 
-
-\begin{figure}
-	\includegraphics[scale=0.4]{img/weightedgraph.png}
-	\caption[Scanpath alignment as a shortest-path-problem]
-	{\small{The elements of two hypothetical scanpaths (left) are used to compute vector differences between all possible pairings as weights $w_1, \ldots, w_6$ in a Matrix $M$ (right). Green arrows indicate connection rules defined by an adjacency matrix. Taken from Jarodzka, Holmqvist \& Nyström, 2010.}}
-	\label{fig:directedgraph}
-\end{figure}
-
-A Dijkstra algorithm (Dijksta, 1959) is used to find the shortest path from the top left node, the first two saccade vectors, to the bottom right node, the last two saccade vectors. “Shortest” path is defined as the connection between nodes with the lowest possible sum of weights. This algorithm is common in way-finding and can be compared to a simple car navigation system that finds the shortest driving distance between two cities. The path returned by the Dijkstra algorithm is a sequence of indexes, denoting pairings of saccade vectors from each scanpath, and as such the desired alignment of scanpaths (Dewhurst et al., 2012).  Finally, in a last step, five measures of scanpath similarity are computed for a multidimensional similarity evaluation. This is done by performing simple vector arithmetic on all aligned saccade pairs $(u_i, v_j)$, taking the median of the results and normalizing this median according to a certain metric. As a result, all five measures are in range [0, 1] with higher values indicating higher similarity between scanpaths on the given dimension (Anderson, Anderson, Kingstone \& Bischof, 2015). \newline
-For \textit{vector shape} similarity, the vector difference is computed as  $u_i - v_j$  and normalized by 2x the screen diagonal (the maximum theoretic value).  For \textit{vector length} similarity, the difference in length between aligned saccade vectors is computed and normalized by the screen diagonal. 
-For \textit{vector direction} similarity, the angular distance in radians between aligned saccade vectors is computed and normalized by $\pi$. For \textit{fixation position} similarity, the difference in fixation coordinates is calculated as the Euclidean distance and normalized by the screen diagonal. 
-For \textit{fixation duration} similarity, the difference in fixation durations between aligned fixations is computed and normalized against the maximum duration of the two fixation durations being compared (Dewhurst et al., 2012). For the use case at hand, especially the duration measure is of high value, as the semantic content at a location of a fixation changes over time in movies, as opposed to static images. 
-
-\subsection{Extraction and processing of eyetracking data}
-
-For the extraction of saccadic eye events, the results where filtered to include only saccades. For the computation of event files following the BIDS standard (Gorgolewski et al., 2016), the Cartesian coordinates of the saccades were transformed into Polar coordinates (angle and length). Based on their angle, saccades were classed into event types describing eight different orientations in the visual field. Saccade onsets and durations were extracted from the REMoDNaV output. The resulting event file per run hence contained the onset, duration, amplitude (length) and direction of saccades. \newline
-The extraction and processing of eye events for further use with multimatch to estimate a measure of exogenous attentional control included several considerations based on current theories, findings and known caveats in eye tracking and attention research with dynamic scenes. These considerations were implemented as additional functionality of the multimatch module to natively work with the studyforrest dataset as a data basis. These additional functions are distributed along with the main algorithm in the multimatch module and are mainly concerned with automatic scanpath extraction from the approximately 15 minutes spanning and several eye-movement categories containing eye-tracking event files by user-defined rules. The first preparation concerned the selection of scanpaths. Obviously, scanpaths of 15 minutes of length are unsuitably long to derive a continuous attention measure or do a scanpath comparison on. Therefore, the data had to be chunked into shorter scanpaths.  It has been shown that subjects gazes have a bias towards the center in Hollywood movies (Tseng, Carmi, Cameron, Munoz \& Itti, 2009). This bias can at least in part be traced back to a strong center bias directly after cuts in dynamic scenes. Carmi and Itti (2006) found the highest degree of exogenous attentional control (i.e. maximal inter-observer similarity in gaze as recorded via eye-tracking) in a moving collage of 50 heterogeneous video clips directly after cuts to new, semantically unrelated scenes. Without isolating cuts it therefore can notbe disentangled whether the contribution of visual features of the movie on scanpaths stems from exogenous control from a movie element or from the sudden occurrence of a new scene after a cut. To not introduce such a confound in the eye-tracking data, the data was cut into shots that did not contain cuts to different scenes. This was done using a location annotation by Häusler and Hanke (2016). The location annotation contained a detailed description of the timing of each of the 870 shots of the movie as well as information about the depicted location in different levels of abstraction. A shot is defined as a movie sequence between two cuts. In a first step, all consecutive short shots to the same locale (i.e. two consecutive, short movie shots in Forrests bedroom, without any cuts containing semantically unrelated content) were grouped together. A “short” shot was defined as being shorter than the median length of 4.92s. This increased the median length of shots from 4.92s to 7.019s. These elongated shots are henceforth referred to as snippets. In a next step, within the scanpath comparison, the onset and offset times of the resulting snippets were extracted for every snippet longer than 4.92s. To not introduce an influence of snippet length into the similarity results, as longer movie snippets will be more likely to be less similar than short ones, scanpath lengths were standardized to approximately 4.92s seconds (the original median length). To further evade any problems associated with the center bias, scanpaths were extracted from the end of the snippet. The last oculomotor event within the range of the snipped marked the end of a scanpath. As such, scanpaths began maximally distant to the snippet onset.
-Therefore, the resulting scanpaths for scanpath comparison did not contain cuts to semantically unrelated scenes and were similar in duration.
-
-\bigskip
 
 The outcome variable $y$ in the analysis is the default rate. It is defined as the proportion of contracts going into default during a certain time period in relation to the total number of contracts in a certain portfolio at the beginning of that time period.
 A list of indications signifying unlikeliness to pay (i.e. possible definitions of default) can be found in table \ref{defaultindications}. Customers of a bank are rated as default if certain criteria are fulfilled such as delayed repayments of loans as defined in the Basel III regulations by the \textcite{bcbs2010baselIII}. 
@@ -1614,90 +1759,6 @@ This procedure is repeated as long as there are significant variables to add, or
 
 In this procedure, the significance levels $\alpha_{stay}$ and $\alpha_{entry}$ are tuning parameters through which the number of predictors can be controlled.
 If the algorithm selects too many predictors, $\alpha_{stay}$ and $\alpha_{entry}$ can be decreased.
-
-\begin{algorithm}
-	\SetKwInOut{Input}{Input}
-	\SetKwInOut{Output}{Output}
-	
-	\Input{REMoDNaV eye movement datafiles per run, movie location annotation per run, desired length to elongate shots to \textit{ldur}, desired scanpath length \textit{dur}}
-	\Output{One n x 3 fixation vector (x, y, duration) per shot > dur}
-	{
-	\If{$event_{row}$ == pursuit}
-		{
-			regard start and end points of pursuit as fixation
-		}
-	}
-	\For{row in REMoDNaV datafile}
-	{
-	\If{$event_{row}$ == fixation}{
-		extract x-, y-coordinate, duration}
-	\If{x, y < 0 or x > 1280 or y < 720}{discard as out-of-bound gaze}
-	}
-	\For{row in annotation}
-	{
-	\If{($locale_{row} == locale_{row+1}$) and ($duration_{row}, duration_{row+1} < ldur$)}
-		{combine to one shot}
-	}
-	\For{row in annotation}
-{
-	\If{$duration_{row}$ > dur)}
-	{extract shotonset and offset time}
-}
-	\For{i in length(onset)}
-	{fixvector$_i$ = REMoDNaV[REMoDNaV$_{onset} > onset_i$; REMoDNaV$_{onset}$ < offset$_i$]
-}
-	return $\{$fixvector$_1$, \ldots, fixvector$_i$$\}$
-	\caption{The studyforrest specific functions of multimatch}
-	\label{algo:multimatch_forrest}
-\end{algorithm}
-
-\begin{algorithm}
-	\SetKwInOut{Input}{Input}
-	\SetKwInOut{Output}{Output}
-	
-	\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
-	\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0;1]}
-	\For{each fixvector}
-	{ 
-		\For{fix in fixvector}
-		{
-		fixation\_x, fixation\_y, fixation\_dur = $x, y, duration$ \;
-		saccade\_x(y) = fixation\_x(y)$_{fix}$ $-$ fixation\_x(y)$_{fix+1}$ \;
-		saccade\_lenx(leny) = fixation\_x(y) $-$ saccade\_x(y)\;
-		saccade\_rho, saccade\_theta = cartesian2polar(saccade\_lenx, saccade\_leny) \;
-		\textbf{eyedata} = [fixation\_x, fixation\_y, fixation\_dur, saccade\_x, saccade\_y, \newline saccade\_lenx, saccade\_leny, saccade\_rho, saccade\_theta]
-			}
-	\While{simplification is still possible}{
-		\If{angle(saccade$_{i}$, saccade$_{i+1}) < TDir$ \bfseries{and} $fixation\_dur < TDur$}
-		{combine saccades}
-		\If{saccade\_rho$_i$, saccade\_rho$_{i+1}$) < TAmp \textbf{and} fixation\_dur $<$ TDur}{combine saccades}
-	}
-	\For{pair of (simplified) scanpaths $S1 = \{u_1, \ldots, u_m\}, S2 = \{v_1, \ldots, v_n\}$}
-	{
-		calculate M: Matrix of saccadelength differences between each $i \in S1$ and  $j \in S2$\;
-		create a directed graph with elements of M as weights $w_1, \ldots, w_i$\;
-		align scanpaths with $min(\sum w)$ from $M(0,0)$ to $M(n,m)$ via Dijkstra algorithm\;
-	}
-	\For{pair($u_i,v_i$) in aligned scanpaths}
-	{
-	angular difference = angle($u_i, v_1$)\;
-	position difference = $\sqrt{(x(u_i) - x(v_i))^2 + (y(u_i) - y(v_i))^2}$ \;
-	vector difference = $\sqrt{(len\_x(u_i) - len\_x(v_i))^2 + (len\_y(u_i) - len\_y(v_i))^2}$\;
-	length difference = $abs(rho(u_i) - rho(v_i))$\;
-	duration difference = $abs(dur(u_i)-dur(v_i))$ \;
-	}
-	normalize angular difference by $\pi$\;
-	normalize vector difference by 2x the screen diagonal\;
-	normalize length difference by the screen diagonal\;
-	normalize position difference by the screen diagonal\;
-	normalize duration difference by maximal duration of the scanpath\;
-	\textbf{return} median for each similarity measure
-	}
-	return onset, durations, similarity measures
-	\caption{The MultiMatch Algorithm}
-	\label{algo:multimatch}
-\end{algorithm}
-
 
 
 \bigskip 
@@ -2684,36 +2745,6 @@ Table \ref{table:correlations} shows the pairwise correlations for the macroecon
 \end{appendices}
 
 
-%---- Eigenständigkeitserklärung -----------------
-\chapter*{Declaration of Academic Integrity}
-\addcontentsline{toc}{chapter}{Declaration of Academic Integrity}
-
-I, Gunnar Behrens, hereby affirm that I have completed the present master thesis without  assistance and without using references other than cited and that this work has not been presented as an examination paper before.
-
-\bigskip
-
-\begin{center}
-	***
-\end{center}
-
-\bigskip
-
-Hiermit erkläre ich, Gunnar Behrens, an Eides statt, dass ich die vorliegende \linebreak Masterarbeit selbstständig, 
-ohne fremde Hilfe und ohne die Verwendung weiterer als der angegebenen Quellen erstellt habe und dass diese Arbeit nicht bereits als Prüfungsarbeit vorgelegen hat.
-
-\bigskip \bigskip \bigskip
-
-Braunschweig, May $3^{rd}$, 2018
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
----------------------------------------------------
-
-$\phantom{mmmm..}$  (Gunnar Behrens)
 
 
 \end{document}
