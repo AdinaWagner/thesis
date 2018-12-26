@@ -80,7 +80,7 @@
 %\clearscrplain		
 \clearscrheadfoot
 \ihead[]{\leftmark}						%setzt Chapter-Name als linke Seitenüberschrift
-\ohead[]{May $3^{rd}$, 2018} 				%für sectionname \rightmark einsetzen
+\ohead[]{***DRAFT*** v.0.1 DEC 2018} 				%für sectionname \rightmark einsetzen
 %\cfoot[\pagemark]{\pagemark}
 \cfoot[\hfill -- \thepage{} -- \hfill]{\hfill -- \thepage{} -- \hfill}	%setzt Seitenzahl unten
 \setkomafont{pagefoot}{%
@@ -206,7 +206,7 @@
 \begin{center}
 \bigskip
 \begin{LARGE}
-\textbf{Master Thesis}
+\textbf{Masters' Thesis}
 \end{LARGE}
 
 \vspace{\fill}
@@ -214,7 +214,7 @@
 \begin{huge}
 %\begin{scshape}
  
-Catching the eye: \\
+\textbf{Catching the eye}: \\
 Investigating the functional neuroanatomy of the visuospatial attention system with fMRI and eyegaze recordings during natural stimulation
 
 %\end{scshape}
@@ -397,7 +397,7 @@ Secondly, I am grateful to Prof. Dr. Pollmann for agreeing to be the second asse
 I cannot overstate the importance of Prof. Yaroslav Halchenko, whom I want to thank deeply for his agreement to supervise and mentor me on a four month research stay at Jim Haxbys Lab at Dartmouth College, NH, USA. His and Michaels passion for open science, open-source software, and scientific integrity and reproducibility will continue to be my source of inspiration and motivation throughout my scientific career.\newline
 I further am grateful to Prof. Jim Haxby for welcoming me in his lab in Dartmouth, as well as Prof. Ida Gobbini, Vassiki Chauhan, Kyle Meyer and Feilong Ma for their company and advice throughout my stay in the US. \newline
 This Masters Thesis would not have been possible without the methodological discussions, programming tutorials, and most importantly friendship of Alexander Waite, Dr. Emanuele Porcu, Benjamin Poldrack, Christian Häusler and Asim Dar. All members of the Psychoinformatics Lab have contributed to the most welcoming, fun, and empowering work environment I have ever been a part of, and despite my daily commute, this wonderful lab became a family for me. \newline
-All of my studies, in Germany and abroad, were mainly funded by the German Academic Foundation. The ideal and financial support since 2013 enabled me to become the person I am today. I am thankful to all of my referees, Dr. Ludwig, Dr. Trebesius, Dr. Köhne, and Dr. Chwalleck, for the insightful discussions, and my mentors, Prof. Enders and Prof. Fink, for their assistance and guidance, and to Dr. Julius and Prof. Zimmermann, whom I was honored to meet and work with several times during my involvement in various projects within the German Academic Foundation. \newline
+All of my studies, in Germany and abroad, were mainly funded by the German Academic Foundation. The ideal and financial support since 2013 enabled me to become the person I am today. I am thankful to all of my referees, Dr. Ludwig, Dr. Trebesius, Dr. Köhne, and Dr. Chwalleck, for the insightful discussions, and my mentors, Prof. Enders and Prof. Fink, for their assistance and guidance, and to Dr. Julius and Prof. Zimmermann, whom I was honored to meet and work with several times. \newline
 Last but not least I am heartily grateful to my parents and friends for their patience, their support, their steady encouragement and constant moral guidance. Especially Gunnar Behrens, who was my anchor throughout seven busy years.
 
 
@@ -459,15 +459,15 @@ The connectivity of the FEF with visual areas caudal to the central sulcus is to
 
 
 \section{Movements of the eye}
-A central feature of the human retina is the fovea centralis, a specialised region about 1.5mm in diameter in the center of the retina (Benninghoff \& Drenckhahn, 2004). It serves only the central 1 degree of the visual field, but due to possessing the highest amount of cones of the retina, and an asymmetric distribution of ganglion cell density across the retina that advantages foveal information, it provides the greatest visual acuity (Perry \& Cowey, 1985). This asymmetry is propagated in the cortical representation of visual inputs from the retina. The magnification factor (MF), the linear extent of cortex devoted to each linear degree on the retina (Daniel \& Whitteridge, 1961), increases monotonically from periphal to foveal vision (Daniel \& Whitterage, 1961). As a result, in almost all visual brain areas, both cortically and subcortically, the fovea has the greatest representation. Full visual acuity can therefore only occur at the fovea. 
+A central feature of the human retina is the fovea centralis, a specialised region about 1.5mm in diameter in the center of the retina (Benninghoff \& Drenckhahn, 2004). It serves only the central 1$^\circ$ of the visual field, but due to possessing the highest amount of cones of the retina, and an asymmetric distribution of ganglion cell density across the retina that advantages foveal information, it provides the greatest visual acuity (Perry \& Cowey, 1985). This asymmetry is propagated in the cortical representation of visual inputs from the retina. The magnification factor (MF), the linear extent of cortex devoted to each linear degree on the retina (Daniel \& Whitteridge, 1961), increases monotonically from periphal to foveal vision (Daniel \& Whitterage, 1961). As a result, in almost all visual brain areas, both cortically and subcortically, the fovea has the greatest representation. Full visual acuity can therefore only occur at the fovea. 
 Due to this constraint, humans need the ability to, first, align the fovea rapidly to an object of interest and, second, keep the fovea aligned to it for a sufficient amount of time in order to maximize the efficiency of foveal vision and perceive objects of interest in greatest detail. An exploration of a visual scene is hence performed in a stepwise manner and requires the described sequence of eye movements to sequentially explore all areas of interest. To accomplish this, the human eye is capable of a number of different eye movements. A selection of important eye movements will be introduced briefly in this section. \newline
-In its most simple form, the sequence consists of rapid eye-movements, so called \textit{saccades}, redirecting the fovea from one object of interest to the next, followed by phases of \textit{fixation} that keep the fovea aligned for visual analysis. As saccades reach speeds of up to 500 degrees/sec, small, corrective post-saccadic oscillations, so called \textit{glissades}, correct minor deviations of saccade target and actual saccade endpoint. Additionally, \textit{smooth pursuits} enable a viewer to track moving objects, while \textit{vergence} movements are necessary for accommodating different depths (Holmqvist \& Nyström, 2011). The following table \ref{table:eyemovements} provides an overview of these movements and their characteristics. 
+In its most simple form, the sequence consists of rapid eye-movements, so called \textit{saccades}, redirecting the fovea from one object of interest to the next, followed by phases of \textit{fixation} that keep the fovea aligned for visual analysis. As saccades reach speeds of up to 500 $^\circ$/sec, small, corrective post-saccadic oscillations, so called \textit{glissades}, correct minor deviations of saccade target and actual saccade endpoint. Additionally, \textit{smooth pursuits} enable a viewer to track moving objects, while \textit{vergence} movements are necessary for accommodating different depths (Holmqvist \& Nyström, 2011). The following table \ref{table:eyemovements} provides an overview of these movements and their characteristics. 
   
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{lC{3cm}C{3cm}C{3cm}}
 			\thickhline 
-			\textbf{Type}	& \textbf{Duration(ms)} & \textbf{Amplitude (degrees)} & \textbf{Velocity (degrees / sec)} \\ \hline
+			\textbf{Type}	& \textbf{Duration(ms)} & \textbf{Amplitude (degrees)} & \textbf{Velocity ($^\circ$/sec)} \\ \hline
 			Fixation 		& 200-300  & -  &  - \\
 			Saccade 		& 30-80   & 4-20  & 30-500 \\
 			Glissade			& 10-40   & 0.5-2  & 20-140 \\
@@ -536,7 +536,7 @@ Data stems from the 2016 released extension of the studyforrest dataset (Hanke e
 
 \subsection{Stimulus material}
 
-Stimulus material for the audiovisual movie was the German dubbed version of Forrest Gump, overlaid with a German audio-description (Koop, Michalski, Beckmann, Meinhardt \& Benecke, produced by Bayrischer Rundfunk, 2009), originally broadcast as an additional audio track for visually impaired recipients on Swiss public television. The additional audio track consists of a male narrator describing the visual content of a scene between dialogs, off-screen-speech or any other relevant audio-content of the movie (Hanke et al., 2014). The video track for the movie stimulus was re-encoded from Blu-ray into H.264 video (1280 x 720 at 25 frames per second (fps)). In accordance to the procedure in an earlier phase of the studyforrest project, the movie was shortened by removing a few scenes less relevant for the major plot to keep the fMRI recording session under two hours. The shortened movie was then segmented into eight segments of roughly the 15 minutes of length (for an overview on segment duration, final stimulus content and detailed procedures see Hanke et al., 2014). Stimulus material for the localizer paradigm consisted of 24 unique grayscale images for each of six different categories (faces, bodies, houses, scenes, everyday objects, and scrambled images) at a resolution of 400x400px, matched in luminance, and displayed at 10x10 degrees of visual angle (Sengupta et al., 2016).
+Stimulus material for the audiovisual movie was the German dubbed version of Forrest Gump, overlaid with a German audio-description (Koop, Michalski, Beckmann, Meinhardt \& Benecke, produced by Bayrischer Rundfunk, 2009), originally broadcast as an additional audio track for visually impaired recipients on Swiss public television. The additional audio track consists of a male narrator describing the visual content of a scene between dialogs, off-screen-speech or any other relevant audio-content of the movie (Hanke et al., 2014). The video track for the movie stimulus was re-encoded from Blu-ray into H.264 video (1280 x 720 at 25 frames per second (fps)). In accordance to the procedure in an earlier phase of the studyforrest project, the movie was shortened by removing a few scenes less relevant for the major plot to keep the fMRI recording session under two hours. The shortened movie was then segmented into eight segments of roughly the 15 minutes of length (for an overview on segment duration, final stimulus content and detailed procedures see Hanke et al., 2014). Stimulus material for the localizer paradigm consisted of 24 unique grayscale images for each of six different categories (faces, bodies, houses, scenes, everyday objects, and scrambled images) at a resolution of 400x400px, matched in luminance, and displayed at 10x10$^\circ$ of visual angle (Sengupta et al., 2016).
 
 \subsection{Procedures}
 Functional MRI data acquisition for the audio visual movie was undertaken in two consecutive recording sessions on the same day, with a break of flexible duration. Within each session, four movie segments were presented in chronological order (Hanke et al., 2016).  Prior to each segment an eye-tracker calibration with a 13-point sequence and accuracy validation was performed.
@@ -2646,11 +2646,12 @@ Finally, it could be investigated whether the analysis of other macroeconomic va
 
 
 %------- Literaturverzeichnis -------------------
-\printbibliography[	heading=bibintoc,			% oder bibnumbered
-										title={Bibliography},
+%%%% Literaturverzeichnis macht aktuell Probleme, könnte bibtex unter Debian sein
+%\printbibliography[	heading=bibintoc,			% oder bibnumbered
+%										title={Bibliography},
 %										nottype=online
-									]	
-\nocite{*} % auch nicht zitierte Werke ausgeben									
+%									]	
+%\nocite{*} % auch nicht zitierte Werke ausgeben									
 
 
 %--------- alternatives Literaturverzeichnis -------
