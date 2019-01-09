@@ -1,0 +1,55 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{}]\begingroup \nomeqref {0.0}\nompageref{9}
+  \item [{EBA}]\begingroup Extrastriate Body Area\nomeqref {0.0}
+		\nompageref{9}
+  \item [{FEF}]\begingroup Frontal Eye Field\nomeqref {0.0}
+		\nompageref{9}
+  \item [{FFA}]\begingroup Fusiform Face Area\nomeqref {0.0}
+		\nompageref{9}
+  \item [{fMRI}]\begingroup functional Magnetic Resonance Imaging\nomeqref {0.0}
+		\nompageref{9}
+  \item [{GLM}]\begingroup General linear model\nomeqref {0.0}
+		\nompageref{9}
+  \item [{GNB}]\begingroup Gaussian Naive Bayes [classifier]\nomeqref {0.0}
+		\nompageref{9}
+  \item [{IFG}]\begingroup Inferior frontal gyrus\nomeqref {0.0}
+		\nompageref{9}
+  \item [{IPS}]\begingroup Intraparietal Sulcus\nomeqref {0.0}
+		\nompageref{9}
+  \item [{LOC}]\begingroup Lateral Occipital Complex\nomeqref {0.0}
+		\nompageref{9}
+  \item [{MEG}]\begingroup Magneto-encephalography\nomeqref {0.0}
+		\nompageref{9}
+  \item [{MF}]\begingroup Magnification Factor\nomeqref {0.0}
+		\nompageref{9}
+  \item [{MFG}]\begingroup Medial frontal gyrus\nomeqref {0.0}
+		\nompageref{9}
+  \item [{MSE}]\begingroup mean squared error\nomeqref {0.0}
+		\nompageref{9}
+  \item [{OLS}]\begingroup ordinary least-squares\nomeqref {0.0}
+		\nompageref{9}
+  \item [{PET}]\begingroup Positron Emission Tomography\nomeqref {0.0}
+		\nompageref{9}
+  \item [{PPA}]\begingroup Parahippocampal Place Area\nomeqref {0.0}
+		\nompageref{9}
+  \item [{SEF}]\begingroup Supplementary Eye Fields\nomeqref {0.0}
+		\nompageref{9}
+  \item [{SSE}]\begingroup explained sum of squares\nomeqref {0.0}
+		\nompageref{9}
+  \item [{SSR}]\begingroup residual sum of squares\nomeqref {0.0}
+		\nompageref{9}
+  \item [{SST}]\begingroup total sum of squares\nomeqref {0.0}
+		\nompageref{9}
+  \item [{STG}]\begingroup superior temporal gyrus\nomeqref {0.0}
+		\nompageref{9}
+  \item [{STS}]\begingroup superior temporal sulcus\nomeqref {0.0}
+		\nompageref{9}
+  \item [{TMS}]\begingroup Transcranial magnetic stimulation\nomeqref {0.0}
+		\nompageref{9}
+  \item [{TPJ}]\begingroup Tempoparietal Junction\nomeqref {0.0}
+		\nompageref{9}
+
+\end{thenomenclature}

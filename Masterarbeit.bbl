@@ -1,0 +1,4326 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{alkan2011differentiation}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AY}{%
+         family={Alkan},
+         familyi={A\bibinitperiod},
+         given={Yelda},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BBB}{%
+         family={Biswal},
+         familyi={B\bibinitperiod},
+         given={Bharat\bibnamedelima B},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=ATL}{%
+         family={Alvarez},
+         familyi={A\bibinitperiod},
+         given={Tara\bibnamedelima L},
+         giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{AYBBBATL1}
+    \strng{fullhash}{AYBBBATL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{11}
+    \field{pages}{e25866}
+    \field{title}{Differentiation between vergence and saccadic functional
+  activity within the human frontal eye fields and midbrain revealed through
+  fMRI}
+    \field{volume}{6}
+    \field{journaltitle}{PLoS One}
+    \field{year}{2011}
+  \endentry
+
+  \entry{amiez2009anatomical}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AC}{%
+         family={Amiez},
+         familyi={A\bibinitperiod},
+         given={C{\'e}line},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Petrides},
+         familyi={P\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ACPM1}
+    \strng{fullhash}{ACPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{2}
+    \field{pages}{220\bibrangedash 230}
+    \field{title}{Anatomical organization of the eye fields in the human and
+  non-human primate frontal cortex}
+    \field{volume}{89}
+    \field{journaltitle}{Progress in neurobiology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{anderson2015comparison}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ANC}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={Nicola\bibnamedelima C},
+         giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={Fraser},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kingstone},
+         familyi={K\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BWF}{%
+         family={Bischof},
+         familyi={B\bibinitperiod},
+         given={Walter\bibnamedelima F},
+         giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{ANC+1}
+    \strng{fullhash}{ANCAFKABWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{1377\bibrangedash 1392}
+    \field{title}{A comparison of scanpath comparison methods}
+    \field{volume}{47}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2015}
+  \endentry
+
+  \entry{andersson2017one}{article}{}
+    \name{author}{5}{}{%
+      {{hash=AR}{%
+         family={Andersson},
+         familyi={A\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Larsson},
+         familyi={L\bibinitperiod},
+         given={Linnea},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Holmqvist},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stridh},
+         familyi={S\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nystr{\"o}m},
+         familyi={N\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AR+1}
+    \strng{fullhash}{ARLLHKSMNM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{2}
+    \field{pages}{616\bibrangedash 637}
+    \field{title}{One algorithm to rule them all? An evaluation and discussion
+  of ten eye movement event-detection algorithms}
+    \field{volume}{49}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2017}
+  \endentry
+
+  \entry{bellebaum2012neuropsych}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BC}{%
+         family={Bellebaum},
+         familyi={B\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Thoma},
+         familyi={T\bibinitperiod},
+         given={Patrizia},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Daum},
+         familyi={D\bibinitperiod},
+         given={Irene},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BCTPDI1}
+    \strng{fullhash}{BCTPDI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Neuropsychologie}
+    \field{year}{2012}
+  \endentry
+
+  \entry{blanke2000FEF}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BO}{%
+         family={Blanke},
+         familyi={B\bibinitperiod},
+         given={O},
+         giveni={O},
+      }}%
+      {{hash=SL}{%
+         family={Spinelli},
+         familyi={S\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+      {{hash=TG}{%
+         family={Thut},
+         familyi={T\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+      {{hash=MCM}{%
+         family={Michel},
+         familyi={M\bibinitperiod},
+         given={C\bibnamedelima M},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Perrig},
+         familyi={P\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=LT}{%
+         family={Landis},
+         familyi={L\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=SM}{%
+         family={Seek},
+         familyi={S\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Kluwer}%
+    }
+    \strng{namehash}{BO+1}
+    \strng{fullhash}{BOSLTGMCMPSLTSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{9}
+    \field{pages}{1907\bibrangedash 1913}
+    \field{title}{Location of the human frontal eye field as defined by
+  electrical cortical stimulation: anatomical, functional and
+  electrophysiological characteristics}
+    \field{volume}{11}
+    \field{journaltitle}{NeuroReport}
+    \field{year}{2000}
+  \endentry
+
+  \entry{blanke2003direction}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BO}{%
+         family={Blanke},
+         familyi={B\bibinitperiod},
+         given={Olaf},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Seeck},
+         familyi={S\bibinitperiod},
+         given={Margitta},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BOSM1}
+    \strng{fullhash}{BOSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2}
+    \field{pages}{174\bibrangedash 183}
+    \field{title}{Direction of saccadic and smooth eye movements induced by
+  electrical stimulation of the human frontal eye field: effect of orbital
+  position}
+    \field{volume}{150}
+    \field{journaltitle}{Experimental brain research}
+    \field{year}{2003}
+  \endentry
+
+  \entry{blankenburg2010studying}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BF}{%
+         family={Blankenburg},
+         familyi={B\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RCC}{%
+         family={Ruff},
+         familyi={R\bibinitperiod},
+         given={Christian\bibnamedelima C},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bestmann},
+         familyi={B\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bjoertomt},
+         familyi={B\bibinitperiod},
+         given={Otto},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=JO}{%
+         family={Josephs},
+         familyi={J\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Deichmann},
+         familyi={D\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Driver},
+         familyi={D\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{BF+1}
+    \strng{fullhash}{BFRCCBSBOJODRDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{11}
+    \field{pages}{2702\bibrangedash 2711}
+    \field{title}{Studying the role of human parietal cortex in visuospatial
+  attention with concurrent TMS--fMRI}
+    \field{volume}{20}
+    \field{journaltitle}{Cerebral Cortex}
+    \field{year}{2010}
+  \endentry
+
+  \entry{bressler2008top}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BSL}{%
+         family={Bressler},
+         familyi={B\bibinitperiod},
+         given={Steven\bibnamedelima L},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SCM}{%
+         family={Sylvester},
+         familyi={S\bibinitperiod},
+         given={Chad\bibnamedelima M},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Soc Neuroscience}%
+    }
+    \strng{namehash}{BSL+1}
+    \strng{fullhash}{BSLTWSCMSGLCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{40}
+    \field{pages}{10056\bibrangedash 10061}
+    \field{title}{Top-down control of human visual cortex by frontal and
+  parietal cortex in anticipatory visual spatial attention}
+    \field{volume}{28}
+    \field{journaltitle}{Journal of Neuroscience}
+    \field{year}{2008}
+  \endentry
+
+  \entry{bruce1985primate}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BCJ}{%
+         family={Bruce},
+         familyi={B\bibinitperiod},
+         given={Charles\bibnamedelima J},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GME}{%
+         family={Goldberg},
+         familyi={G\bibinitperiod},
+         given={Michael\bibnamedelima E},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BMC}{%
+         family={Bushnell},
+         familyi={B\bibinitperiod},
+         given={M\bibnamedelima Catherine},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SGB}{%
+         family={Stanton},
+         familyi={S\bibinitperiod},
+         given={Gregory\bibnamedelima B},
+         giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physiological Society Bethesda, MD}%
+    }
+    \strng{namehash}{BCJ+1}
+    \strng{fullhash}{BCJGMEBMCSGB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{714\bibrangedash 734}
+    \field{title}{Primate frontal eye fields. II. Physiological and anatomical
+  correlates of electrically evoked eye movements}
+    \field{volume}{54}
+    \field{journaltitle}{Journal of neurophysiology}
+    \field{year}{1985}
+  \endentry
+
+  \entry{carmi2006visual}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CR}{%
+         family={Carmi},
+         familyi={C\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=IL}{%
+         family={Itti},
+         familyi={I\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CRIL1}
+    \strng{fullhash}{CRIL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{26}
+    \field{pages}{4333\bibrangedash 4345}
+    \field{title}{Visual causes versus correlates of attentional selection in
+  dynamic scenes}
+    \field{volume}{46}
+    \field{journaltitle}{Vision research}
+    \field{year}{2006}
+  \endentry
+
+  \entry{carrasco2011visual}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Carrasco},
+         familyi={C\bibinitperiod},
+         given={Marisa},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{13}
+    \field{pages}{1484\bibrangedash 1525}
+    \field{title}{Visual attention: The past 25 years}
+    \field{volume}{51}
+    \field{journaltitle}{Vision research}
+    \field{year}{2011}
+  \endentry
+
+  \entry{chica2013two}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CAB}{%
+         family={Chica},
+         familyi={C\bibinitperiod},
+         given={Ana\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bartolomeo},
+         familyi={B\bibinitperiod},
+         given={Paolo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lupi{\'a}{\~n}ez},
+         familyi={L\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CABBPLJ1}
+    \strng{fullhash}{CABBPLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{107\bibrangedash 123}
+    \field{title}{Two cognitive and neural systems for endogenous and exogenous
+  spatial attention}
+    \field{volume}{237}
+    \field{journaltitle}{Behavioural brain research}
+    \field{year}{2013}
+  \endentry
+
+  \entry{connolly2002human}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CJD}{%
+         family={Connolly},
+         familyi={C\bibinitperiod},
+         given={Jason\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=GMA}{%
+         family={Goodale},
+         familyi={G\bibinitperiod},
+         given={Melvyn\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MRS}{%
+         family={Menon},
+         familyi={M\bibinitperiod},
+         given={Ravi\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MDP}{%
+         family={Munoz},
+         familyi={M\bibinitperiod},
+         given={Douglas\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CJD+1}
+    \strng{fullhash}{CJDGMAMRSMDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{12}
+    \field{pages}{1345}
+    \field{title}{Human fMRI evidence for the neural correlates of preparatory
+  set}
+    \field{volume}{5}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2002}
+  \endentry
+
+  \entry{corbetta2008reorienting}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CMPGSGL1}
+    \strng{fullhash}{CMPGSGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{306\bibrangedash 324}
+    \field{title}{The reorienting system of the human brain: from environment
+  to theory of mind}
+    \field{volume}{58}
+    \field{journaltitle}{Neuron}
+    \field{year}{2008}
+  \endentry
+
+  \entry{corbetta2002control}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CMSGL1}
+    \strng{fullhash}{CMSGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{201}
+    \field{title}{Control of goal-directed and stimulus-driven attention in the
+  brain}
+    \field{volume}{3}
+    \field{journaltitle}{Nature reviews neuroscience}
+    \field{year}{2002}
+  \endentry
+
+  \entry{coutrot2018scanpath}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Coutrot},
+         familyi={C\bibinitperiod},
+         given={Antoine},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HJH}{%
+         family={Hsiao},
+         familyi={H\bibinitperiod},
+         given={Janet\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CAB}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={Antoni\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CAHJHCAB1}
+    \strng{fullhash}{CAHJHCAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{362\bibrangedash 379}
+    \field{title}{Scanpath modeling and classification with hidden Markov
+  models}
+    \field{volume}{50}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2018}
+  \endentry
+
+  \entry{cristino2010scanmatch}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CF}{%
+         family={Cristino},
+         familyi={C\bibinitperiod},
+         given={Filipe},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Math{\^o}t},
+         familyi={M\bibinitperiod},
+         given={Sebastiaan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Theeuwes},
+         familyi={T\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GID}{%
+         family={Gilchrist},
+         familyi={G\bibinitperiod},
+         given={Iain\bibnamedelima D},
+         giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFMSTJGID1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{692\bibrangedash 700}
+    \field{title}{ScanMatch: A novel method for comparing fixation sequences}
+    \field{volume}{42}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2010}
+  \endentry
+
+  \entry{crowne1981effects}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CDP}{%
+         family={Crowne},
+         familyi={C\bibinitperiod},
+         given={Douglas\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=YCH}{%
+         family={Yeo},
+         familyi={Y\bibinitperiod},
+         given={Christopher\bibnamedelima H},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RIS}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={I\bibnamedelima Steele},
+         giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CDPYCHRIS1}
+    \strng{fullhash}{CDPYCHRIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1981}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{165\bibrangedash 187}
+    \field{title}{The effects of unilateral frontal eye field lesions in the
+  monkey: visual-motor guidance and avoidance behaviour}
+    \field{volume}{2}
+    \field{journaltitle}{Behavioural brain research}
+    \field{year}{1981}
+  \endentry
+
+  \entry{daniel1961representation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DP}{%
+         family={Daniel},
+         familyi={D\bibinitperiod},
+         given={PM},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Whitteridge},
+         familyi={W\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{DPWD1}
+    \strng{fullhash}{DPWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1961}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{2}
+    \field{pages}{203\bibrangedash 221}
+    \field{title}{The representation of the visual field on the cerebral cortex
+  in monkeys}
+    \field{volume}{159}
+    \field{journaltitle}{The Journal of physiology}
+    \field{year}{1961}
+  \endentry
+
+  \entry{dewhurst2012depends}{article}{}
+    \name{author}{6}{}{%
+      {{hash=DR}{%
+         family={Dewhurst},
+         familyi={D\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nystr{\"o}m},
+         familyi={N\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jarodzka},
+         familyi={J\bibinitperiod},
+         given={Halszka},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Foulsham},
+         familyi={F\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Johansson},
+         familyi={J\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Holmqvist},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DR+1}
+    \strng{fullhash}{DRNMJHFTJRHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{4}
+    \field{pages}{1079\bibrangedash 1100}
+    \field{title}{It depends on how you look at it: Scanpath comparison in
+  multiple dimensions with MultiMatch, a vector-based approach}
+    \field{volume}{44}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2012}
+  \endentry
+
+  \entry{dijkstra1959note}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DEW}{%
+         family={Dijkstra},
+         familyi={D\bibinitperiod},
+         given={Edsger\bibnamedelima W},
+         giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DEW1}
+    \strng{fullhash}{DEW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1959}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{269\bibrangedash 271}
+    \field{title}{A note on two problems in connexion with graphs}
+    \field{volume}{1}
+    \field{journaltitle}{Numerische mathematik}
+    \field{year}{1959}
+  \endentry
+
+  \entry{dorr2010variability}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DM}{%
+         family={Dorr},
+         familyi={D\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Martinetz},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GKR}{%
+         family={Gegenfurtner},
+         familyi={G\bibinitperiod},
+         given={Karl\bibnamedelima R},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Barth},
+         familyi={B\bibinitperiod},
+         given={Erhardt},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {The Association for Research in Vision}%
+      {Ophthalmology}%
+    }
+    \strng{namehash}{DM+1}
+    \strng{fullhash}{DMMTGKRBE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{10}
+    \field{pages}{28\bibrangedash 28}
+    \field{title}{Variability of eye movements when viewing dynamic natural
+  scenes}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of vision}
+    \field{year}{2010}
+  \endentry
+
+  \entry{downar2000multimodal}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DJ}{%
+         family={Downar},
+         familyi={D\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CAP}{%
+         family={Crawley},
+         familyi={C\bibinitperiod},
+         given={Adrian\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MDJ}{%
+         family={Mikulis},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DKD}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Karen\bibnamedelima D},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCAPMDJDKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{3}
+    \field{pages}{277}
+    \field{title}{A multimodal cortical network for the detection of changes in
+  the sensory environment}
+    \field{volume}{3}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2000}
+  \endentry
+
+  \entry{downar2001effect}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DJ}{%
+         family={Downar},
+         familyi={D\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CAP}{%
+         family={Crawley},
+         familyi={C\bibinitperiod},
+         given={Adrian\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MDJ}{%
+         family={Mikulis},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DKD}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Karen\bibnamedelima D},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCAPMDJDKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{6}
+    \field{pages}{1256\bibrangedash 1267}
+    \field{title}{The effect of task relevance on the cortical response to
+  changes in visual and auditory stimuli: an event-related fMRI study}
+    \field{volume}{14}
+    \field{journaltitle}{Neuroimage}
+    \field{year}{2001}
+  \endentry
+
+  \entry{benninghof2004anat}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DD}{%
+         family={Drenckhahn},
+         familyi={D\bibinitperiod},
+         given={Detlef},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier GmbH}%
+    }
+    \strng{namehash}{DD1}
+    \strng{fullhash}{DD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Anatomie, Makroskopische Anatomie, Embryologie und Histologie
+  des Menschen.: Band 2: Herz-Kreislauf-System, Lymphatisches System, Endokrine
+  Drüsen, Nervensystem, Sinnesorgane, Haut.}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2004}
+  \endentry
+
+  \entry{fox2009defining}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FCJ}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={Christopher\bibnamedelima J},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Iaria},
+         familyi={I\bibinitperiod},
+         given={Giuseppe},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BJJ}{%
+         family={Barton},
+         familyi={B\bibinitperiod},
+         given={Jason\bibnamedelima JS},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{FCJIGBJJ1}
+    \strng{fullhash}{FCJIGBJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{5}
+    \field{pages}{1637\bibrangedash 1651}
+    \field{title}{Defining the face processing network: optimization of the
+  functional localizer in fMRI}
+    \field{volume}{30}
+    \field{journaltitle}{Human brain mapping}
+    \field{year}{2009}
+  \endentry
+
+  \entry{fox2006spontaneous}{article}{}
+    \name{author}{5}{}{%
+      {{hash=FMD}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={Michael\bibnamedelima D},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SAZ}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={Abraham\bibnamedelima Z},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=VJL}{%
+         family={Vincent},
+         familyi={V\bibinitperiod},
+         given={Justin\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=RME}{%
+         family={Raichle},
+         familyi={R\bibinitperiod},
+         given={Marcus\bibnamedelima E},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \strng{namehash}{FMD+1}
+    \strng{fullhash}{FMDCMSAZVJLRME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{26}
+    \field{pages}{10046\bibrangedash 10051}
+    \field{title}{Spontaneous neuronal activity distinguishes human dorsal and
+  ventral attention systems}
+    \field{volume}{103}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2006}
+  \endentry
+
+  \entry{french2017evaluation}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FRM}{%
+         family={French},
+         familyi={F\bibinitperiod},
+         given={Robert\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Glady},
+         familyi={G\bibinitperiod},
+         given={Yannick},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TJP}{%
+         family={Thibaut},
+         familyi={T\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FRMGYTJP1}
+    \strng{fullhash}{FRMGYTJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{4}
+    \field{pages}{1291\bibrangedash 1302}
+    \field{title}{An evaluation of scanpath-comparison and machine-learning
+  classification algorithms used to study the dynamics of analogy making}
+    \field{volume}{49}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2017}
+  \endentry
+
+  \entry{goldstein2007people}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GRB}{%
+         family={Goldstein},
+         familyi={G\bibinitperiod},
+         given={Robert\bibnamedelima B},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WRL}{%
+         family={Woods},
+         familyi={W\bibinitperiod},
+         given={Russell\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Peli},
+         familyi={P\bibinitperiod},
+         given={Eli},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GRBWRLPE1}
+    \strng{fullhash}{GRBWRLPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{7}
+    \field{pages}{957\bibrangedash 964}
+    \field{title}{Where people look when watching movies: Do all viewers look
+  at the same place?}
+    \field{volume}{37}
+    \field{journaltitle}{Computers in biology and medicine}
+    \field{year}{2007}
+  \endentry
+
+  \entry{goodwin2007cranial}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Goodwin},
+         familyi={G\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Saunders, Elsevier}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{133\bibrangedash 164}
+    \field{title}{Cranial Nerves III, IV, and VI: the oculomotor system}
+    \field{journaltitle}{Textbook of clinical neurology}
+    \field{year}{2007}
+  \endentry
+
+  \entry{gorgolewski2016brain}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=GKJ}{%
+         family={Gorgolewski},
+         familyi={G\bibinitperiod},
+         given={Krzysztof\bibnamedelima J},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Auer},
+         familyi={A\bibinitperiod},
+         given={Tibor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CVD}{%
+         family={Calhoun},
+         familyi={C\bibinitperiod},
+         given={Vince\bibnamedelima D},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CRC}{%
+         family={Craddock},
+         familyi={C\bibinitperiod},
+         given={R\bibnamedelima Cameron},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Samir},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DEP}{%
+         family={Duff},
+         familyi={D\bibinitperiod},
+         given={Eugene\bibnamedelima P},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Flandin},
+         familyi={F\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GSS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Satrajit\bibnamedelima S},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Glatard},
+         familyi={G\bibinitperiod},
+         given={Tristan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{GKJ+2}
+    \strng{fullhash}{GKJATCVDCRCDSDEPFGGSSGTHYO+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{160044}
+    \field{title}{The brain imaging data structure, a format for organizing and
+  describing outputs of neuroimaging experiments}
+    \field{volume}{3}
+    \field{journaltitle}{Scientific Data}
+    \field{year}{2016}
+  \endentry
+
+  \entry{gorgolewski_krzysztof}{misc}{}
+    \name{author}{132}{}{%
+      {{hash=GKJ}{%
+         family={Gorgolewski},
+         familyi={G\bibinitperiod},
+         given={Krzysztof\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=EO}{%
+         family={Esteban},
+         familyi={E\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=EDG}{%
+         family={Ellis},
+         familyi={E\bibinitperiod},
+         given={David\bibnamedelima Gage},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=NMP}{%
+         family={Notter},
+         familyi={N\bibinitperiod},
+         given={Michael\bibnamedelima Philipp},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=ZE}{%
+         family={Ziegler},
+         familyi={Z\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hamalainen},
+         familyi={H\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YB}{%
+         family={Yvernault},
+         familyi={Y\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Burns},
+         familyi={B\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MSA}{%
+         family={Manhães-Savio},
+         familyi={M\bibinitperiod-S\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jarecka},
+         familyi={J\bibinitperiod},
+         given={Dorota},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MCJ}{%
+         family={Markiewicz},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Salo},
+         familyi={S\bibinitperiod},
+         given={Taylor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Waskom},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Modat},
+         familyi={M\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DBE}{%
+         family={Dewey},
+         familyi={D\bibinitperiod},
+         given={Blake\bibnamedelima E},
+         giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CMG}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Michael\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dayan},
+         familyi={D\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Loney},
+         familyi={L\bibinitperiod},
+         given={Fred},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Madison},
+         familyi={M\bibinitperiod},
+         given={Cindee},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gramfort},
+         familyi={G\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Keshavan},
+         familyi={K\bibinitperiod},
+         given={Anisha},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Berleant},
+         familyi={B\bibinitperiod},
+         given={Shoshana},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Pinsard},
+         familyi={P\bibinitperiod},
+         given={Basile},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Goncalves},
+         familyi={G\bibinitperiod},
+         given={Mathias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Dav},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Cipollini},
+         familyi={C\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Varoquaux},
+         familyi={V\bibinitperiod},
+         given={Gael},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wassermann},
+         familyi={W\bibinitperiod},
+         given={Demian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rokem},
+         familyi={R\bibinitperiod},
+         given={Ariel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O.},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Forbes},
+         familyi={F\bibinitperiod},
+         given={Jessica},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moloney},
+         familyi={M\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MIB}{%
+         family={Malone},
+         familyi={M\bibinitperiod},
+         given={Ian\bibnamedelima B.},
+         giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mordom},
+         familyi={M\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Buchanan},
+         familyi={B\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PWM}{%
+         family={PAULI},
+         familyi={P\bibinitperiod},
+         given={WOLFGANG\bibnamedelima M.},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HJM}{%
+         family={Huntenburg},
+         familyi={H\bibinitperiod},
+         given={Julia\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Horea},
+         familyi={H\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SY}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={Yannick},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tungaraza},
+         familyi={T\bibinitperiod},
+         given={Rosalia},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Iqbal},
+         familyi={I\bibinitperiod},
+         given={Shariq},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kleesiek},
+         familyi={K\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sikka},
+         familyi={S\bibinitperiod},
+         given={Sharad},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Frohlich},
+         familyi={F\bibinitperiod},
+         given={Caroline},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kent},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PGM}{%
+         family={Perez-Guevara},
+         familyi={P\bibinitperiod-G\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Aimi},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Welch},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cumba},
+         familyi={C\bibinitperiod},
+         given={Chad},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Ginsburg},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Eshaghi},
+         familyi={E\bibinitperiod},
+         given={Arman},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kastman},
+         familyi={K\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bougacha},
+         familyi={B\bibinitperiod},
+         given={Salma},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Blair},
+         familyi={B\bibinitperiod},
+         given={Ross},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Acland},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gillman},
+         familyi={G\bibinitperiod},
+         given={Ashley},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NBN}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={B.\bibnamedelima Nolan},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Giavasis},
+         familyi={G\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Erickson},
+         familyi={E\bibinitperiod},
+         given={Drew},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Correa},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ghayoor},
+         familyi={G\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Küttner},
+         familyi={K\bibinitperiod},
+         given={René},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Haselgrove},
+         familyi={H\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Dale},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CRC}{%
+         family={Craddock},
+         familyi={C\bibinitperiod},
+         given={R.\bibnamedelima Cameron},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Haehn},
+         familyi={H\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lampe},
+         familyi={L\bibinitperiod},
+         given={Leonie},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Millman},
+         familyi={M\bibinitperiod},
+         given={Jarrod},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Renfro},
+         familyi={R\bibinitperiod},
+         given={Mandy},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Siqi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stadler},
+         familyi={S\bibinitperiod},
+         given={Jörg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Glatard},
+         familyi={G\bibinitperiod},
+         given={Tristan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KAE}{%
+         family={Kahn},
+         familyi={K\bibinitperiod},
+         given={Ari\bibnamedelima E.},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KXZ}{%
+         family={Kong},
+         familyi={K\bibinitperiod},
+         given={Xiang-Zhen},
+         giveni={X\bibinitperiod-Z\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Triplett},
+         familyi={T\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={McDermottroe},
+         familyi={M\bibinitperiod},
+         given={Conor},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hallquist},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Poldrack},
+         familyi={P\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PLN}{%
+         family={Perkins},
+         familyi={P\bibinitperiod},
+         given={L.\bibnamedelima Nathan},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Noel},
+         familyi={N\bibinitperiod},
+         given={Maxime},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gerhard},
+         familyi={G\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Salvatore},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Mertz},
+         familyi={M\bibinitperiod},
+         given={Fred},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Broderick},
+         familyi={B\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Inati},
+         familyi={I\bibinitperiod},
+         given={Souheil},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HO}{%
+         family={Hinds},
+         familyi={H\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Brett},
+         familyi={B\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Durnez},
+         familyi={D\bibinitperiod},
+         given={Joke},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tambini},
+         familyi={T\bibinitperiod},
+         given={Arielle},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rothmei},
+         familyi={R\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ASK}{%
+         family={Andberg},
+         familyi={A\bibinitperiod},
+         given={Sami\bibnamedelima Kristian},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cooper},
+         familyi={C\bibinitperiod},
+         given={Gavin},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Marina},
+         familyi={M\bibinitperiod},
+         given={Ana},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mattfeld},
+         familyi={M\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=US}{%
+         family={Urchs},
+         familyi={U\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sharp},
+         familyi={S\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Matsubara},
+         familyi={M\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=GD}{%
+         family={Geisler},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Cheung},
+         familyi={C\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Floren},
+         familyi={F\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nickson},
+         familyi={N\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Pannetier},
+         familyi={P\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Weinstein},
+         familyi={W\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dubois},
+         familyi={D\bibinitperiod},
+         given={Mathieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Arias},
+         familyi={A\bibinitperiod},
+         given={Jaime},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tarbert},
+         familyi={T\bibinitperiod},
+         given={Claire},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Schlamp},
+         familyi={S\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=JK}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Kesshi},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Liem},
+         familyi={L\bibinitperiod},
+         given={Franz},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Saase},
+         familyi={S\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Harms},
+         familyi={H\bibinitperiod},
+         given={Robbert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Khanuja},
+         familyi={K\bibinitperiod},
+         given={Ranjeet},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Podranski},
+         familyi={P\bibinitperiod},
+         given={Kornelius},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Flandin},
+         familyi={F\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=POD}{%
+         family={Papadopoulos\bibnamedelima Orfanos},
+         familyi={P\bibinitperiod\bibinitdelim O\bibinitperiod},
+         given={Dimitri},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Schwabacher},
+         familyi={S\bibinitperiod},
+         given={Isaac},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={McNamee},
+         familyi={M\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Falkiewicz},
+         familyi={F\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pellman},
+         familyi={P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Linkersdörfer},
+         familyi={L\bibinitperiod},
+         given={Janosch},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Varada},
+         familyi={V\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PGF}{%
+         family={Pérez-García},
+         familyi={P\bibinitperiod-G\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Davison},
+         familyi={D\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Shachnev},
+         familyi={S\bibinitperiod},
+         given={Dmitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Satrajit},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKJ+1}
+  \strng{fullhash}{GKJEOEDGNMPZEJHHCYBBCMSAJDMCJSTCDWMWJMMDBECMGDMLFMCGAKABSPBGMCDCBVGWDRAHYOFJMBMIBHMMDBCPWMHJMHCSYTRISKJSSFCKJPGMWAWDCCGDEAKEBSBRABGASANBNGSEDCCGAKRHCZDCRCHDLLMJLJRMLSSJGTKAEKXZTWPAMCHMPRPLNNMGSSJMFBWISHOBMDJTARSASKCGMAMAUSSPMKGDCBFANTPNWADMAJTCSKJKLF}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.5281/zenodo.581704
+    \endverb
+    \field{title}{nipy/nipype: Release 0.13.1}
+    \verb{url}
+    \verb https://doi.org/10.5281/zenodo.581704
+    \endverb
+    \field{month}{05}
+    \field{year}{2017}
+  \endentry
+
+  \entry{hanke2009pymvpa}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=SPB}{%
+         family={Sederberg},
+         familyi={S\bibinitperiod},
+         given={Per\bibnamedelima B},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=HSJ}{%
+         family={Hanson},
+         familyi={H\bibinitperiod},
+         given={Stephen\bibnamedelima Jos{\'e}},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HJV}{%
+         family={Haxby},
+         familyi={H\bibinitperiod},
+         given={James\bibnamedelima V},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pollmann},
+         familyi={P\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMHYOSPBHSJHJVPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{37\bibrangedash 53}
+    \field{title}{PyMVPA: a python toolbox for multivariate pattern analysis of
+  fMRI data}
+    \field{volume}{7}
+    \field{journaltitle}{Neuroinformatics}
+    \field{year}{2009}
+  \endentry
+
+  \entry{hanke2014high}{article}{}
+    \name{author}{8}{}{%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BFJ}{%
+         family={Baumgartner},
+         familyi={B\bibinitperiod},
+         given={Florian\bibnamedelima J},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=IP}{%
+         family={Ibe},
+         familyi={I\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KFR}{%
+         family={Kaule},
+         familyi={K\bibinitperiod},
+         given={Falko\bibnamedelima R},
+         giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pollmann},
+         familyi={P\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SO}{%
+         family={Speck},
+         familyi={S\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zinke},
+         familyi={Z\bibinitperiod},
+         given={Wolf},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stadler},
+         familyi={S\bibinitperiod},
+         given={J{\"o}rg},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMBFJIPKFRPSSOZWSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{140003}
+    \field{title}{A high-resolution 7-Tesla fMRI dataset from complex natural
+  stimulation with an audio movie}
+    \field{volume}{1}
+    \field{journaltitle}{Scientific data}
+    \field{year}{2014}
+  \endentry
+
+  \entry{hanke2016studyforrest}{article}{}
+    \name{author}{10}{}{%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AN}{%
+         family={Adelh{\"o}fer},
+         familyi={A\bibinitperiod},
+         given={Nico},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kottke},
+         familyi={K\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=IV}{%
+         family={Iacovella},
+         familyi={I\bibinitperiod},
+         given={Vittorio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sengupta},
+         familyi={S\bibinitperiod},
+         given={Ayan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KFR}{%
+         family={Kaule},
+         familyi={K\bibinitperiod},
+         given={Falko\bibnamedelima R},
+         giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nigbur},
+         familyi={N\bibinitperiod},
+         given={Roland},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WAQ}{%
+         family={Waite},
+         familyi={W\bibinitperiod},
+         given={Alexander\bibnamedelima Q},
+         giveni={A\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Baumgartner},
+         familyi={B\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stadler},
+         familyi={S\bibinitperiod},
+         given={J{\"o}rg},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMANKDIVSAKFRNRWAQBFSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{160092}
+    \field{title}{A studyforrest extension, simultaneous fMRI and eye gaze
+  recordings during prolonged natural stimulation}
+    \field{volume}{3}
+    \field{journaltitle}{Scientific data}
+    \field{year}{2016}
+  \endentry
+
+  \entry{hasson2010reliability}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HU}{%
+         family={Hasson},
+         familyi={H\bibinitperiod},
+         given={Uri},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Malach},
+         familyi={M\bibinitperiod},
+         given={Rafael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HDJ}{%
+         family={Heeger},
+         familyi={H\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HUMRHDJ1}
+    \strng{fullhash}{HUMRHDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{40\bibrangedash 48}
+    \field{title}{Reliability of cortical activity during natural stimulation}
+    \field{volume}{14}
+    \field{journaltitle}{Trends in cognitive sciences}
+    \field{year}{2010}
+  \endentry
+
+  \entry{hasson2004intersubject}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HU}{%
+         family={Hasson},
+         familyi={H\bibinitperiod},
+         given={Uri},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NY}{%
+         family={Nir},
+         familyi={N\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LI}{%
+         family={Levy},
+         familyi={L\bibinitperiod},
+         given={Ifat},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fuhrmann},
+         familyi={F\bibinitperiod},
+         given={Galit},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Malach},
+         familyi={M\bibinitperiod},
+         given={Rafael},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{HU+1}
+    \strng{fullhash}{HUNYLIFGMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{5664}
+    \field{pages}{1634\bibrangedash 1640}
+    \field{title}{Intersubject synchronization of cortical activity during
+  natural vision}
+    \field{volume}{303}
+    \field{journaltitle}{science}
+    \field{year}{2004}
+  \endentry
+
+  \entry{hasson2008neurocinematics}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HU}{%
+         family={Hasson},
+         familyi={H\bibinitperiod},
+         given={Uri},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=LO}{%
+         family={Landesman},
+         familyi={L\bibinitperiod},
+         given={Ohad},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Knappmeyer},
+         familyi={K\bibinitperiod},
+         given={Barbara},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VI}{%
+         family={Vallines},
+         familyi={V\bibinitperiod},
+         given={Ignacio},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Rubin},
+         familyi={R\bibinitperiod},
+         given={Nava},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HDJ}{%
+         family={Heeger},
+         familyi={H\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Berghahn Journals}%
+    }
+    \strng{namehash}{HU+1}
+    \strng{fullhash}{HULOKBVIRNHDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 26}
+    \field{title}{Neurocinematics: The neuroscience of film}
+    \field{volume}{2}
+    \field{journaltitle}{Projections}
+    \field{year}{2008}
+  \endentry
+
+  \entry{hausler2016annotation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HCO}{%
+         family={H{\"a}usler},
+         familyi={H\bibinitperiod},
+         given={Christian\bibnamedelima O},
+         giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Faculty of 1000 Ltd}%
+    }
+    \strng{namehash}{HCOHM1}
+    \strng{fullhash}{HCOHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{An annotation of cuts, depicted locations, and temporal
+  progression in the motion picture" Forrest Gump"}
+    \field{volume}{5}
+    \field{journaltitle}{F1000Research}
+    \field{year}{2016}
+  \endentry
+
+  \entry{he2007breakdown}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HBJ}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Biyu\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SAZ}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={Abraham\bibnamedelima Z},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=VJL}{%
+         family={Vincent},
+         familyi={V\bibinitperiod},
+         given={Justin\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Epstein},
+         familyi={E\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HBJ+1}
+    \strng{fullhash}{HBJSAZVJLEASGLCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{6}
+    \field{pages}{905\bibrangedash 918}
+    \field{title}{Breakdown of functional connectivity in frontoparietal
+  networks underlies behavioral deficits in spatial neglect}
+    \field{volume}{53}
+    \field{journaltitle}{Neuron}
+    \field{year}{2007}
+  \endentry
+
+  \entry{holmqvist2011eye}{book}{}
+    \name{author}{6}{}{%
+      {{hash=HK}{%
+         family={Holmqvist},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nystr{\"o}m},
+         familyi={N\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Andersson},
+         familyi={A\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dewhurst},
+         familyi={D\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jarodzka},
+         familyi={J\bibinitperiod},
+         given={Halszka},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=VdWJ}{%
+         prefix={Van\bibnamedelima de},
+         prefixi={V\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Weijer},
+         familyi={W\bibinitperiod},
+         given={Joost},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OUP Oxford}%
+    }
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKNMARDRJHWJVd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Eye tracking: A comprehensive guide to methods and measures}
+    \field{year}{2011}
+  \endentry
+
+  \entry{ioannides2004meg}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=IAA}{%
+         family={Ioannides},
+         familyi={I\bibinitperiod},
+         given={Andreas\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CCM}{%
+         family={Corsi-Cabrera},
+         familyi={C\bibinitperiod-C\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FPB}{%
+         family={Fenwick},
+         familyi={F\bibinitperiod},
+         given={Peter\bibnamedelima BC},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=dRPY}{%
+         prefix={del},
+         prefixi={d\bibinitperiod},
+         family={Rio\bibnamedelima Portilla},
+         familyi={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Yolanda},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LNA}{%
+         family={Laskaris},
+         familyi={L\bibinitperiod},
+         given={Nikos\bibnamedelima A},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khurshudyan},
+         familyi={K\bibinitperiod},
+         given={Ara},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Theofilou},
+         familyi={T\bibinitperiod},
+         given={Dionyssios},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Shibata},
+         familyi={S\bibinitperiod},
+         given={Tadahiko},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=US}{%
+         family={Uchida},
+         familyi={U\bibinitperiod},
+         given={Sunao},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nakabayashi},
+         familyi={N\bibinitperiod},
+         given={Tetsuo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{IAA+1}
+    \strng{fullhash}{IAACCMFPBRPYdLNAKATDSTUSNT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{1}
+    \field{pages}{56\bibrangedash 72}
+    \field{title}{MEG tomography of human cortex and brainstem activity in
+  waking and REM sleep saccades}
+    \field{volume}{14}
+    \field{journaltitle}{Cerebral Cortex}
+    \field{year}{2004}
+  \endentry
+
+  \entry{itti2001computational}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IL}{%
+         family={Itti},
+         familyi={I\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{ILKC1}
+    \strng{fullhash}{ILKC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{3}
+    \field{pages}{194}
+    \field{title}{Computational modelling of visual attention}
+    \field{volume}{2}
+    \field{journaltitle}{Nature reviews neuroscience}
+    \field{year}{2001}
+  \endentry
+
+  \entry{jarodzka2010vector}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=JH}{%
+         family={Jarodzka},
+         familyi={J\bibinitperiod},
+         given={Halszka},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Holmqvist},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nystr{\"o}m},
+         familyi={N\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{JHHKNM1}
+    \strng{fullhash}{JHHKNM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{booktitle}{Proceedings of the 2010 symposium on eye-tracking
+  research \& applications}
+    \field{pages}{211\bibrangedash 218}
+    \field{title}{A vector-based, multidimensional scanpath similarity measure}
+    \field{year}{2010}
+  \endentry
+
+  \entry{jenkinson2012fsl}{article}{}
+    \name{author}{5}{}{%
+      {{hash=JM}{%
+         family={Jenkinson},
+         familyi={J\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BCF}{%
+         family={Beckmann},
+         familyi={B\bibinitperiod},
+         given={Christian\bibnamedelima F},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=BTE}{%
+         family={Behrens},
+         familyi={B\bibinitperiod},
+         given={Timothy\bibnamedelima EJ},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WMW}{%
+         family={Woolrich},
+         familyi={W\bibinitperiod},
+         given={Mark\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SSM}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Stephen\bibnamedelima M},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{JM+1}
+    \strng{fullhash}{JMBCFBTEWMWSSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{2}
+    \field{pages}{782\bibrangedash 790}
+    \field{title}{Fsl}
+    \field{volume}{62}
+    \field{journaltitle}{Neuroimage}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kawashima1998oculomotor}{article}{}
+    \name{author}{9}{}{%
+      {{hash=KR}{%
+         family={Kawashima},
+         familyi={K\bibinitperiod},
+         given={Ryuta},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tanji},
+         familyi={T\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OK}{%
+         family={Okada},
+         familyi={O\bibinitperiod},
+         given={Ken},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiura},
+         familyi={S\bibinitperiod},
+         given={Motoaki},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sato},
+         familyi={S\bibinitperiod},
+         given={Kazunori},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kinomura},
+         familyi={K\bibinitperiod},
+         given={Shigeo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IK}{%
+         family={Inoue},
+         familyi={I\bibinitperiod},
+         given={Kentaro},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ogawa},
+         familyi={O\bibinitperiod},
+         given={Akira},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fukuda},
+         familyi={F\bibinitperiod},
+         given={Hiroshi},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KR+1}
+    \strng{fullhash}{KRTJOKSMSKKSIKOAFH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Oculomotor sequence learning: a positron emission tomography
+  study}
+    \field{volume}{122}
+    \field{journaltitle}{Experimental brain research}
+    \field{year}{1998}
+  \endentry
+
+  \entry{kowler2011eye}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KE}{%
+         family={Kowler},
+         familyi={K\bibinitperiod},
+         given={Eileen},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KE1}
+    \strng{fullhash}{KE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{13}
+    \field{pages}{1457\bibrangedash 1483}
+    \field{title}{Eye movements: The past 25 years}
+    \field{volume}{51}
+    \field{journaltitle}{Vision research}
+    \field{year}{2011}
+  \endentry
+
+  \entry{krauzlis2014eye}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=KRJ}{%
+         family={Krauzlis},
+         familyi={K\bibinitperiod},
+         given={Richard\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KRJ1}
+    \strng{fullhash}{KRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Fundamental Neuroscience (Fourth Edition)}
+    \field{pages}{697\bibrangedash 714}
+    \field{title}{Eye movements}
+    \field{year}{2014}
+  \endentry
+
+  \entry{leichnetz1988higher}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LG}{%
+         family={Leichnetz},
+         familyi={L\bibinitperiod},
+         given={GR},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Goldberg},
+         familyi={G\bibinitperiod},
+         given={ME},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LGGM1}
+    \strng{fullhash}{LGGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1988}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{365\bibrangedash 429}
+    \field{title}{Higher centers concerned with eye movement and visual
+  attention: cerebral cortex and thalamus.}
+    \field{volume}{2}
+    \field{journaltitle}{Reviews of oculomotor research}
+    \field{year}{1988}
+  \endentry
+
+  \entry{levenshtein1966binary}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LVI}{%
+         family={Levenshtein},
+         familyi={L\bibinitperiod},
+         given={Vladimir\bibnamedelima I},
+         giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LVI1}
+    \strng{fullhash}{LVI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Soviet physics doklady}
+    \field{number}{8}
+    \field{pages}{707\bibrangedash 710}
+    \field{title}{Binary codes capable of correcting deletions, insertions, and
+  reversals}
+    \field{volume}{10}
+    \field{year}{1966}
+  \endentry
+
+  \entry{malinen2007towards}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Malinen},
+         familyi={M\bibinitperiod},
+         given={Sanna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Hlushchuk},
+         familyi={H\bibinitperiod},
+         given={Yevhen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hari},
+         familyi={H\bibinitperiod},
+         given={Riitta},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MSHYHR1}
+    \strng{fullhash}{MSHYHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{1}
+    \field{pages}{131\bibrangedash 139}
+    \field{title}{Towards natural stimulation in fMRI—issues of data
+  analysis}
+    \field{volume}{35}
+    \field{journaltitle}{Neuroimage}
+    \field{year}{2007}
+  \endentry
+
+  \entry{DBLP:books/daglib/0087929}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MTM}{%
+         family={Mitchell},
+         familyi={M\bibinitperiod},
+         given={Tom\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{MTM1}
+    \strng{fullhash}{MTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{isbn}{978-0-07-042807-2}
+    \field{series}{McGraw Hill series in computer science}
+    \field{title}{Machine learning}
+    \verb{url}
+    \verb http://www.worldcat.org/oclc/61321007
+    \endverb
+    \field{year}{1997}
+  \endentry
+
+  \entry{monosov2009frontal}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MIE}{%
+         family={Monosov},
+         familyi={M\bibinitperiod},
+         given={Ilya\bibnamedelima E},
+         giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=TKG}{%
+         family={Thompson},
+         familyi={T\bibinitperiod},
+         given={Kirk\bibnamedelima G},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physiological Society Bethesda, MD}%
+    }
+    \strng{namehash}{MIETKG1}
+    \strng{fullhash}{MIETKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{6}
+    \field{pages}{3656\bibrangedash 3672}
+    \field{title}{Frontal eye field activity enhances object identification
+  during covert visual search}
+    \field{volume}{102}
+    \field{journaltitle}{Journal of neurophysiology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{muggleton2003human}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MNG}{%
+         family={Muggleton},
+         familyi={M\bibinitperiod},
+         given={Neil\bibnamedelima G},
+         giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=JCH}{%
+         family={Juan},
+         familyi={J\bibinitperiod},
+         given={Chi-Hung},
+         giveni={C\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Cowey},
+         familyi={C\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WV}{%
+         family={Walsh},
+         familyi={W\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physiological Society}%
+    }
+    \strng{namehash}{MNG+1}
+    \strng{fullhash}{MNGJCHCAWV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{6}
+    \field{pages}{3340\bibrangedash 3343}
+    \field{title}{Human frontal eye fields and visual search}
+    \field{volume}{89}
+    \field{journaltitle}{Journal of neurophysiology}
+    \field{year}{2003}
+  \endentry
+
+  \entry{munoz2002commentary}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MDP}{%
+         family={Munoz},
+         familyi={M\bibinitperiod},
+         given={Douglas\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MDP1}
+    \strng{fullhash}{MDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Progress in brain research}
+    \field{pages}{89\bibrangedash 96}
+    \field{title}{Commentary: saccadic eye movements: overview of neural
+  circuitry}
+    \field{volume}{140}
+    \field{year}{2002}
+  \endentry
+
+  \entry{nystrom2010adaptive}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NM}{%
+         family={Nystr{\"o}m},
+         familyi={N\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Holmqvist},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{NMHK1}
+    \strng{fullhash}{NMHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{number}{1}
+    \field{pages}{188\bibrangedash 204}
+    \field{title}{An adaptive algorithm for fixation, saccade, and glissade
+  detection in eyetracking data}
+    \field{volume}{42}
+    \field{journaltitle}{Behavior research methods}
+    \field{year}{2010}
+  \endentry
+
+  \entry{ouerhani2004empirical}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ON}{%
+         family={Ouerhani},
+         familyi={O\bibinitperiod},
+         given={Nabil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=VWR}{%
+         family={Von\bibnamedelima Wartburg},
+         familyi={V\bibinitperiod\bibinitdelim W\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Hugli},
+         familyi={H\bibinitperiod},
+         given={Heinz},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={M{\"u}ri},
+         familyi={M\bibinitperiod},
+         given={Ren{\'e}},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ON+1}
+    \strng{fullhash}{ONVWRHHMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{1}
+    \field{pages}{13\bibrangedash 24}
+    \field{title}{Empirical validation of the saliency-based model of visual
+  attention}
+    \field{volume}{3}
+    \field{journaltitle}{ELCVIA: electronic letters on computer vision and
+  image analysis}
+    \field{year}{2004}
+  \endentry
+
+  \entry{paus1996location}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PT}{%
+         family={Paus},
+         familyi={P\bibinitperiod},
+         given={Tom{\'a}{\v{s}}},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{PT1}
+    \strng{fullhash}{PT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{6}
+    \field{pages}{475\bibrangedash 483}
+    \field{title}{Location and function of the human frontal eye-field: a
+  selective review}
+    \field{volume}{34}
+    \field{journaltitle}{Neuropsychologia}
+    \field{year}{1996}
+  \endentry
+
+  \entry{perry1986ganglion}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PV}{%
+         family={Perry},
+         familyi={P\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=CA}{%
+         family={Cowey},
+         familyi={C\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \strng{namehash}{PVCA1}
+    \strng{fullhash}{PVCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{1}
+    \field{pages}{131\bibrangedash 132}
+    \field{title}{The ganglion-cell and cone distributions in the monkeys
+  retina - Implications for central magnification factors}
+    \field{volume}{20}
+    \field{journaltitle}{Behavioural Brain Research}
+    \field{year}{1986}
+  \endentry
+
+  \entry{petit1999functional}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PL}{%
+         family={Petit},
+         familyi={P\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HJV}{%
+         family={Haxby},
+         familyi={H\bibinitperiod},
+         given={James\bibnamedelima V},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physiological Society Bethesda, MD}%
+    }
+    \strng{namehash}{PLHJV1}
+    \strng{fullhash}{PLHJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{1}
+    \field{pages}{463\bibrangedash 471}
+    \field{title}{Functional anatomy of pursuit eye movements in humans as
+  revealed by fMRI}
+    \field{volume}{82}
+    \field{journaltitle}{Journal of Neurophysiology}
+    \field{year}{1999}
+  \endentry
+
+  \entry{poldrack2009decoding}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PRA}{%
+         family={Poldrack},
+         familyi={P\bibinitperiod},
+         given={Russell\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HSJ}{%
+         family={Hanson},
+         familyi={H\bibinitperiod},
+         given={Stephen\bibnamedelima Jos{\'e}},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{PRAHYOHSJ1}
+    \strng{fullhash}{PRAHYOHSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{11}
+    \field{pages}{1364\bibrangedash 1372}
+    \field{title}{Decoding the large-scale structure of brain function by
+  classifying mental states across individuals}
+    \field{volume}{20}
+    \field{journaltitle}{Psychological science}
+    \field{year}{2009}
+  \endentry
+
+  \entry{posner1980attention}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PMI}{%
+         family={Posner},
+         familyi={P\bibinitperiod},
+         given={Michael\bibnamedelima I},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=SCR}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={Charles\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DBJ}{%
+         family={Davidson},
+         familyi={D\bibinitperiod},
+         given={Brian\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{PMISCRDBJ1}
+    \strng{fullhash}{PMISCRDBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1980}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{2}
+    \field{pages}{160}
+    \field{title}{Attention and the detection of signals.}
+    \field{volume}{109}
+    \field{journaltitle}{Journal of experimental psychology: General}
+    \field{year}{1980}
+  \endentry
+
+  \entry{ross2013eye}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RNM}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Nicholas\bibnamedelima M},
+         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kowler},
+         familyi={K\bibinitperiod},
+         given={Eileen},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {The Association for Research in Vision}%
+      {Ophthalmology}%
+    }
+    \strng{namehash}{RNMKE1}
+    \strng{fullhash}{RNMKE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{4}
+    \field{pages}{1\bibrangedash 1}
+    \field{title}{Eye movements while viewing narrated, captioned, and silent
+  videos}
+    \field{volume}{13}
+    \field{journaltitle}{Journal of vision}
+    \field{year}{2013}
+  \endentry
+
+  \entry{ruff2009hemispheric}{article}{}
+    \name{author}{6}{}{%
+      {{hash=RCC}{%
+         family={Ruff},
+         familyi={R\bibinitperiod},
+         given={Christian\bibnamedelima C},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Blankenburg},
+         familyi={B\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bjoertomt},
+         familyi={B\bibinitperiod},
+         given={Otto},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bestmann},
+         familyi={B\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Weiskopf},
+         familyi={W\bibinitperiod},
+         given={Nikolaus},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Driver},
+         familyi={D\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{RCC+1}
+    \strng{fullhash}{RCCBFBOBSWNDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{6}
+    \field{pages}{1146\bibrangedash 1161}
+    \field{title}{Hemispheric differences in frontal and parietal influences on
+  human occipital cortex: direct confirmation with concurrent TMS--fMRI}
+    \field{volume}{21}
+    \field{journaltitle}{Journal of Cognitive Neuroscience}
+    \field{year}{2009}
+  \endentry
+
+  \entry{schall1995topography}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SJD}{%
+         family={Schall},
+         familyi={S\bibinitperiod},
+         given={Jeffrey\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Morel},
+         familyi={M\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KDJ}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Dana\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bullier},
+         familyi={B\bibinitperiod},
+         given={Jean},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Soc Neuroscience}%
+    }
+    \strng{namehash}{SJD+1}
+    \strng{fullhash}{SJDMAKDJBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{6}
+    \field{pages}{4464\bibrangedash 4487}
+    \field{title}{Topography of visual cortex connections with frontal eye
+  field in macaque: convergence and segregation of processing streams}
+    \field{volume}{15}
+    \field{journaltitle}{Journal of Neuroscience}
+    \field{year}{1995}
+  \endentry
+
+  \entry{sengupta2016studyforrest}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SA}{%
+         family={Sengupta},
+         familyi={S\bibinitperiod},
+         given={Ayan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KFR}{%
+         family={Kaule},
+         familyi={K\bibinitperiod},
+         given={Falko\bibnamedelima R},
+         giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GJS}{%
+         family={Guntupalli},
+         familyi={G\bibinitperiod},
+         given={J\bibnamedelima Swaroop},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HMB}{%
+         family={Hoffmann},
+         familyi={H\bibinitperiod},
+         given={Michael\bibnamedelima B},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={H{\"a}usler},
+         familyi={H\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stadler},
+         familyi={S\bibinitperiod},
+         given={J{\"o}rg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SA+1}
+    \strng{fullhash}{SAKFRGJSHMBHCSJHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{160093}
+    \field{title}{A studyforrest extension, retinotopic mapping and
+  localization of higher visual areas}
+    \field{volume}{3}
+    \field{journaltitle}{Scientific data}
+    \field{year}{2016}
+  \endentry
+
+  \entry{shulman2003quantitative}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MMP}{%
+         family={McAvoy},
+         familyi={M\bibinitperiod},
+         given={Mark\bibnamedelima P},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=CMC}{%
+         family={Cowan},
+         familyi={C\bibinitperiod},
+         given={Melanie\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=ASV}{%
+         family={Astafiev},
+         familyi={A\bibinitperiod},
+         given={Serguei\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=TAP}{%
+         family={Tansy},
+         familyi={T\bibinitperiod},
+         given={Aaron\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=dG}{%
+         family={d'Avossa},
+         familyi={d\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physiological Society}%
+    }
+    \strng{namehash}{SGL+1}
+    \strng{fullhash}{SGLMMPCMCASVTAPdGCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{5}
+    \field{pages}{3384\bibrangedash 3397}
+    \field{title}{Quantitative analysis of attention and detection signals
+  during visual search}
+    \field{volume}{90}
+    \field{journaltitle}{Journal of neurophysiology}
+    \field{year}{2003}
+  \endentry
+
+  \entry{shulman2007right}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SGL}{%
+         family={Shulman},
+         familyi={S\bibinitperiod},
+         given={Gordon\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ASV}{%
+         family={Astafiev},
+         familyi={A\bibinitperiod},
+         given={Serguei\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=MMP}{%
+         family={McAvoy},
+         familyi={M\bibinitperiod},
+         given={Mark\bibnamedelima P},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=dG}{%
+         family={d'Avossa},
+         familyi={d\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corbetta},
+         familyi={C\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{SGL+1}
+    \strng{fullhash}{SGLASVMMPdGCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{11}
+    \field{pages}{2625\bibrangedash 2633}
+    \field{title}{Right TPJ deactivation during visual search: functional
+  significance and support for a filter hypothesis}
+    \field{volume}{17}
+    \field{journaltitle}{Cerebral Cortex}
+    \field{year}{2007}
+  \endentry
+
+  \entry{siegelbaum2000neuro}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SSA}{%
+         family={Siegelbaum},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HAJ}{%
+         family={Hudspeth},
+         familyi={H\bibinitperiod},
+         given={A.\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{SSAHAJ1}
+    \strng{fullhash}{SSAHAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{978-0071390118}
+    \field{series}{McGraw Hill Education Medical}
+    \field{title}{Principles of Neural Science (Kandel)}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2000}
+  \endentry
+
+  \entry{smith2008attentional}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ST}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {The Association for Research in Vision}%
+      {Ophthalmology}%
+    }
+    \strng{namehash}{STHJ1}
+    \strng{fullhash}{STHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{6}
+    \field{pages}{773\bibrangedash 773}
+    \field{title}{Attentional synchrony in static and dynamic scenes}
+    \field{volume}{8}
+    \field{journaltitle}{Journal of Vision}
+    \field{year}{2008}
+  \endentry
+
+  \entry{smith2013watching}{article}{}
+    \name{author}{1}{}{%
+      {{hash=STJ}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Tim\bibnamedelima J},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{STJ1}
+    \strng{fullhash}{STJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Watching you watch movies: Using eye tracking to inform film
+  theory}
+    \field{year}{2013}
+  \endentry
+
+  \entry{stanton1995topography}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SG}{%
+         family={Stanton},
+         familyi={S\bibinitperiod},
+         given={GB},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bruce},
+         familyi={B\bibinitperiod},
+         given={CJ},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Goldberg},
+         familyi={G\bibinitperiod},
+         given={ME},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SGBCGM1}
+    \strng{fullhash}{SGBCGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{291\bibrangedash 305}
+    \field{title}{Topography of projections to posterior cortical areas from
+  the macaque frontal eye fields}
+    \field{volume}{353}
+    \field{journaltitle}{Journal of Comparative Neurology}
+    \field{year}{1995}
+  \endentry
+
+  \entry{tehovnik2000eye}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TEJ}{%
+         family={Tehovnik},
+         familyi={T\bibinitperiod},
+         given={Edward\bibnamedelima J},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SMA}{%
+         family={Sommer},
+         familyi={S\bibinitperiod},
+         given={Marc\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CIH}{%
+         family={Chou},
+         familyi={C\bibinitperiod},
+         given={I-Han},
+         giveni={I\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=SWM}{%
+         family={Slocum},
+         familyi={S\bibinitperiod},
+         given={Warren\bibnamedelima M},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SPH}{%
+         family={Schiller},
+         familyi={S\bibinitperiod},
+         given={Peter\bibnamedelima H},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{TEJ+1}
+    \strng{fullhash}{TEJSMACIHSWMSPH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{2-3}
+    \field{pages}{413\bibrangedash 448}
+    \field{title}{Eye fields in the frontal lobes of primates}
+    \field{volume}{32}
+    \field{journaltitle}{Brain Research Reviews}
+    \field{year}{2000}
+  \endentry
+
+  \entry{thompson2005visual}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TKG}{%
+         family={Thompson},
+         familyi={T\bibinitperiod},
+         given={Kirk\bibnamedelima G},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BNP}{%
+         family={Bichot},
+         familyi={B\bibinitperiod},
+         given={Narcisse\bibnamedelima P},
+         giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{TKGBNP1}
+    \strng{fullhash}{TKGBNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{pages}{249\bibrangedash 262}
+    \field{title}{A visual salience map in the primate frontal eye field}
+    \field{volume}{147}
+    \field{journaltitle}{Progress in brain research}
+    \field{year}{2005}
+  \endentry
+
+  \entry{tseng2009quantifying}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TPH}{%
+         family={Tseng},
+         familyi={T\bibinitperiod},
+         given={Po-He},
+         giveni={P\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Carmi},
+         familyi={C\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CIG}{%
+         family={Cameron},
+         familyi={C\bibinitperiod},
+         given={Ian\bibnamedelima GM},
+         giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=MDP}{%
+         family={Munoz},
+         familyi={M\bibinitperiod},
+         given={Douglas\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=IL}{%
+         family={Itti},
+         familyi={I\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {The Association for Research in Vision}%
+      {Ophthalmology}%
+    }
+    \strng{namehash}{TPH+1}
+    \strng{fullhash}{TPHCRCIGMDPIL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{7}
+    \field{pages}{4\bibrangedash 4}
+    \field{title}{Quantifying center bias of observers in free viewing of
+  dynamic natural scenes}
+    \field{volume}{9}
+    \field{journaltitle}{Journal of vision}
+    \field{year}{2009}
+  \endentry
+
+  \entry{vernet2014corrigendum}{article}{}
+    \name{author}{5}{}{%
+      {{hash=VM}{%
+         family={Vernet},
+         familyi={V\bibinitperiod},
+         given={Marine},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=QR}{%
+         family={Quentin},
+         familyi={Q\bibinitperiod},
+         given={Romain},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Chanes},
+         familyi={C\bibinitperiod},
+         given={Lorena},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mitsumasu},
+         familyi={M\bibinitperiod},
+         given={Andres},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VCA}{%
+         family={Valero-Cabre},
+         familyi={V\bibinitperiod-C\bibinitperiod},
+         given={Antoni},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{VM+1}
+    \strng{fullhash}{VMQRCLMAVCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{pages}{88}
+    \field{title}{Corrigendum: Frontal eye field, where art thou? Anatomy,
+  function, and non-invasive manipulation of frontal regions involved in eye
+  movements and associated cognitive operations}
+    \field{volume}{8}
+    \field{journaltitle}{Frontiers in integrative neuroscience}
+    \field{year}{2014}
+  \endentry
+
+  \entry{vogt2018machine}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VN}{%
+         family={Vogt},
+         familyi={V\bibinitperiod},
+         given={Nina},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{VN1}
+    \strng{fullhash}{VN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{1}
+    \field{pages}{33}
+    \field{title}{Machine learning in neuroscience}
+    \field{volume}{15}
+    \field{journaltitle}{Nature Methods}
+    \field{year}{2018}
+  \endentry
+
+  \entry{vossel2014dorsal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VS}{%
+         family={Vossel},
+         familyi={V\bibinitperiod},
+         given={Simone},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GJJ}{%
+         family={Geng},
+         familyi={G\bibinitperiod},
+         given={Joy\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FGR}{%
+         family={Fink},
+         familyi={F\bibinitperiod},
+         given={Gereon\bibnamedelima R},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{VSGJJFGR1}
+    \strng{fullhash}{VSGJJFGR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{2}
+    \field{pages}{150\bibrangedash 159}
+    \field{title}{Dorsal and ventral attention systems: distinct neural
+  circuits but collaborative roles}
+    \field{volume}{20}
+    \field{journaltitle}{The Neuroscientist}
+    \field{year}{2014}
+  \endentry
+
+  \entry{weintraub1987right}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WS}{%
+         family={Weintraub},
+         familyi={W\bibinitperiod},
+         given={Sandra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MMM}{%
+         family={Mesulam},
+         familyi={M\bibinitperiod},
+         given={M-Marsel},
+         giveni={M\bibinitperiod-M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Medical Association}%
+    }
+    \strng{namehash}{WSMMM1}
+    \strng{fullhash}{WSMMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1987}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{6}
+    \field{pages}{621\bibrangedash 625}
+    \field{title}{Right cerebral dominance in spatial attention: Further
+  evidence based on ipsilateral neglect}
+    \field{volume}{44}
+    \field{journaltitle}{Archives of neurology}
+    \field{year}{1987}
+  \endentry
+
+  \entry{yarbus1967eye}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=YAL}{%
+         family={Yarbus},
+         familyi={Y\bibinitperiod},
+         given={Alfred\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{YAL1}
+    \strng{fullhash}{YAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{Eye movements and vision}
+    \field{pages}{171\bibrangedash 211}
+    \field{title}{Eye movements during perception of complex objects}
+    \field{year}{1967}
+  \endentry
+
+  \entry{zeigermann2018machine}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ZO}{%
+         family={Zeigermann},
+         familyi={Z\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={C.N.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O'Reilly}%
+    }
+    \strng{namehash}{ZONC1}
+    \strng{fullhash}{ZONC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{isbn}{9783960101932}
+    \field{series}{kurz \& gut}
+    \field{title}{Machine Learning -- kurz \& gut: Eine Einf{\"u}hrung mit
+  Python, Pandas und Scikit-Learn}
+    \verb{url}
+    \verb https://books.google.com/books?id=n-FVDwAAQBAJ
+    \endverb
+    \field{year}{2018}
+  \endentry
+\endsortlist
+\endinput
