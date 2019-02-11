@@ -750,20 +750,30 @@ For use in the localizer dataset, the event files describing the stimulation pro
 For generalization in the movie dataset, a stimulus description of the movie was obtained from two sources, the location annotation of \textcite{hausler2016annotation}, and an automatic facial feature extraction per frame of Hanke (unpublished, computed using Google's Cloud Vision API via pliers (\textbf{McNamara et al. 2017})). An event was derived for each "setting" in the location annotation occurring more than once. An event was further derived for night-time, a scene being located exterior, a general cut, and contextual jumps to future or past from the previous shot. The facial feature data was downsampled to 1 second and two conditions were derived, "face" for any 1 second time window with a maximum of less than 3 faces, and "many\_faces" for any 1 second time window with more faces present.
 
 \section{TODO: FEF}
-\textbf{[this is a gigantic TODO]}
-
 \subsection{Localization of the FEF}
-\begin{itemize}
-	\item Extraction of saccadic eye movements from remodnav data. 
-	\item Selection of saccades within 30$^\circ$ of the horizontal and vertical axis, see figure \ref{fig:saccs}
-	\item Implementation of a glm with fitlins (cite). As fitlins was in early alpha stage during the completion of the analysis, some enhancements where suggested and implemented as pull requests.
-\end{itemize}
+Subject-specific localization of the frontal eye fields is performed based on each subjects saccadic eye movements throughout the movie. For the extraction of saccadic eye events, the REMoDNaV results were filtered to include only saccades. For the computation of event files following the BIDS standard (\cite{gorgolewski2016brain}), the Cartesian coordinates of the saccades were transformed into Polar coordinates (angle and length, a graphic explanation of this procedure can be found in \ref{fig:Polar_to_cartesian}, B). Based on their angle, saccades were classed into event types describing eight different orientations in the visual field. Four of these quadrants corresponding to 30$^\circ$ of the horizontal and vertical axis (see figure \ref{fig:saccs}) were sub-selected to be used for localization. Saccade onsets, durations and amplitudes were extracted from the REMoDNaV output. The resulting event file per run hence contained the onset, duration, amplitude and four directions (as strings 'UP', 'DOWN', 'LEFT', 'RIGHT' in the column trial\_type) of saccades.
 
 \begin{figure}[H]
 	\includegraphics[scale = 0.7]{img/saccades.png}
 	\caption[saccadic eye movements during movie watching]{\begin{small}Polar coordinates (direction in degrees on the outer ring, length in visual degrees on the inner grid) of saccadic eyemovements of all subjects during movie watching. Colors indicate subjects. Yellow overlay indicates 30$^\circ$ around the horizontal or vertical axis.\end{small}}
 	\label{fig:saccs}
 \end{figure}
+
+All four directions were entered as regressors into a three-level GLM (run, subject, dataset) to localize the FEF. GLM computation was done with fitlins [\cite{markiewicz_christopher_j_2019_2555453}]. Fitlins is a software for estimating linear models on BIDS or BIDS-derivatives(\cite{gorgolewski2016brain}) compliant data directories. It relies heavily on pybids to automatically query and ingest all relevant data files, and is intended to be run with only one commandline call. As a first step, therefore, the directory was restructured to be BIDS-derivative compliant, event files were recomputed to follow the necessary fitlins convention, motion parameter .txt files were transformed into dense \_regressors.tsv files, and confounds relating to the movie stimulus (perceptual difference, rms, lrdiff) were transformed into one dense \_physio.tsv.gz file.
+Figure \ref{fig:dirstruct} gives an overview of the directory structure for one subjects and one run. To compute a linear model with fitlins, a model\_smdl.json file specified desired analysis-levels, regressors and their transformations, and contrasts. For the localizer GLM, the split transformation was used to obtain four saccade direction regressors with their amplitude, and the 'Convolve' transformation was used to convolve all regressors with spm's HRF function. The full model\_smdl.json file used for the localizer GLM can be found in appendix \textbf{Ref to appendix here}. The weights $[1 1 -1 -1]$ are used to define a horizontal-vs-vertical eye movements contrast, and this contrast is carried through all higher levels with fitlins 'AutoContrasts' functionality. \newline
+
+\begin{figure}
+	\includegraphics[scale=0.7]{img/dirstruct.png}
+	\caption[BIDS derivatives directory structure]{\begin{small}The BIDS derivatives conform directory structure of the dataset, shown here for subject 1, run 1.\end{small}}
+	\label{fig:dirstruct}
+\end{figure}
+
+However, as fitlins is still in early alpha stage development phase, it had never been used on a sole BIDS derivatives directory, and as the employed design was more complex than a regular block-stimulation experiment, the implementation of the model led to multiple failures on every stage of the analysis. In the wake of model implementation, several contributions have therefore been made to the recent releases of fitlins (\cite{markiewicz_christopher_j_2019_2555453}) and pybids (\cite{yarkoni_tal_2019_2555449}), leading to a co-authorship in both of these software's releases.
+Nevertheless, the current model relies on some custom sourcecode changes not (yet) integrated into the main software distribution. In order to recreate the computational environment necessary for reproducing the analysis, a niceman.yml \footnote{Niceman \cite{yaroslav_halchenko_2018_2403222} is a software that analyzes and summarizes computational environments for later recreation and recomputation} file is part of the directory. 
+
+\bigskip
+
+
 
 add something in the notion of: Study of the frontal eye fields attempting to capture its involvement as both a structure of motion and attentional deployment ... somewhere
 
