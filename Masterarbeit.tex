@@ -637,15 +637,27 @@ As the classification results obtained with GNB and SGD are comparable despite t
 
 \subsection{GLM results}\label{sec:c1_glm_res}
 
-Figure \ref{fig:locsens} shows the time course of sensitivities and the corresponding GLM fit for the localizer experiment (top panel A) and the movie data (top panel B) for the first run of each of these experiments. For the localizer data, 89\% of the variance in the sensitivity time course was explained with the stimulation protocol description. For the movie data, 28\% of the variance was explained with a general location and face-occurrence annotation.
-\textbf{TODO: for now, don't include classification accuracies, they are irrelevant here}
+Figure \ref{fig:locsens} shows the results of the subsequent GLM analysis: Depicted is the time course of sensitivities (black) and the corresponding GLM fit (red) for the localizer experiment (top panel) and the movie data (bottom panel B) for the first run of each of these experiments with sensitivities derived from classification with GNB.
+
 \begin{figure}
-	\includegraphics[scale=0.4]{img/sens_timecourse.png}
-	\caption[Functional specificity of ROIs in two validation analyses.]{\small{Black line: Sensitivities. Red line: GLM fit from regressing sensitivities onto the event regressors. A: Run 1 of the localizer experiment, with 12 regressors derived from the object categories of the stimulation. B: Run 1 of the movie experiment with regressors derived from the movie annotation.\newline Colors correspond to stimulation with one particular event type in time, beta values are given in brackets. The legend in panel B contains only the diagnostically most valuable regressors}}
+	\subfigure{\includegraphics[scale=0.3]{img/tc_localizer.png}}
+	\subfigure{\includegraphics[scale=0.3]{img/tc_avmovie.png}}
+	\caption[Functional specificity of ROIs in two proof-of-concept analyses.]{\small{Functional specificity of ROIs in two proof-of-concept analyses. Black line: Sensitivities. Red line: GLM fit from regressing sensitivities onto the event regressors. Top panel: Run 1 of the localizer experiment, with 12 regressors derived from the object categories of the stimulation. Bottom panel: Run 1 of the movie experiment with regressors derived from the movie annotation. The legend contains only those regressors that were present in the first run of the movie. Colors correspond to stimulation with one particular event type, beta values are given in brackets.}}
 	\label{fig:locsens}
 \end{figure}
 
-\section{Discussion}
+As for a subsequent descriptive investigation of the stimulus contents, figure \ref{fig:scenes} shows the middle frames of scenes consistently, i.e. in all dataset sizes and classifier choices, associated with a high positive or high negative beta weight with overlaid eye gazes.
+
+
+
+\section{Discussion}\label{sec:c1_discussion}
+
+This first chapter introduced a novel approach to determining functional specificity of regions of interest. To provide a proof-of-concept analysis, data from two different experiments conducted on the same participants was used to investigate the functional specificity of two well established ROIs, the FFA and the PPA. \newline
+The results obtained during classification are of lesser interest for this thesis. However, they show some interesting results that I will briefly digress into. Importantly, as table \ref{tab:CV} summarizes, the GNB classifier performs comparable to the SGD classifier during classification. Despite the strong assumptions of the GNB algorithm, its classification results appear to be robust. Further, the table highlights very good and highly similar classification accuracies in both datasets. Note however that the higher accuracy in the full datasets is a distortion that stems from the high imbalance in class frequencies introduced by the inclusion of the rest of the brain. \newline Figure \ref{fig:CV} underlines the high accuracies and similarities further: Classification of ROIs is possible and highly accurate both with a standard block-design experiment and with dynamic, naturalistic stimulation. These results replicate the findings of \textcite{nastase2016} and provide further evidence for the usability of complex, naturalistic stimulation for the localization of ROIs (\cite{malinen2007towards}).\\
+The results obtained from the GLM provide a general proof-of-principle for the ROI specificity analysis. The validation analysis on the localizer paradigm shows a remarkable goodness of fit (R$^2$ = .90). The category information in the event files seems to be well able to capture the relative activation differences between the FFA and the PPA. The beta weights confirm known functional specificities of the ROIs: The FFA is differentially higher activated by pictures of faces, whereas the PPA is differentially higher activated by stimulation with houses. However, the results of the localizer data also shed additional light onto the functional specificities of these regions: For one, the FFA is also activated by images of bodies, and the PPA is also activated by images of scenes. The most simple 'face-house' contrast may therefore not be the optimal choice of contrast. Additionally, results reveal evidence for the influence of other stimulus features, such as the first image within a stimulation). \newline
+For complex, naturalistic stimulation in the movie experiment, the method proofed to be applicable. The lower goodness of fit indicates that the method provided only a partial explanation to the more complex sensitivity timecourse. Nevertheless, an R$^2$ of 0.26 still corresponds to a correlation of $r = .51$ between GLM fit and functional signature. Additionally, the obtained results for the examplary choice of ROIs look sensible: The occurrence of faces corresponds to differentially higher FFA activation, even more so if there there are three faces or more. As displayed in figure \ref{fig:scenes}, locations consistently associated with higher FFA activation are more commonly depicting dialogues between two or more persons, whereas locations consistently associated with higher PPA activation are more commonly depicting urban or rural scenes.
+
+
 
 
 \chapter{Localizing the frontal eye fields with naturalistic stimulation}\label{c2}
