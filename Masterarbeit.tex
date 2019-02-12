@@ -599,16 +599,19 @@ For each the localizer and the avmovie data, a group dataset was build from the 
 For both datasets, sensitivities were derived for the full dataset (including the ROI 'rest of the brain') and a stripped dataset consisting only of the regions of interest. Each of these analyses were computed with a GNB and an SDG classifier. For the proof-of-concept analysis, the ROIs were combined across hemispheres.
 
 \section{Results}\label{section:c1_results}
+
+\textbf{TODO: some introductory words here}
+
 \subsection{Classification results}\label{sec:c1_cv_res}
 
 Table \ref{tab:CV} gives an overview of the classification accuracies achieved within the different analyses. 
-Figure \ref{fig:CV} displays the classification confusion matrices for the localizer experiment and the movie experiment.
+Figure \ref{fig:CV} displays the classification confusion matrices for the localizer experiment and the movie experiment obtained from a classification of the stripped dataset with a GNB classifier.
 
 \begin{table}[h!]
 	\begin{center}
 		\caption{Classification accuracies of the proof-of-concept analyses}
 		\label{tab:CV}
-		\begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+		\begin{tabular}{l|c|c} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
 			\textbf{dataset} & \textbf{GNB} & \textbf{SGD}\\
 			\hline
 			Localizer dataset (with rest of brain) & 93.09 & 97.69\\
@@ -619,12 +622,13 @@ Figure \ref{fig:CV} displays the classification confusion matrices for the local
 	\end{center}
 \end{table}
 
+As the classification results obtained with GNB and SGD are comparable despite the stronger assumption of the GNB, results are reported only for the GNB classifier due to is straightforward interpretation.
 
-\begin{figure}
+\begin{figure}[H]
 
-	\subfigure{\includegraphics[width=0.15\textwidth]{img/CV_bilat_stripped_localizer.png}}
-	\subfigure{\includegraphics[width=0.15\textwidth]{img/CV_bilat_stripped_avmovie.png}}
-	\caption{\small{ Confusion matrices of ROI classifications across subjects in the localizer (left) and movie (right) experiments. Color shows classification accuracy (from 0 to 100$\%$) while numbers in each cell correspond to the actual number of voxels across all subjects }}
+	\subfigure{\includegraphics[width=0.49\textwidth]{img/CV_bilat_stripped_localizer.png}}
+	\subfigure{\includegraphics[width=0.49\textwidth]{img/CV_bilat_stripped_avmovie.png}}
+	\caption[Classification results in two proof-of-concept analyses]{\small{Confusion matrices of ROI classifications across subjects in the localizer (left) and movie (right) experiments. Color shows classification accuracy (from 0 to 100$\%$) while numbers in each cell correspond to the actual number of voxels across all subjects }}
 	\label{fig:CV}
 \end{figure}
 
