@@ -754,15 +754,21 @@ The analysis of scanpaths has been used for decades to gain insights into the vi
 
 Following this reasoning, the comparison of scanpaths of different subjects constitutes a measure of similarity in the different subjects’ attentional processes and adds a useful dimension to the traditional analysis of eye-tracking data. \newline
 In recent years, many approaches for scanpath comparisons were developed and implemented in various software solutions. Among them are methods based on (semantic) areas of interest (AOIs) such as the \textit{Levenshtein distance} (\cite{levenshtein1966binary}), or an improved generalization of it in \textit{ScanMatch} (\cite{cristino2010scanmatch}), methods based on attention maps such as \textit{AMAP} (\cite{ouerhani2004empirical}), methods employing machine learning algorithms such as \textit{SMAC with HMM} (\cite{coutrot2018scanpath}), or methods based on vector-geometry such as \textit{MultiMatch} (\cite{jarodzka2010vector}). The latter method is a multidimensional approach of scanpath comparison on five different measures similarity, \textbf{shape}, \textbf{length}, \textbf{position}, \textbf{direction}, and \textbf{fixation durations}. According to \textcite{jarodzka2010vector}, it has been developed specifically to overcome known shortcomings of many previous methods that limit their informative value. These shortcomings amount to a loss of information due to the use of coarse aggregate measures of eye movement, susceptibility of the results of a comparison to influential data points due to arbitrary classifications, or both. The main reason it overcomes these deficiency is that it does not rely on AOIs, but the precise locations in pixels in two-dimensional space, which leads to a finer level of detail in scanpath comparison. \newline A number of studies used the method in evaluations or applications of scanpath comparisons. In evaluations with simulated and actual eye-tracking data, the method was found to be robust against spatial noise, sensitive to position, order and fixation duration, and outperformed the ScanMatch method in AOI border cases (\cite{dewhurst2012depends}). In a comprehensive test of eleven common scanpath comparison methods on static real-life photographies, MultiMatch was found to be robust in inter- and intra-subject comparisons of scanpaths (\cite{anderson2015comparison}). As it was also used to study mental activity involved in perceiving visual input by others (\cite{french2017evaluation}) already, the MultiMatch method was chosen to be employed in the current thesis to derive a measure for attentional processes of participants during movie watching. \newline
-For its computation, this attentional measure utilizes the scanpath information of all participants to obtain a common measure of attentional modulation of the stimulus in the sample. It follows a reasoning conceived by \textbf{Baumgartner et al. (unpublished manuscript)}: The more similar all participants scanpaths are for any given scene of a movie stimulus, the more exogenous control is exercised by this movie segment. \textbf{TODO: this might need additional details/motivation/examples} \newline
+For its computation, this attentional measure utilizes the scanpath information of all participants to obtain a common measure of attentional modulation of the stimulus in the sample. It follows a reasoning conceived by \textcite{baumgartner}: The more similar all participants scanpaths are for any given scene of a movie stimulus, the more exogenous control is exercised by this movie segment.
 An overview of the method is available in section \ref{section:multimatch}.
  
+ 
+\section{Methods}
 
-\section{MultiMatch}\label{section:multimatch}
+\subsection{Data}
+
+This analysis uses the custom preprocessed BOLD files from the movie experiment (see section \ref{section:generalmethods}), the eye tracking classification by REMoDNaV, the FEF ROI masks derived in the previous chapter, the annotation confounds by \textcite{hausler2016annotation}, and the stimulus confounds files already used in chapter \ref{c2}.
+
+\subsection{MultiMatch}\label{section:multimatch}
 
 The MultiMatch method (\cite{jarodzka2010vector}) was selected as a promising approach of scanpath comparison. The original implementation, however, only existed as a Matlab toolbox shared upon request by the corresponding author of the respective publication (\cite{dewhurst2012depends}). This reliance on closed-source software and barriers in retrieval of the software\footnote{While acquisition of the toolbox via e-mail was prompt and complication-free, later correspondence with several of the authors was an odyssey of expired email addresses, changed affiliations and digital communication allegedly lost in the void of the Internet.} hinder the wider usage and potential improvement of the method. A publicly available, open-source implementation would instead facilitate its usage in scientific works. Therefore, the method was ported from Matlab into Python and transformed into the pip-installable module \textit{multimatch}\footnote{The module can be installed via ``pip install multimatch``. A corresponding publication (Wagner \& Hanke) in the Journal of Open Source Software (JOSS) in currently in preparation. The sourcecode can be found at github.com/AdinaWagner/multimatch.}.
 
-\subsection{multimatch in Python}
+\subsubsection{multimatch in Python}
 The following section gives a brief overview of the general MultiMatch method. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch}. \newline 
 The method takes two n x 3 fixation vectors of two scanpaths with x-coordinates in pixel, y-coordinates in pixel, and duration of fixations as columns as its input. Based on the coordinates and durations of fixations, the scanpaths are represented as geometric vector sequences as shown in figure \ref{fig:Polar_to_cartesian}:
 
@@ -849,12 +855,11 @@ A Dijkstra algorithm (\cite{dijkstra1959note}) is used to find the shortest path
 		\label{algo:multimatch}
 	\end{small}
 \end{algorithm}
-\textbf{TODO: Not sure whether the pseudo code makes anything any clearer. Looks neat though and took a while. Might ban it into Appendix.}
 
-\subsection{multimatch usage in the studyforrest dataset}
+\subsubsection{multimatch usage in the studyforrest dataset}
 The extraction of eye events for further use with multimatch to estimate a measure of exogenous attentional control included several considerations based on findings and known caveats in eye-tracking and attention research with dynamic scenes. The resulting additional functions are mainly concerned with automatic scanpath extraction from the approximately 15 minutes spanning and several eye-movement categories containing eye-tracking event files by user-defined rules. An overview in pseudocode can be found in algorithm \ref{algo:multimatch_forrest}. \newline
 First, as the stimulus was dynamic, the start and end of pursuit movements were relabeled as fixations. This was done to accommodate the fact that most areas of interest in a movie are in motion. Focusing on the running young Forrest for example would likely appear as a slow pursuit in the eye event data. Disregarding such pursuits would lead to a large loss in data and variability, and as such, they were included via relabeling. \newline A different consideration concerned the selection of scanpaths from the approximately 15 minute long segments, as they are unsuitably long to derive a continuous attention measure or do a scanpath comparison on. It has been shown that subjects gazes have a bias towards the center in Hollywood movies (\cite{tseng2009quantifying}). This bias can at least in part be traced back to a strong center bias directly after cuts in dynamic scenes. \textcite{carmi2006visual} found the highest degree of exogenous attentional control (i.e. maximal inter-observer similarity in gaze as recorded via eye-tracking) in a moving collage of 50 heterogeneous video clips directly after cuts to new, semantically unrelated scenes. Without isolating cuts it therefore can not be disentangled whether the contribution of visual features of the movie on scanpaths stems from exogenous control from a movie element or from the sudden occurrence of a new scene after a cut. To not introduce such a confound in the eye-tracking data, the data was cut into segments that did not contain cuts to different scenes, relying on a location annotation by \textcite{hausler2016annotation}. They define a \textit{shot} as a movie sequence between two cuts. The location annotation contained a detailed description of the timing of each of the 870 shots of the movie as well as information about the depicted location in different levels of abstraction. In a first step, all consecutive short shots to the same locale (e.g. two consecutive, short movie shots in Forrest's bedroom, without any cuts containing semantically unrelated content) were grouped together. A “short” shot was defined as being shorter than the median length of 4.92s. This procedure increased the median length of shots from 4.92s to 7.019s. These elongated shots are henceforth referred to as \textit{snippets}. In a next step, within the scanpath comparison, the onset and offset times of the resulting snippets were extracted for every snippet longer than 4.92s. To not introduce an influence of snippet length into the similarity results, as longer movie snippets will be more likely to be less similar than short ones, scanpath lengths were standardized to approximately 4.92s seconds (the original median length). To further evade any problems associated with the center bias, scanpaths were extracted from the end of the snippet: The last oculomotor event within the range of the snippet marked the end of a scanpath. As such, scanpaths began maximally distant to the snippet onset.
-As the eye movements of participants are interindividually different and do not correspond exactly to snippet timing, the precise onsets and resulting exact durations were computed as well, and stored for later use as regressors.
+As the eye movements of participants are interindividually different and do not correspond exactly to snippet timing, the precise onsets and resulting exact durations were computed as well, and stored for later use as regressors. The results of this computation can be found on Github\footnote{https://github.com/AdinaWagner/multimatch\_forrest} as well.
 
 \begin{algorithm}[H]
 	\begin{small}
@@ -893,16 +898,20 @@ As the eye movements of participants are interindividually different and do not 
 		\label{algo:multimatch_forrest}
 	\end{small}
 \end{algorithm}
-\textbf{TODO: Not sure whether the pseudo code makes anything any clearer. Looks neat though and took a while. Might ban it into Appendix.}
 
 \subsection{Deriving a measure of attentional modulation from multimatch}
-A common measure of attentional modulation was computed in a two-step procedure. First, scanpath comparisons of all scanpaths from the same shot of two subjects were calculated for all possible pairs of subject. This resulted in $C_k(n) = {N\choose k} = {15\choose 2} = 105$ combinations for N = 15 subjects. These comparisons were done without any further simplification (i.e. no use of the direction, length, and duration thresholds), as even minor differences in scanpaths obtained from a movie can correspond to major differences in attended visual stimuli. In a second step, the resulting similarities for each of the five similarity dimensions were averaged. Thus, for each snippet longer than 4.92s five similarity measures were computed that represented the average similarity of scanpaths of all subjects on the given dimension. 
+A common measure of attentional modulation was computed in a two-step procedure. First, scanpath comparisons of all scanpaths from the same shot of two subjects were calculated for all possible pairs of subject. This resulted in $C_k(n) = {N\choose k} = {15\choose 2} = 105$ combinations for N = 15 subjects. These comparisons were done without any further simplification (i.e. no use of the direction, length, and duration thresholds), as even minor differences in scanpaths obtained from a movie can correspond to major differences in attended visual stimuli. In a second step, the resulting similarities for each of the five similarity dimensions were averaged. Thus, for each snippet longer than 4.92s five similarity measures were computed that represented the average similarity of scanpaths of all subjects on the given dimension. For further use in the functional ROI specificity analysis, the multimatch results were z-scored.
  
+\subsection{Investigating functional specificity differences in left and right FEF}
+\textbf{TODO: we need some text that described what we did here.}
  
- 
+The correlation structure within the multimatch measures proofed to be suboptimal (further explored in section \ref{sec:res_mm}). As evident in figure \ref{fig:dist_hist}(c), only a maximum of two dimensions 
+simultaneously are mutually uncorrelated. Due to this constraint, two dimensions with a straightforward interpretation were subselected for the analysis, duration and position. The position dimension indicates the similarity with regard to points of interest in the movie: Do participants fixate the same parts of the screen? The duration dimensions on the other hand may be more indicative of employed exploration strategies: Do participants fixate points of interest similarly long?
+
+
 \section{Results}
 
-\section{Eye movements and multimatch}
+\subsection{Eye movements and multimatch}\label{sec:res_mm}
 In order to check the validity of the eye-movement extraction with REMoDNaV, the mean and median duration of extracted fixations were compared to the results of \textcite{dorr2010variability}. Fixations as found by REMoDNaV had a length of mean = 0.326s, median = 0.256s, which corresponds closely to the aforementioned study's results (0.354s and 0.253s, respectively). A comparison of algorithm performance and human coding of eye movements on data of \textcite{andersson2017one} by \textcite{dar2019} showed the highest degree of concordance of all contemporary algorithms used in \textcite{anderson2015comparison}, providing further evidence for the validity of extracted eye movements. \newline
 
 Based on the REMoDNaV output, the multimatch method was able to extract a total of N = 533 scanpaths from the movie. The median duration of extracted scanpath duration was 4.39 seconds (mean = 4.36s) (see figure \ref{fig:dist_hist}). The median and average similarities per dimension are stated in table \ref{table:sims}.
@@ -922,36 +931,34 @@ Based on the REMoDNaV output, the multimatch method was able to extract a total 
 \end{table}
 
 
-\begin{table}
-	\begin{center}
-		\begin{tabular}{C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}}
-			\thickhline
-			& \textbf{Vector} & \textbf{Direction} & \textbf{Length} & \textbf{Position} & \textbf{Duration}  \\
-			\textbf{Vector} & 	- & $0.12$ & $0.97$ & $0.74$ & $-0.05$ \\ 
-			\textbf{Direction} & **  & - & $0.15$ & $0.04$ & $0.72$ \\
-			\textbf{Length} & *** & *** & - & $0.72$ & $0.04$ \\
-			\textbf{Position} & *** & n.s.	 & *** & - & $-0.12$ \\
-			\textbf{Duration } &  n.s.	& *** & n.s. & ** & - \\ \thickhline
-		\end{tabular}
-	\end{center}
-	\footnotesize Significance codes: *** $p < 0.001$, ** $p < 0.01$, * $p < 0.05$
-	\caption{Pearson correlations of similarity metrics}
-	\label{table:correlations}
-\end{table}
+%\begin{table}
+%	\begin{center}
+%		\begin{tabular}{C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}}
+%			\thickhline
+%			& \textbf{Vector} & \textbf{Direction} & \textbf{Length} & \textbf{Position} & \textbf{Duration}  \\
+%			\textbf{Vector} & 	- & $0.12$ & $0.97$ & $0.74$ & $-0.05$ \\ 
+%			\textbf{Direction} & **  & - & $0.15$ & $0.04$ & $0.72$ \\
+%			\textbf{Length} & *** & *** & - & $0.72$ & $0.04$ \\
+%			\textbf{Position} & *** & n.s.	 & *** & - & $-0.12$ \\
+%			\textbf{Duration } &  n.s.	& *** & n.s. & ** & - \\ \thickhline
+%		\end{tabular}
+%	\end{center}
+%	\footnotesize Significance codes: *** $p < 0.001$, ** $p < 0.01$, * $p < 0.05$
+%	\caption{Pearson correlations of similarity metrics}
+%	\label{table:correlations}
+%\end{table}
 
-\begin{figure}
-	\includegraphics{img/sim_corr.png}
-	\caption{Correlation heatmap}
-	\label{fig:corrs}
-\end{figure}
 
 
 Figure \ref{fig:dist_hist} gives an overview of some additional scanpath characteristics, in particular the distribution of similarity per dimension, the onset of scanpaths in the first run, and an example of movie segments with high and low similarity.
 
 \begin{figure}[H]
-	\subfigure[Extracted scanpath lengths]{\includegraphics[width=0.49\textwidth]{img/dist_hist.png}}
-	\subfigure[Distribution of similarities per dimension for the movie]{\includegraphics[width=0.49\textwidth]{img/sim_per_dimension.png}}
-	\subfigure[Average onsets of scanpaths in seconds for the first run]{\includegraphics[height=0.1\textheight, width=1\textwidth]{img/scanpath_onsets.png}}
+
+	\subfigure[Extracted scanpathlengths]{\includegraphics[width=0.5\textwidth]{img/dist_hist_v2.png}}
+	\subfigure[Distribution of similarities per dimension for the movie]{\includegraphics[width=0.49\textwidth]{img/sim_per_dimension_v2.png}}
+	\subfigure[Correlation heatmap between dimensions]{\includegraphics[width=0.49\textwidth]{img/sim_corr_v2.png}}
+	\subfigure[\textbf{TODO: one more plot for prettiness}]{\includegraphics[width=0.49\textwidth]{img/mri_all_saccades.png}}
+	\subfigure[Average onsets of scanpaths in seconds for the first run]{\includegraphics[height=50pt, width=1\textwidth]{img/scanpath_onsets_v2.png}}
 	\subfigure[Frame from movie snippet with the lowest average similarity rating of run 1, with overlaid eyegaze]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/low_sim.png}}
 	\subfigure[Frame from movie snippet with the highest average similarity rating of run 1, with overlaid eyegaze]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/max_sim.png}}
 	\caption{\small{Overview of extracted scanpaths' characteristics.}}
