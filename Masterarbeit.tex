@@ -30,6 +30,8 @@
 \usepackage{floatrow} % Caption neben Abbildungen
 % \usepackage{makecell} % dicke Linien in Tabellen
 %\usepackage{setspace}
+%\usepackage{minted} % might become relevant to have syntax highlighting for code
+%\usepackage{listing}% also relevant for syntax highlighting, however currently conflicts with own defined command
 
 \usepackage[toc,page]{appendix}	% Anhang
 
@@ -1127,6 +1129,76 @@ Independent of the results, this thesis provided an open source implementation o
 	\label{fig:scenes}
 \end{figure}
 	
+%If there is time, figure out minted and listing conflicts to include json in Appendix
+
+%\begin{listing}
+%\begin{minted}[frame=single,
+%			   framesep=3mm,
+%			   linenos=true,
+%			   xleftmargin=21pt,
+%			   tabsize=4]{js}
+%	{
+%		"name": "FEF\_localizer",
+%		"Input": {
+%			"include": {
+%				"session": "movie"
+%			},
+%			"exclude": {
+%				"subject": ["05"]
+%			}
+%		},
+%		"Steps": [
+%		{
+%			"Level": "run",
+%			"Model": {
+%				"X": [
+%				"amplitude\_.RIGHT",
+%				"amplitude\_.LEFT",
+%				"amplitude\_.UP",
+%				"amplitude\_.DOWN",
+%				"X",
+%				"Y",
+%				"Z",
+%				"RotX",
+%				"RotY",
+%				"RotZ",
+%				"lrdiff",
+%				"pd",
+%				"rms"
+%				]
+%			},
+%			"Contrasts": [
+%			{
+%				"Name": "horizontal\_vertical",
+%				"ConditionList": ["amplitude\_.RIGHT", "amplitude\_.LEFT", "amplitude\_.UP", "amplitude\_.DOWN"],
+%				"Weights": [1, 1, -1, -1],
+%				"Type": "t"
+%			}
+%			],
+%			"Transformations": [{
+%				"Name": "Split",
+%				"Input": ["amplitude\_"],
+%				"By": ["trial\_type"]
+%			},
+%			{
+%				"Name": "Convolve",
+%				"Input": ["amplitude\_.RIGHT", "amplitude\_.LEFT", "amplitude\_.UP", "amplitude\_.DOWN"],
+%				"Model": "spm"
+%			}]
+%		},
+%		{
+%			"Level": "subject",
+%			"AutoContrasts": true
+%		},
+%		{
+%			"Level": "dataset",
+%			"AutoContrasts": true
+%		}]
+%	}
+%\end{minted}
+%\caption{Fitlins model specification in .json}
+%\label{code:json}
+%\end{listing}
 \end{appendices}
 
 
