@@ -724,11 +724,31 @@ Despite these improvements, the current model relies on some custom sourcecode c
 
 \subsection{Creation of ROI masks}\label{c2:masks}
 In order to obtain subject-specific ROI masks, an attempt was made to find clusters corresponding to the FEF in the subject-level result of each participant with FSLeyes (\cite{mccarthy_paul_2018_1887737}). Mimicking \textcite{sengupta2016studyforrest}, an cluster-forming threshold of z = 1.64 was used. Clusters were selected based on the known anatomical location of the FEF, and Neurosynths (\cite{yarkoni2011neurosynth}) posterior probabilities of relevance of corresponding terms to brain locations with the fsl-neurosynth-atlas as distributed in the NeuroDebian (\cite{10.3389/fninf.2012.00022}) platform. Clusters surviving the thresholding at a plausible location were hand-traced into binary ROI masks in group-space. \\
-As table \ref{tab:masks} shows, however, this approach was unable to identify masks for 20 out of the 30 masks. For remainder of FEFs, a grouplevel mask obtained from the result of the dataset-level was substituted.
+As table \ref{tab:masks} shows, however, this approach was unable to identify masks for 10 out of the 30 masks. For remainder of FEFs, a grouplevel mask obtained from the result of the dataset-level with the same procedure was substituted.
 
 \section{Results}
+\textbf{some introductory words here, please}
 
-Table \ref{tab:masks} summarizes minimum and maximum coordinates as well as the location with the highest activation of obtained masks per participant and hemisphere. Figure \ref{fig:FEF}
+\subsection{Extracted eye movements and REMoDNaV validity}
+
+\textbf{TODO: summary stats about saccade directions and amplitudes, maybe a bar plot.}
+
+In order to check the validity of the eye-movement extraction with REMoDNaV, the mean and median duration of extracted fixations were compared to the results of \textcite{dorr2010variability}, who studied descriptive parameters of eye movements during movie watching. Fixations as found by REMoDNaV had a length of mean = 0.326s, median = 0.256s, which corresponds closely to the aforementioned study's results (0.354s and 0.253s, respectively). A comparison of algorithm performance and human coding of eye movements on data of \textcite{andersson2017one} by \textcite{dar2019} showed the highest degree of concordance of all contemporary algorithms used in \textcite{anderson2015comparison}, providing further evidence for the validity of extracted eye movements. \newline
+
+\subsection{Localization of the FEF}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.6]{img/3rdlvl_fitlins.png}
+	\caption[GLM results with fitlins]{\small{blablabla}}
+\end{figure}
+
+Out of the 15 subjects, 12 subject-specific masks for the right FEF and 8 subject-specific masks for the left FEF were obtained. Table \ref{tab:masks} summarizes minimum and maximum coordinates as well as the location with the highest activation of obtained masks per participant and hemisphere. Figure \ref{fig:FEF} displays the overlap of the resulting FEF masks.
+
+\begin{figure}[H]
+	\includegraphics[scale=0.5]{img/FEF_masks_overlaid_v2.png}
+	\caption[]{\small{Subject-specific ROI masks overlaid on a group-space template (screenshot of the FSLeyes interface). Regions with lower opacity correspond to higher overlap of masks.}}
+	\label{fig:FEF}
+\end{figure}
 
 \begin{table}[H]
 	\centering
@@ -778,21 +798,17 @@ Table \ref{tab:masks} summarizes minimum and maximum coordinates as well as the 
 
 include stuff about
 \begin{itemize}
-	\item{occurance of larger and small saccades, and the proportion of directions}
+	\item{occurance of larger and small saccades, and the proportion of directions, or maybe more summary statistics for saccades if there is time to generate them}
 	\item{The thresholds and steps used for mask generation}
-	\item{a table describing found clusters}
-	\item{a figure showing the results}
+
 \end{itemize}
 
-\begin{figure}
-	\includegraphics[scale=0.5]{img/FEF_masks_overlaid_v2.png}
-\end{figure}
 
 \section{Discussion}
 \textbf{TODO: Do a discussion here}
 include:
 \begin{itemize}
-	\item{discuss troubles with localization}
+	\item{discuss troubles with localization, e.g. loss of eye tracking data}, only few vertical and horizontal saccades
 	\item{discuss shortcommings of fitlins}
 \end{itemize}
 
