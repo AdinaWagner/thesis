@@ -719,13 +719,63 @@ Figure \ref{fig:dirstruct} gives an overview of the directory structure for one 
 	\label{fig:dirstruct}
 \end{figure}
 
-As fitlins is still in early alpha stage development phase, it had never been used on a sole BIDS derivatives directory, and as the employed design was more complex than a regular block-stimulation experiment, the implementation of the model led to multiple failures on every stage of the analysis. In the wake of model implementation, several contributions have therefore been made to the recent releases of fitlins (\cite{markiewicz_christopher_j_2019_2555453}) and pybids (\cite{yarkoni_tal_2019_2555449}), leading to a co-authorship in both of these software's releases.
-Despite these improvements, the current model relies on some custom sourcecode changes not (yet) integrated into the main software distribution. In order to recreate the computational environment necessary for reproducing the analysis, a niceman.yml\footnote{Niceman (\cite{yaroslav_halchenko_2018_2403222}) is a software that analyzes and summarizes computational environments for later recreation and recomputation} file is part of the directory. 
+As fitlins is still in early alpha stage development phase, it had never been used on a sole BIDS derivatives directory, the inclusion of eye-tracking data is not yet integrated into the BIDS standard\footnote{There is however work in progress on a BIDS Extension Proposal 20 (BEP020), that this thesis relied upon.}, and as the employed design was more complex than a regular block-stimulation experiment, the implementation of the model led to multiple failures on every stage of the analysis. In the wake of model implementation, several contributions have therefore been made to the recent releases of fitlins (\cite{markiewicz_christopher_j_2019_2555453}) and pybids (\cite{yarkoni_tal_2019_2555449}), leading to a co-authorship in both of these software's releases.
+Despite these improvements, the current model relies on some custom sourcecode changes not (yet) integrated into the main software distribution. In order to recreate the computational environment necessary for reproducing the analysis, a niceman.yml\footnote{Niceman (very recently renamed to 'Reproman') (\cite{yaroslav_halchenko_2018_2403222}) is a software that analyzes and summarizes computational environments for later recreation and recomputation: https://github.com/ReproNim/reproman} file is part of the directory. 
 
-\subsection{Creation of ROI masks}
-blabalbla
+\subsection{Creation of ROI masks}\label{c2:masks}
+In order to obtain subject-specific ROI masks, an attempt was made to find clusters corresponding to the FEF in the subject-level result of each participant with FSLeyes (\cite{mccarthy_paul_2018_1887737}). Mimicking \textcite{sengupta2016studyforrest}, an cluster-forming threshold of z = 1.64 was used. Clusters were selected based on the known anatomical location of the FEF, and Neurosynths (\cite{yarkoni2011neurosynth}) posterior probabilities of relevance of corresponding terms to brain locations with the fsl-neurosynth-atlas as distributed in the NeuroDebian (\cite{10.3389/fninf.2012.00022}) platform. Clusters surviving the thresholding at a plausible location were hand-traced into binary ROI masks in group-space. \\
+As table \ref{tab:masks} shows, however, this approach was unable to identify masks for 20 out of the 30 masks. For remainder of FEFs, a grouplevel mask obtained from the result of the dataset-level was substituted.
 
 \section{Results}
+
+Table \ref{tab:masks} summarizes minimum and maximum coordinates as well as the location with the highest activation of obtained masks per participant and hemisphere. Figure \ref{fig:FEF}
+
+\begin{table}[H]
+	\centering
+	{\scriptsize
+	\begin{tabular}{C{1.5cm}C{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}C{1.2cm}C{3cm}}
+		\thickhline
+		\textbf{right} \\
+		\thickhline 
+		\textbf{subject}	& \textbf{min x} & \textbf{min y} & \textbf{min z} & \textbf{max x} & \textbf{max y} & \textbf{max z} & \textbf{max activation}  \\ \hline
+		1	& $60$    & $4$ & $50$ & $37$ & $-5$ & $42$ & $(42, -3, 48)$\\
+		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\			
+		3	& $42$    & $3$ & $46$ & $31$ & $-4$ & $41$ & $(38, 4, 41)$\\			
+		4 & $30$  & $2$ & $46$ & $31$ & $-4$ & $41$ & $(25, -3, 51)$ \\
+		5	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		6	& $43$   & $5$ & $50$ & $27$ & $-6$ & $40$ & $(28, 1, 45)$ \\ 
+		9	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		10	& $37$   & $2$ & $58$ & $22$ & $-10$ & $43$ & $(33, -5, 48)$ \\
+		14	& $42$   & $4$ & $43$ & $22$ & $-5$ & $40$ & $(32, -1, 48)$ \\
+		15	& $48$   & $7$ & $48$ & $28$ & $3$ & $43$ & $(38, 5, 46)$ \\
+		16	& $40$   & $2$ & $61$ & $25$ & $-8$ & $43$ & $(40, -2, 56)$ \\
+		17	& $40$   & $5$ & $53$ & $26$ & $-3$ & $53$ & $(29, -2, 46)$ \\
+		18	& $43$   & $-1$ & $48$ & $40$ & $-9$ & $43$ & $(43, -7, 46)$ \\
+		19	& $50$   & $4$ & $50$ & $37$ & $-5$ & $42$ & $(42, -3, 48)$ \\
+		20	& $30$   & $7$ & $58$ & $24$ & $-3$ & $53$ & $(28, 2, 58)$ \\\thickhline
+		\textbf{left} &&&&&&&\\\thickhline
+		1	& $-38$    & $0$ & $57$ & $-25$ & $-10$ & $50$ & $(31, -6, 52)$\\
+		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\			
+		3	& $-38$    & $5$ & $46$ & $-21$ & $-3$ & $41$ & $(-30, 3, 43)$\\			
+		4 	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\ 
+		5	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		6	& $-40$   & $3$ & $50$ & $-26$ & $1$ & $43$ & $-$ \\ 
+		9	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		10	& $-30$   & $-3$ & $58$ & $-16$ & $-9$ & $56$ & $(-25, -4, 58)$ \\
+		14	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		15	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		16	& $-42$   & $-1$ & $60$ & $-22$ & $-12$ & $48$ & $(-21, -8, 55)$ \\
+		17	& $-50$   & $-1$ & $55$ & $-24$ & $-13$ & $43$ & $(-33, -8, 48)$ \\
+		18	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		19	& $-48$   & $1$ & $55$ & $-39$ & $-8$ & $43$ & $(-48, -5, 53)$ \\
+		20	& $-40$   & $1$ & $58$ & $-29$ & $-4$ & $53$ & $(38, 1, 55)$ \\\thickhline
+		\caption[FEF masks coordinates]{\small{Minimum and maximum coordinates of the subject-specific FEF masks, and the voxel location with the highest activation, for left and right FEF.}}
+		\label{tab:masks}
+	\end{tabular}}
+\end{table}
+
+
+
 include stuff about
 \begin{itemize}
 	\item{occurance of larger and small saccades, and the proportion of directions}
