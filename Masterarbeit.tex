@@ -887,7 +887,7 @@ A Dijkstra algorithm (\cite{dijkstra1959note}) is used to find the shortest path
 		\SetKwInOut{Input}{Input}
 		\SetKwInOut{Output}{Output}
 		
-		\Input{n x 3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
+		\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
 		\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0, 1]}
 		\For{\textbf{each} fixvector}
 		{ 
@@ -917,7 +917,7 @@ A Dijkstra algorithm (\cite{dijkstra1959note}) is used to find the shortest path
 			
 			add aligned scanpath to set of aligned scanpaths \;
 			
-			\For{ \textbf{each} pair($u_i,v_i$) in aligned scanpaths}
+			\For{\textbf{each} pair($u_i,v_i$) in aligned scanpaths}
 			{
 				angular difference = angle($u_i, v_1$)\;
 				position difference = $\sqrt{(x(u_i) - x(v_i))^2 + (y(u_i) - y(v_i))^2}$ \;
@@ -926,11 +926,11 @@ A Dijkstra algorithm (\cite{dijkstra1959note}) is used to find the shortest path
 				duration difference = $abs(dur(u_i)-dur(v_i))$ \;
 			}
 			normalize angular difference by $\pi$\;
-			normalize vector difference by 2x the screen diagonal (maximum theoretical distance)\;
+			normalize vector difference by 2x the screen diagonal (max theoretical distance)\;
 			normalize length difference, position difference by the screen diagonal\;
 			normalize duration difference by maximal duration difference in the scanpaths\;
-			\textbf{return} median for each similarity measure
-			\textbf{return} \textbf{similarity measures}
+			\textbf{sim\_measures} = median of each similarity measure\;
+			\textbf{return} \textbf{sim\_measures}
 		}
 		\caption{multimatch}
 		\label{algo:multimatch}
