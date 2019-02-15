@@ -164,12 +164,14 @@
 \setcounter{tocdepth}{2}
 
 %------------Literaturverzeichnis--------
+%\usepackage{apacite}		%APA Zitationen
+%\bibliographystyle{apacite}
 
 \usepackage[babel,german=quotes]{csquotes}
-\usepackage[	style=authoryear,		% oder numeric
+\usepackage[	style=authoryear-icomp,		% oder numeric
 							backend=bibtex,			% oder biber
 							firstinits=true,		% Vorname abgekürzt
-							maxitems= 6				% maximale Anzahl an Authoren, Abkürzung et alter
+							maxitems=7				% maximale Anzahl an Authoren, Abkürzung et alter
 						]{biblatex}
 \renewbibmacro{in:}{} 	% unterdrücke "in:" vor dem Journal-Titel						
 %\renewcommand*{\mkbibnamelast}[1]{\textsc{#1}} 	% Autoren in Kapitälchen
