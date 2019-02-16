@@ -1071,32 +1071,51 @@ The implemented multimatch algorithm was able to extract scanpaths and calculate
 \textbf{TODO: Discuss FEF ROI specificity results}
 
 \chapter{General discussion}\label{section:discussion}
-do a short summary of everything
+The aim of this thesis was to investigate the functional neuroanatomy of the visuospatial attention system with fMRI and eye tracking data obtained during naturalistic stimulation with a Hollywood movie. For this, I selected a particular part of the dorsal attention system, the frontal eye fields, and attempted to gain insights into the possible contribution of attentional mode to its distinction between the left and right hemisphere. \\
+To conduct this analysis, I undertook a number preliminary analysis steps, and combined efforts from several software- and analysis sub-projects. This thesis, therefore, contains a dense collection of methodological advancements and analysis results: Chapter \ref{c1} contained the development of a novel method to determine functional ROI specificity and the results of two validation analyses. Chapter \ref{c2} involved the localization of the frontal eye fields with a GLM on unconstrained eye movements under natural stimulation with a Hollywood movie with fitlins. Using the MultiMatch algorithm, parts of chapter \ref{c3} dealt with the computation of a measure of similarity between scanpaths of participants for movie scenes in order to use the obtained results as a measure of attentional mode. Lastly, all of these efforts were combined to the functional specificity analysis in the section \ref{c3:FEF}. \\
 
+\bigskip
+
+ The results show that...
+ \begin{itemize}
+ 	\item{proof of principle for the ROI specificity method}
+ 	\item{simultaneously, further evidence that ROI localization is possible with naturalistic stimulation}
+ 	\item{localization of the FEF with naturalistic stimulation with a Hollywood movie is generally possible, but suffers from the center bias that keeps participants eye gaze in the center of the screen }
+ 	\item elaborate on the fact that everything reported here is basically descriptive, not inferential
+ 	\item make a point about how throughout analyses like this are only possible because of data sharing and open science, and open source software.
+ \end{itemize}
+ 
+ 
+ \bigskip 
+ 
+ A number of potential issues need to be addressed to access the validity of the results ....
+ 
+ 
 \begin{itemize}
-	\item The aim of this thesis was to < Reference to the title of this thing.> For this, I attempted to gain insights into the possible contribution of attentional mode to the distinction between the left and right frontal eye field as a central part of the dorsal attention system.
-	\item To conduct this analysis, I undertook some preliminary analysis steps, and combined them to the intended analysis. In this thesis I developed a novel method to determine functional ROI specificity (Chapter \ref{c1}) and conducted two validation analyses. Furthermore, I localized the frontal eye fields with a GLM on unconstrained viewing under natural stimulation with a Hollywood movie. Using the MultiMatch algorithm, I computed a measure of similarity between scanpaths of participants for movie scenes in order to use the obtained results as a measure of attentional mode. Lastly, I combined all of these approaches to blablabal
-	\item The results show that...
-	\item{proof of principle for the ROI specificity method}
-	\item{simultaneously, further evidence that ROI localization is possible with naturalistic stimulation}
-	\item{This thesis contributed to or initiated a number of scientific open source software projects. In the wake of the analysis, I contributed with code and discussions to PyMVPA (\cite{hanke2009pymvpa})}, fitlins (\cite{markiewicz_christopher_j_2019_2555453}), pybids (\cite{yarkoni_tal_2019_2555449}) and REMoDNaV (\cite{dar2019}). Furthermore, I ported the matlab toolbox MultiMatch (\cite{dewhurst2012depends}) into Python and thus provided an accessible open source distribution of a closed software program that can easily be advanced further with the collaborative development possibilities on Github. Additionally, all analyses reported in this thesis can be found on Github.
+ 	\item (maybe refer to Deborah Mayos Severe Testing ideas?)
+ 	\item As evident from the consistency in scanpath similarity, the MultiMatch method was not able to detect large changes in attentional mode throughout the movie. This might reflect a consistently high exogenous control exercised by the movie stimulus. However, it is not clear whether similarity in scanpaths does actually correspond to exogenous control. The similarity measures obtained from eye gazes could fail to account to differentiate exogenous modulation from endogenous influences arising from a shared goal between participants. Consider the following example: in order to fully comprehend the movie content, it might be of relevance for every subject to endogenously focus on the facial features of Forrest in his dialogue with Jenny. This scene does not contain salient stimulus features or other types of exogenous control, yet it would lead to a high similarity measure. A high degree of synchrony in eye movements therefore would not necessarily correspond to purely exogenous influences. A more thorough investigation of the origin of eye gaze similarity might lie in a subsequent qualitative analysis of individual movie shots, but that was not within the scope of this thesis.
+ 	\item Problem of 5 different similarity measures --- BUT successfully used by French et al., multidimensional construct preferable as might explain more variance (citation? check anderson or the other dewhurst publication) 
+ 	\item The first part of this thesis was largely exploratory in regard to determining the functional specificity of ROIs during method development and validation. Of course, the value and novelty of the developed method lies in its ability to explore previously unknown functions with naturalistic stimulation. As such, it is providing interesting and important new insights on the level of functional neuroanatomy, and constitutes additional evidence that the use of naturalistic stimulation is of immense value in neuroimaging research and can underlie experimental control (\cite{hasson2004intersubject}). Nevertheless, any exploratory analysis is lacking a thorough derivation of hypothesis from theory, and the preregistration of such hypotheses to guarantee scientific integrity. Furthermore, given that the choices of annotation for naturalistic stimulation and their inclusion can potentially be unlimited, the method leaves many researchers degrees of freedom to potentially bend results into shape. Therefore, it is important to note that the method does not suffice on its own. Instead, it should be regarded as a valuable first step to gain exploratory insights and generate novel hypotheses. The ideas derived from the method should subsequently be brought to test on new data to prevent findings due to chance being published without further testing. Furthermore, the validation analysis of the ROI specificity method on the localizer data is \textit{circular}, as the classification is performed on the same data used to derive the higher visual area ROI masks. This practice is prone to give distorted descriptive and invalid inferential statistics, as voxel in test and training set are no longer independent (\cite{kriegeskorte2009circular}). However, for the analysis at hand, independence was achieved in the movie data, and the classification results appear to be robust. Nevertheless, the extraordinary cleanliness of the sensitivity time course in the localizer data is very likely at least in part an artifact from the subselection of voxel with activation related to the localization stimulation protocol during ROI selection. In the same vein, the derivation of FEF masks from movie data and subsequent ROI specificity with movie data can be considered problematic. To prevent this circularity, the method needs to be tested further. Two different possibilities for this arise in the near future. For one, the method could be used with any experiments data and a 'blind' ROI selection, for example utilizing the HCP-MMP1 multimodal cortical parcelation (\cite{glasser2016multi}), consisting of 360 parcels of the whole cortex. This parcelation is independent of voxel activation in the datasets, and could especially in the case of the movie experiment help to shed light on the functional specificities of unexplored regions during movie watching. Secondly, an Honors Thesis project concerned with a similar classification question based on a different movie dataset in the Haxby Lab has agreed to test the method on their new data after completion of the thesis.
+ 	\item Address the question of whether the linearity and gaussian distribution assumptions hold.
+ 	\item Now trash all shortcomings and come to the conclusion that for was done and despite a number of limitations this thesis was able to advance the literature in the following ways
+ 	\item 
+ 	
+... Nevertheless, despite these shortcomings, blablablab. 
 \end{itemize}
-	 
+ 
+ \bigskip
+... Likewise, this thesis provided an example of how the eye tracking data of the studyforrest publication can be utilized in fMRI analyses....
+\bigskip
+ 
+Beyond its use in this mere Masters thesis, the work presented here has also led to more lasting, shared resources in the form of data, software, and methods, that can be used more widely in other scientific work. In the wake of the analysis, I contributed with code and discussions to PyMVPA (\cite{hanke2009pymvpa}), fitlins (\cite{markiewicz_christopher_j_2019_2555453}), pybids (\cite{yarkoni_tal_2019_2555449}) and REMoDNaV (\cite{dar2019}). Furthermore, I ported the matlab toolbox MultiMatch (\cite{dewhurst2012depends}) into the pip-installable Python module multimatch and thus provided an accessible open source distribution of a closed software program that can easily be advanced further with the collaborative development possibilities of Github. The ROI specificity method has been submitted as an abstract to the OHBM, and can thus hopefully be presented to and discussed with a broader scientific audience. Lastly, the scanpath similarity data during movie watching has been publicly shared on Github, as well as all analyses code reported in this thesis. 
+\textbf{make a point about how throughout analyses like this are only possible because of data sharing and open science, and open source software.}
+
 	
 
 
 
-\section{TODO Drawbacks and shortcomings}
-\begin{itemize}
-	\item A number of potential issues need to be addressed to access the validity of the results (maybe refer to Deborah Mayos Severe Testing ideas?)
-	\item As evident from the consistency in scanpath similarity, the MultiMatch method was not able to detect large changes in attentional mode throughout the movie. This might reflect a consistently high exogenous control exercised by the movie stimulus. However, it is not clear whether similarity in scanpaths does actually correspond to exogenous control. The similarity measures obtained from eye gazes could fail to account to differentiate exogenous modulation from endogenous influences arising from a shared goal between participants. Consider the following example: in order to fully comprehend the movie content, it might be of relevance for every subject to endogenously focus on the facial features of Forrest in his dialogue with Jenny. This scene does not contain salient stimulus features or other types of exogenous control, yet it would lead to a high similarity measure. A high degree of synchrony in eye movements therefore would not necessarily correspond to purely exogenous influences. A more thorough investigation of the origin of eye gaze similarity might lie in a subsequent qualitative analysis of individual movie shots, but that was not within the scope of this thesis.
-	\item Problem of 5 different similarity measures --- BUT successfully used by French et al., multidimensional construct preferable as might explain more variance (citation? check anderson or the other dewhurst publication) 
-	\item The thesis was largely exploratory in regard to determining the functional specificity of ROIs. Of course, the value and novelty of the developed method lies in its ability to explore previously unknown functions with naturalistic stimulation. As such, it is providing interesting new insights on the level of functional neuroanatomy, and constitutes additional evidence that the use of naturalistic stimulation is of immense value in neuroimaging research and can underlie experimental control (\cite{hasson2004intersubject}). Nevertheless, any exploratory analysis is lacking a thorough derivation of hypothesis from theory, and the preregistration of such hypotheses to guarantee scientific integrity. Furthermore, given that the choices of annotation for naturalistic stimulation and their inclusion can potentially be unlimited, the method leaves many researchers degrees of freedom to potentially bend results into shape. Therefore, the method does not suffice on its own. Instead, it should be regarded as a valuable first step to gain exploratory insights and generate novel hypotheses. The ideas derived from the method should subsequently be brought to test on new data to prevent findings due to chance being published without further testing. 
-	\item Address the question of whether the linearity and gaussian distribution assumptions hold.
-	\item Now trash all shortcomings and come to the conclusion that for was done and despite a number of limitations this thesis was able to advance the literature in the following ways
-\end{itemize}
 
-\section{TODO Future directions}
+\section{Future directions}
 \begin{itemize}
 	\item The employed method for determining the functional specificity of ROIs proved to be an interesting novel approach to gain further insights into the functional neuroanatomy of regions of interest. ... extension by reverting analysis steps ... application to a new movie and annotation in the Haxby lab ... Possibility to use the method on the movie data using the parcelation suggested by Sam. 
 	\item it will be especially interesting to see whether the method is capable of providing insights into functional specificities of the same structure in different hemispheres, for example the left and the right FFA.
@@ -1104,23 +1123,22 @@ do a short summary of everything
 \end{itemize}
 
 
-\section{TODO Conclusions}
+\section{Conclusions}
 \begin{itemize}
 	\item now what have we all learned after reading this far?
 	\item surely something needs additional research
-
+	
 \end{itemize}
 Independent of the results, this thesis provided an open source implementation of the matlab based MultiMatch toolbox for multidimensional scanpath comparison. This might enable additional research into scanpath similarity with this geometric, multidimensional approach, without requiring usage and purchase of closed source software. \newline Furthermore, it provided a proof of principle that the sensitivities of a "transposed" approach of classification in unison with a functional description of the experimental design can be used to gain insights into the functional neuroanatomy of regions of interest in a meaningful way. The work undertaken in this thesis constitutes a starting point for further development and future application of the method.
 
 
 
-\chapter{Things that are still shitty}
-\textbf{big shit}
-\begin{itemize}
-	\item introduction is somewhat weak and lacks a common thread. thats because i lack a common thread though. will be easier to work on once the rest is finished.
-	\item surely incomprehensible method description, especially ROI specificity analysis
-	\item it's worthwhile to think about splitting the thesis from intro-methods-results-discussion into into-methods1-results1-methods2-results2-generaldiscussion
-\end{itemize}
+
+ 
+
+
+\textbf{TODOs}
+
 \textbf{small shit}
 \begin{itemize}
 	\item too many passive constructions
@@ -1169,6 +1187,8 @@ Independent of the results, this thesis provided an open source implementation o
 	
 \chapter{Additional tables and graphics}\label{A:addons}
 \textbf{TODO: some introductory words}
+
+As for a subsequent descriptive investigation of the stimulus contents, figure \ref{fig:scenes} shows the middle frames of scenes consistently, i.e. in all dataset sizes and classifier choices, associated with a high positive or high negative beta weight with overlaid eye gazes.
 
 \begin{figure}[H]
 	\subfigure{\includegraphics[scale=0.3]{img/highest_betaFFA.png}}
