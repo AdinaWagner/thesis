@@ -1200,87 +1200,39 @@ Beyond its use in this mere Masters thesis, the work presented here has also led
 \begin{appendices}
 	
 \chapter{Additional tables and graphics}\label{A:addons}
-\textbf{TODO: some introductory words}
 
-As for a subsequent descriptive investigation of the stimulus contents, figure \ref{fig:scenes} shows the middle frames of scenes consistently, i.e. in all dataset sizes and classifier choices, associated with a high positive or high negative beta weight with overlaid eye gazes.
+As for a subsequent descriptive investigation of the stimulus contents contributing to a FFA-PPA distinction, figure \ref{fig:scenes} shows the middle frames of scenes consistently, i.e. in all dataset sizes and classifier choices, associated with a high positive or high negative beta weight with overlaid eye gazes.
+An in depth investigation of stimulus properties was not within the scope of this thesis, however, this short descriptive overview confirms general known functional specificities of the FFA and PPA. High betas correspond to scenes with dialogues or groups of people (as for the choir or in the football stadium). Low betas in turn show more associations with rural or urban scenes.
 
 \begin{figure}[H]
-	\subfigure{\includegraphics[scale=0.3]{img/highest_betaFFA.png}}
-	\subfigure{\includegraphics[scale=0.3]{img/highest_betaPPA.png}}
+	\subfigure{\includegraphics[scale=0.4]{img/highest_betaFFA.png}}
+	\subfigure{\includegraphics[scale=0.4]{img/highest_betaPPA.png}}
 	\caption[Descriptive analysis of diagnostic scenes]{\small{Middle frame of scenes consistently associated with a high positive (top frame) or negative (bottom frame) beta value with overlayed eye-gaze (circles).}}
 	\label{fig:scenes}
 \end{figure}
 	
-%If there is time, figure out minted and listing conflicts to include json in Appendix
 
-%\begin{listing}
-%\begin{minted}[frame=single,
-%			   framesep=3mm,
-%			   linenos=true,
-%			   xleftmargin=21pt,
-%			   tabsize=4]{js}
-%	{
-%		"name": "FEF\_localizer",
-%		"Input": {
-%			"include": {
-%				"session": "movie"
-%			},
-%			"exclude": {
-%				"subject": ["05"]
-%			}
-%		},
-%		"Steps": [
-%		{
-%			"Level": "run",
-%			"Model": {
-%				"X": [
-%				"amplitude\_.RIGHT",
-%				"amplitude\_.LEFT",
-%				"amplitude\_.UP",
-%				"amplitude\_.DOWN",
-%				"X",
-%				"Y",
-%				"Z",
-%				"RotX",
-%				"RotY",
-%				"RotZ",
-%				"lrdiff",
-%				"pd",
-%				"rms"
-%				]
-%			},
-%			"Contrasts": [
-%			{
-%				"Name": "horizontal\_vertical",
-%				"ConditionList": ["amplitude\_.RIGHT", "amplitude\_.LEFT", "amplitude\_.UP", "amplitude\_.DOWN"],
-%				"Weights": [1, 1, -1, -1],
-%				"Type": "t"
-%			}
-%			],
-%			"Transformations": [{
-%				"Name": "Split",
-%				"Input": ["amplitude\_"],
-%				"By": ["trial\_type"]
-%			},
-%			{
-%				"Name": "Convolve",
-%				"Input": ["amplitude\_.RIGHT", "amplitude\_.LEFT", "amplitude\_.UP", "amplitude\_.DOWN"],
-%				"Model": "spm"
-%			}]
-%		},
-%		{
-%			"Level": "subject",
-%			"AutoContrasts": true
-%		},
-%		{
-%			"Level": "dataset",
-%			"AutoContrasts": true
-%		}]
-%	}
-%\end{minted}
-%\caption{Fitlins model specification in .json}
-%\label{code:json}
-%\end{listing}
+\chapter{Code}\label{A:code}
+
+\begin{figure} [H]
+	\includegraphics[scale = 0.7]{img/json_fitlins.png}\hfill
+	\caption{json file with fitlins model specification}
+	\label{A:fitlins}
+\end{figure}
+
+
+
+The model specified for fitlins follows the BIDS Extension Proposal 002 concerning statistical models\footnote{https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M/edit}. The keyword \texttt{X} denotes the design matrix specification. For the first level of this analysis, as evident from the values supplied to the keyword, four directions of saccades, six motion parameters (X, Y, Z, RotX, RotZ, RotY) and three stimulus confounds (lrdiff, pd, rms) are used to build a design matrix. An example design matrix for one subject and run is shown in figure \ref{fig:des}. 
+\begin{figure}[H]
+	\includegraphics[scale=0.5]{img/ex_design.png}
+	\caption{A firstlevel design matrix with fitlins}
+	\label{fig:des}
+\end{figure}
+
+First level contrasts involve only the saccade directions and specify the \texttt{horizontal\_vertical} contrast. The first level transformations are \texttt{Split}, to obtain four saccade regressors and their amplitude\footnote{without this transformation, the amplitude information of the regressors would have been lost.}, and \texttt{Convolve}, to convolve the saccade regressors with spms HRF. The following analysis level, subject and dataset, carry the contrast through with fitlins \texttt{Autocontrast} function.
+
+
+
 \end{appendices}
 
 
