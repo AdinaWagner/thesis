@@ -30,7 +30,7 @@
 \usepackage{floatrow} % Caption neben Abbildungen
 \usepackage{setspace} % ändere Zeilenabstand für Teile des Dokuments
 \usepackage{hyperref} % Links/hrefs
-% \usepackage{makecell} % dicke Linien in Tabellen
+%\usepackage{makecell} % dicke Linien in Tabellen
 %\usepackage{setspace}
 %\usepackage{minted} % might become relevant to have syntax highlighting for code
 %\usepackage{listing}% also relevant for syntax highlighting, however currently conflicts with own defined command
@@ -50,7 +50,6 @@
 			marginparsep=5mm,		%Abstand Notizrand
 			marginparwidth=20mm		%Breite Notizrand
 		}
-		
 %------------Abbildungen-----------------------------------------------
 
 \usepackage{graphicx}					%Einbinden von Bildern
@@ -78,10 +77,10 @@
 
 
 %\usepackage{scrpage2}
-\pagestyle{scrheadings}			
+\pagestyle{scrheadings}
 
-%\clearscrheadings	
-%\clearscrplain		
+%\clearscrheadings
+%\clearscrplain
 \clearscrheadfoot
 \ihead[]{\leftmark}						%setzt Chapter-Name als linke Seitenüberschrift
 \ohead[]{} 				%für sectionname \rightmark einsetzen
@@ -95,7 +94,7 @@
 
 \setlength{\unitlength}{3ex}		% Längengrundeinheit auf 3-fache Höhe von "x" setzen.
 
-% dicke Linien in Tabellen: \thickhline 
+% dicke Linien in Tabellen: \thickhline
 
 \makeatletter
 \def\thickhline{%
@@ -127,7 +126,7 @@
 \newtheorem{Ex}[Theorem]{Example}
 \def\ci{\perp\!\!\!\perp} %stochastisch unabhängig
 \newcommand{\RR}{\mathbb{R}}
-\newcommand{\Rquer}{\overline\RR} 
+\newcommand{\Rquer}{\overline\RR}
 \newcommand{\Null}{{\mathrm{Null}}}
 \newcommand{\Range}{{\mathrm{Range}}}
 \newcommand{\trace}{{\mathrm{trace}}}
@@ -176,7 +175,7 @@
 							firstinits=true,		% Vorname abgekürzt
 							maxitems=7				% maximale Anzahl an Authoren, Abkürzung et alter
 						]{biblatex}
-\renewbibmacro{in:}{} 	% unterdrücke "in:" vor dem Journal-Titel						
+\renewbibmacro{in:}{} 	% unterdrücke "in:" vor dem Journal-Titel
 %\renewcommand*{\mkbibnamelast}[1]{\textsc{#1}} 	% Autoren in Kapitälchen
 \setlength{\bibhang}{2em}		% hängender Einzug
 						
@@ -187,7 +186,7 @@
 
 % --------- Abkürzungsverzeichnis ------------------
 \usepackage{nomencl}	% Package für Abkürzungsverzeichnis
-\setlength{\nomitemsep}{-\parsep} % Zeilenabstand 
+\setlength{\nomitemsep}{-\parsep} % Zeilenabstand
 \setlength{\nomlabelwidth}{.15\hsize}	% Erklärungen bündig
 \makenomenclature
 %%% Ausführen in der Konsole
@@ -221,7 +220,7 @@
 
 \begin{huge}
 %\begin{scshape}
- 
+
 \textbf{Catching the eye}: \\
 Investigating the functional neuroanatomy of the visuospatial attention system with fMRI and eyegaze recordings during natural stimulation
 
@@ -236,7 +235,7 @@ Adina Wagner (215486) \\
 \vspace{0.3cm}
 Master of Science in Clinical Neuroscience\\
 \begin{normalsize}
-adina.wagner@t-online.de 
+adina.wagner@t-online.de
 \end{normalsize}
 
 \vspace{\fill}
@@ -263,7 +262,7 @@ February $27^{th}$, 2019
 % -------- Ende Deckblatt ----------------------
 
 % ------- Leere Seite nach dem Deckblatt -------
-%\newpage 
+%\newpage
 %\thispagestyle{empty}
 %$\phantom{.}$
 %\clearpage
@@ -335,7 +334,7 @@ $\phantom{mmmm..}$  (Adina Wagner)
 \textit{The cure for boredom is curiosity. There is no cure for curiosity.}
 
 \medskip
--- Ellen Parr 
+-- Ellen Parr
 \end{quote}
 
 
@@ -418,7 +417,7 @@ $\phantom{mmmm..}$  (Adina Wagner)
 
 %---------- Eigentliche Ausarbeitung ----------
 
-\chapter*{TODO: Abstract}
+\chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
 The frontal eye fields (FEF) are a core part of the endogenous, dorsal attention system, and a site of convergence for motor tasks in eye movements, and higher cognitive functions in visuospatial attention. [short statement of relevance - what is a gap in the literature]  [Here something about the hypothesis and the aim to use naturalistic stimulation]: something about hemispheric and attentional specificity of activation during movie watching.... \newline
@@ -459,8 +458,6 @@ The endogenous (greek \textit{endo} = within) visual attention, also termed volu
 	{\small{Definition of dorsal and ventral networks from activation data, and putative interactions. Taken from \textcite{corbetta2008reorienting}.}}
 	\label{fig:Networks}
 \end{figure}
-
-
 
 A core part of the dorsal attention system is the FEF. In humans, the FEF is located bilaterally in the rostral bank of a portion of the precentral sulcus at the caudal end of the middle frontal gyrus (see \ref{fig:FEF_reg}). Early insights about its function stem from stimulation studies with primates and were related to the FEF functions in the generation of eye-movements. These studies found an involvement of the FEF in almost all types of oculomotor events: Saccades (rapid movements of the eye between fixation points), fixations (maintenance of gaze), smooth pursuits (tracking of moving objects) and vergence movements (eye rotations necessary for bifoveated vision at differing target depths) (see \textcite{krauzlis2014eye} for an overview). The early works of Ferrier in the end of the 19th century, and later works by Bruce and colleagues (1985) reported the major involvement of the FEF in saccade generation: Low-intensity electrical stimulation of the FEF in the bank of the arcuate sulcus in monkeys elicits saccadic eye movements directed contralaterally to the stimulated hemisphere (\cite{tehovnik2000eye}). \textcite{bruce1985primate} further found a first subdivision of the FEF when they showed that saccades elicited by stimulation at a particular region have a particular direction and amplitude, independent of the orientation of the eyes. The more medial the stimulation of the primate arcuate sulcus, the larger the saccadic amplitude gets (\cite{bruce1985primate}), thus revealing a gradient of saccadic amplitudes from lateral to medial sites of the FEF. Hence, the ventrolateral portion of the FEF is generating shorter saccades, while the mediodorsal portion is generating longer saccades. 
 
@@ -538,8 +535,8 @@ There are a number of different classification algorithms available to build cla
 The GNB algorithm belongs to the family of Naive Bayes algorithms. These algorithms use a probabilistic approach to classification, utilizing the Bayes theorem to capture the relationships within input data and output label. Given some samples $x_1, \ldots, x_n$ with a number of characteristics on different features, and labels $c_1, \ldots, c_r$, naive Bayes classifiers learn a model of the joint probability, $p(x, c)$ during training. During testing, they make predictions by using Bayes theorem to calculate the probability of a label, given the feature characteristics of a sample, $p(c|x)$. Two fundamental assumptions exist for these algorithms: \newline 
 \begin{itemize}
 	\item \textit{Conditional independence}: Each feature $x_i$ is independent of every other feature $x_j$ for $j \neq i$ given the outcome $c_r$.
-	\item \textit{Equal contribution of features}:  Each feature is given the same weight for the outcome prediction. 
-\end{itemize} 
+    \item \textit{Equal contribution of features}:  Each feature is given the same weight for the outcome prediction.
+\end{itemize}
 A linear Gaussian Naive Bayes classifier further assumes the data to be distributed according to a Gaussian distribution, and it assumes the feature variance to be independent of class (i.e. $\sigma_{i, 0}^2 = \sigma_{i, 1}^2$). Given the latter assumption holds, the decision boundery between any two classes 1 and 0,
 \begin{equation}
 \prod_{i=1}^{d} P(X_i |C = 0)P(C=0) = \prod_{i=1}^{d} P(X_i |C = 1)P(C=1),
@@ -577,11 +574,11 @@ This approach holds two advantages: For one, it enables the classification of vo
 \subsection{Step 2: GLM}
 
 The subsequent GLM builds up on the sensitivity analysis during classification. To obtain insights into the stimulus features driving the activation differences between ROIs in question, the available experimental design is transformed into regressors, convolved with an HRF, and used to model the sensitivity profile. The resulting coefficients indicate the importance for each regressor (i.e. stimulus characteristic) for the distinction between ROIs. Section \ref{c1:methods} will give a comprehensive example of this approach. As the datasets are transposed prior to the classification analysis to have time points as features, in the case of the GNB, each weight corresponded to the normalized difference in mean activation of all voxels given the class at one time point. In case of for example the decision between FFA and PPA, a negative weight therefore corresponds to an overall higher PPA activation at this particular point in time. The type of stimulation present at this point in the experimental design likely contributes to the distinction between the two areas, and the magnitude of its influence will be visible in its associated beta coefficient obtained from the GLM.
-	
+
 
 \section{Methods}\label{c1:methods}
 In order to establish feasibility of the procedure and to test the generalization of the developed approach, the method was validated in a two-step procedure. As a test of plausibility, it was used on data from a standard block design for ROI localization within the studyforrest dataset. As a measure of its capabilities to generalize to naturalistic stimulation, it was subsequently used with the studyforrests' movie data, collected on the same participants. For both datasets, six functional ROI masks (FFA, PPA, OFA, EBA, LOC, early visual cortex) were available to serve as labels during classification analysis. Both validating analyses were restricted to the well-explored and functionally distinct ROIs FFA and PPA as for the wealth of literature concerned with these ROIs.  
-All code used in this analysis can be found on Github\footnote{\url{https://github.com/AdinaWagner/localizer}}. 
+All code used in this analysis can be found on Github\footnote{\url{https://github.com/AdinaWagner/localizer}}.
 
 \subsection{Analysis-specific data}
 
@@ -596,7 +593,7 @@ Data consists of the custom preprocessed localizer and avmovie datasets with the
 	\subfigure{\includegraphics[width=0.15\textwidth]{img/scramble01.png}}
 	\caption{\small{Image categories used for localization.}}
 	\label{fig:stims}
-\end{figure} 
+\end{figure}
 
 In addition to the aforementioned data, the method requires information about the experimental paradigm or the stimulation. For this purpose, for the localizer data analysis, the stimulation event files from the block-stimulation were obtained from the public repository\footnote{\url{https://github.com/psychoinformatics-de/studyforrest-data-visualrois}}. The dynamic, naturalistic nature of the movie did not permit any experimental design description, but several annotations of the movie were used instead: The location annotation by \textcite{hausler2016annotation}, providing a detailed description of a scenes' setting in different levels of abstraction as well as onset and duration information, and an automatic feature extraction using Google's Cloud Vision API via the pliers toolkit (\cite{yarkonipliers}), providing frame-wise counts of faces. 
 
@@ -768,11 +765,11 @@ Figure \ref{fig:fitlins} shows a glass brain plot of the third-level GLM results
 		\thickhline 
 		\textbf{subject}	& \textbf{min x} & \textbf{min y} & \textbf{min z} & \textbf{max x} & \textbf{max y} & \textbf{max z} & \textbf{max activation}  \\ \hline
 		1	& $60$    & $4$ & $50$ & $37$ & $-5$ & $42$ & $(42, -3, 48)$\\
-		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\			
-		3	& $42$    & $3$ & $46$ & $31$ & $-4$ & $41$ & $(38, 4, 41)$\\			
+		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		3	& $42$    & $3$ & $46$ & $31$ & $-4$ & $41$ & $(38, 4, 41)$\\
 		4 & $30$  & $2$ & $46$ & $31$ & $-4$ & $41$ & $(25, -3, 51)$ \\
 		5	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
-		6	& $43$   & $5$ & $50$ & $27$ & $-6$ & $40$ & $(28, 1, 45)$ \\ 
+		6	& $43$   & $5$ & $50$ & $27$ & $-6$ & $40$ & $(28, 1, 45)$ \\
 		9	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
 		10	& $37$   & $2$ & $58$ & $22$ & $-10$ & $43$ & $(33, -5, 48)$ \\
 		14	& $42$   & $4$ & $43$ & $22$ & $-5$ & $40$ & $(32, -1, 48)$ \\
@@ -785,11 +782,11 @@ Figure \ref{fig:fitlins} shows a glass brain plot of the third-level GLM results
 		mean & & & & & & & $(34 \pm 6, -1 \pm 3, 48 \pm 5)$\\\thickhline
 		\textbf{left} &&&&&&&\\\thickhline
 		1	& $-38$    & $0$ & $57$ & $-25$ & $-10$ & $50$ & $(-31, -6, 52)$\\
-		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\			
-		3	& $-38$    & $5$ & $46$ & $-21$ & $-3$ & $41$ & $(-30, 3, 43)$\\			
-		4 	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\ 
+		2	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
+		3	& $-38$    & $5$ & $46$ & $-21$ & $-3$ & $41$ & $(-30, 3, 43)$\\
+		4 	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
 		5	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
-		6	& $-40$   & $3$ & $50$ & $-26$ & $1$ & $43$ & $-$ \\ 
+		6	& $-40$   & $3$ & $50$ & $-26$ & $1$ & $43$ & $-$ \\
 		9	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
 		10	& $-30$   & $-3$ & $58$ & $-16$ & $-9$ & $56$ & $(-25, -4, 58)$ \\
 		14	& $-$   & $-$ & $-$ & $-$ & $-$ & $-$ & $-$ \\
@@ -850,7 +847,7 @@ For its computation, this attentional measure utilizes the scanpath information 
 	and their relation to the current stimuli are less predictable."}
 \end{quotation}
 A comprehensive overview of the method and the attention mode measure is given the following sections.
- 
+
 \section{Methods}
 The first part of this section is dedicated to the MultiMatch algorithm. It gives a comprehensive overview of how the algorithm works, and describes how it was used for the studyforrest data. The second part elaborates on the application of the ROI specificity analysis for the study of the frontal eye fields.
 
@@ -863,7 +860,7 @@ This analysis uses the custom preprocessed BOLD files from the movie experiment 
 The MultiMatch method (\cite{jarodzka2010vector}) is a promising approach of scanpath comparison. The original implementation, however, only existed as a Matlab toolbox shared upon request by the corresponding author of the respective publication (\cite{dewhurst2012depends}). This reliance on closed-source software and barriers in retrieval of the software\footnote{While acquisition of the toolbox via e-mail was prompt and complication-free, later correspondence with several of the authors was an odyssey of expired email addresses, changed affiliations and digital communication allegedly lost in the void of the Internet.} hinder the wider usage and potential improvement of the method. A publicly available, open-source implementation would instead facilitate its usage in scientific works. Therefore, the method was ported from Matlab into Python and transformed into the pip-installable module \textit{multimatch}\footnote{The module can be installed via ``pip install multimatch``. A corresponding publication (Wagner \& Hanke) in the Journal of Open Source Software (JOSS) in currently in preparation. The sourcecode can be found at github.com/AdinaWagner/multimatch.}.
 
 \subsubsection{multimatch in Python}
-The following section gives a brief overview of the general MultiMatch method. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch} in the appendix. \newline 
+The following section gives a brief overview of the general MultiMatch method. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch} in the appendix. \newline
 The method takes two n x 3 fixation vectors of two scanpaths with x-coordinates in pixel, y-coordinates in pixel, and duration of fixations as columns as its input. Based on the coordinates and durations of fixations, the scanpaths are represented as geometric vector sequences as shown in figure \ref{fig:Polar_to_cartesian}:
 
 \begin{figure}[H]
@@ -876,7 +873,7 @@ The method takes two n x 3 fixation vectors of two scanpaths with x-coordinates 
 
 To reduce complexity, the scanpaths are simplified according to angle and amplitude in an iterative procedure. Two or more saccades are grouped together if angles between two consecutive saccades are below an angular threshold \textit{TDir}, or if the amplitude of successive saccades is below a length threshold \textit{TAmp}, as long as intermediate fixations of the saccades are shorter than a duration threshold, \textit{TDur}. As such, small, locally contained saccades, and saccades in the same general direction are summed to form larger, less complex saccades. \newline
 In order to find pairings of saccade vectors to compare, the simplified scanpaths are temporally aligned. The aim is to not necessarily align two saccade vectors that constitute the same component in  their respective vector sequence, but those two vectors that are the most similar while still preserving temporal order. In this way, a stray saccade in one of the two scanpaths does not lead to an overall low similarity rating, and it is further possible to compare scanpaths of unequal length.  To do so, all possible pairings of saccades are evaluated in similarity by the vector differences between all pairings (shape): The vector differences between each element $i$ in scanpath $S1 = {u_1, u_2, \ldots, u_m}$ and each element $j$ in scanpath $S2 = {v_1, v_2, \ldots, v_n}$ are computed and stored in a matrix $M$ with dimension m x n as weights that denote similarity, with low weights corresponding to high similarity. In a next step, an adjacency matrix is build, defining the rules on which connection between matrix elements are allowed to preserve the temporal order of saccades: In order to take temporal sequence of saccades into account, connections can only be made to the right, below or below-right (green arrows in figure \ref{fig:directedgraph}). Together, matrices $M$ and the adjacency matrix constitute a matrix representation of a directed, weighted graph (figure \ref{fig:directedgraph}). Elements of the matrix are nodes, the connection rules constitute edges and the weights define the cost associated with each connection. 
-In the generic example in figure \ref{fig:directedgraph} the edge between node (1, 1) and node (1, 2) has an associated weight, or cost, of $w_2$. 
+In the generic example in figure \ref{fig:directedgraph} the edge between node (1, 1) and node (1, 2) has an associated weight, or cost, of $w_2$.
 
 
 \begin{figure}[H]
@@ -905,7 +902,7 @@ As the eye movements of participants are interindividually different and do not 
 
 \subsection{A measure of attentional modulation from multimatch}\label{section:multimatch_attention}
 A common measure of attentional modulation was computed in a two-step procedure. First, scanpath comparisons of all scanpaths from the same shot of two subjects were calculated for all possible pairs of subject. This resulted in $C_k(n) = {N\choose k} = {15\choose 2} = 105$ combinations for N = 15 subjects. These comparisons were done without any further simplification (i.e. no use of the direction, length, and duration thresholds), as even minor differences in scanpaths obtained from a movie can correspond to major differences in attended visual stimuli. In a second step, the resulting similarities for each of the five similarity dimensions, the onsets, and durations were averaged across subject comparisons, but within snippet. Thus, for each snippet longer than 4.92s five similarity measures were computed that represented the average similarity of scanpaths of all subjects on the given dimension. For further use in the functional ROI specificity analysis, the multimatch results were z-scored.
- 
+
 \subsection{ROI specificity of the FEF}\label{c3:FEF}
 
 To combine all previous efforts, in a first step, the movie groupdataset was extended by including the FEF masks generated in chapter \ref{c2}. In a next step, the multimatch measures were included as event regressors into the glm computation. The z-scored similarity per dimension was used as the 'amplitude' of the event. As for its previously robust results, the Gaussian Naive Bayes algorithm was used during classification. The reasoning behind the analysis is the following: Higher similarity values in multimatch indicate greater exogenous attentional control evoked from the movie stimulus. If this continuous attentional mode modulates the left and right FEF differentially, this should be visible in the sign of the beta coefficient. For example, if a low similarity (more endogenous control) contributes to the distinction between the left and the right FEF, the regressors should have a high beta value, indicating general importance of attentional mode in the distinction of the ROIs. In the case of the GNB classifier, the sign should further indicate which of the FEFs has a differentially higher activation at which time point, which in conjunction with the similarity value at this point in time sheds light on the question which attentional mode drives the distinction. Initially, during conceptualization of the analysis, all five similarity measures were supposed to be included. The computation of the similarity results revealed a suboptimal correlation structure within the multimatch measures, though (further explored in section \ref{sec:res_mm}). As evident in figure \ref{fig:simcor}, only a maximum of two dimensions are simultaneously mutually uncorrelated. In linear regression, multicollinearity of regressors as introduced by such high correlations is undesirable, as the resulting regression coefficients would be highly unstable (\cite{wickens2014geometry}). To prevent this, two barely correlated ($r = -.12$) dimensions were sub-selected for the analysis, duration and position.  \\
@@ -926,16 +923,16 @@ Based on the REMoDNaV output, the multimatch method was able to extract a total 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{lC{3cm}C{2cm}C{3cm}}
-		\thickhline 
+		\thickhline
 		\textbf{Variable}	& \textbf{mean} [SD] & \textbf{median}  \\ \hline
 		Vector similarity 	& $0.97$ $[0.01]$   & $0.97$  \\
-		Position similarity	& $0.88$ $[0.03]$   & $ 0.89$  \\			
-		Length similarity	& $0.96$ $[0.01]$   & $0.96$   \\			
+		Position similarity	& $0.88$ $[0.03]$   & $ 0.89$  \\
+		Length similarity	& $0.96$ $[0.01]$   & $0.96$   \\
 		Duration similarity & $0.54$ $[0.05]$   & $0.55$  \\
 		Direction similarity	& $0.72$ $[0.05]$ 	& $0.71$  \\ \thickhline
 		\caption[Scanpath similarity in the movie data]{{\small Characteristics of scanpath similarity across the movie.}}
 		\label{table:sims}
-	\end{tabular} 
+	\end{tabular}
 \end{table}
 
 
@@ -944,7 +941,7 @@ Based on the REMoDNaV output, the multimatch method was able to extract a total 
 %		\begin{tabular}{C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}C{2cm}}
 %			\thickhline
 %			& \textbf{Vector} & \textbf{Direction} & \textbf{Length} & \textbf{Position} & \textbf{Duration}  \\
-%			\textbf{Vector} & 	- & $0.12$ & $0.97$ & $0.74$ & $-0.05$ \\ 
+%			\textbf{Vector} & 	- & $0.12$ & $0.97$ & $0.74$ & $-0.05$ \\
 %			\textbf{Direction} & **  & - & $0.15$ & $0.04$ & $0.72$ \\
 %			\textbf{Length} & *** & *** & - & $0.72$ & $0.04$ \\
 %			\textbf{Position} & *** & n.s.	 & *** & - & $-0.12$ \\
@@ -987,7 +984,7 @@ Figure \ref{fig:tc_FEF} shows the GLM results for the time course of sensitiviti
 \begin{figure}[H]
 	\includegraphics[scale=0.3]{img/tc_lFEF_rFEF.png}
 	\caption[Functional specificity of left and right FEF]{{\small Functional specificity of left and right FEF during run 1. Black line: Sensitivities derived from classification with a linear GNB. Red line: GLM fit from regressing sensitivities onto the multimatch results. Colors correspond to the regressors, widths indicate the scanpath length. Beta values are given in brackets.}}
-	\label{fig:tc_FEF}	
+	\label{fig:tc_FEF}
 \end{figure}
 
 
@@ -1027,21 +1024,21 @@ Beyond its use in this mere Masters thesis, the work presented here has also led
 \printbibliography[	heading=bibintoc,			% oder bibnumbered
 										title={Bibliography},
 										nottype=online]
-%									]	
-\nocite{*} % auch nicht zitierte Werke ausgeben									
+%									]
+\nocite{*} % auch nicht zitierte Werke ausgeben
 
 
 %--------- alternatives Literaturverzeichnis -------
 % so kann man das Literaturverzeichnis direkt erzeugen
 % \begin{thebibliography}{99}
 % \addcontentsline{toc}{chapter}{Literaturverzeichnis}
-% \bibitem{nelsen}Nelsen, Roger B.: An Introduction to Copulas, Springer, Portland, 2006. 																											
-% \bibitem{lindner}	Lindner,	Alexander:	Skript zur Wahrscheinlichkeitstheorie SoSe 2014,	Braunschweig,	2014.																																											
+% \bibitem{nelsen}Nelsen, Roger B.: An Introduction to Copulas, Springer, Portland, 2006.
+% \bibitem{lindner}	Lindner,	Alexander:	Skript zur Wahrscheinlichkeitstheorie SoSe 2014,	Braunschweig,	2014.
 % \end{thebibliography}
 
 
 \begin{appendices}
-	
+
 \chapter*{Additional tables and graphics}\label{A:addons}
 
 As for a subsequent descriptive investigation of the stimulus contents contributing to a FFA-PPA distinction, figure \ref{fig:scenes} shows the middle frames of scenes consistently, i.e. in all dataset sizes and classifier choices, associated with a high positive or high negative beta weight with overlaid eye gazes.
@@ -1053,7 +1050,7 @@ An in-depth investigation of stimulus properties was not within the scope of thi
 	\caption[Descriptive analysis of diagnostic scenes]{\small{Middle frame of scenes consistently associated with a high positive (top frame) or negative (bottom frame) beta value with overlayed eye-gaze (circles).}}
 	\label{fig:scenes}
 \end{figure}
-	
+
 
 \chapter*{Code}\label{A:code}
 
@@ -1096,11 +1093,11 @@ The following pages contain the pseudocode for the algorithms in chapter \ref{c3
 	\begin{small}
 		\SetKwInOut{Input}{Input}
 		\SetKwInOut{Output}{Output}
-		
+
 		\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
 		\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0, 1]}
 		\For{\textbf{each} fixvector}
-		{ 
+		{
 			\For{\textbf{each} fixation \textit{f} in fixvector}
 			{
 				fixation$_x$, fixation$_y$, fixation$_{dur}$ = $x, y, duration$ \;
@@ -1124,9 +1121,9 @@ The following pages contain the pseudocode for the algorithms in chapter \ref{c3
 			calculate M: Matrix of saccade length differences between each $i \in S1$ and  $j \in S2$\;
 			create a directed graph with elements of M as weights $w_1, \ldots, w_i$\;
 			align scanpaths with $min(\sum w)$ from $M(0,0)$ to $M(n,m)$ via Dijkstra algorithm\;
-			
+
 			add aligned scanpath to set of aligned scanpaths \;
-			
+
 			\For{\textbf{each} pair($u_i,v_i$) in aligned scanpaths}
 			{
 				angular difference = angle($u_i, v_1$)\;
@@ -1186,11 +1183,5 @@ The following pages contain the pseudocode for the algorithms in chapter \ref{c3
 	\end{small}
 \end{algorithm}
 
-
-
 \end{appendices}
-
-
-
-
 \end{document}
