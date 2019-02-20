@@ -581,7 +581,7 @@ The subsequent GLM builds up on the sensitivity analysis during classification. 
 
 \section{Methods}\label{c1:methods}
 In order to establish feasibility of the procedure and to test the generalization of the developed approach, the method was validated in a two-step procedure. As a test of plausibility, it was used on data from a standard block design for ROI localization within the studyforrest dataset. As a measure of its capabilities to generalize to naturalistic stimulation, it was subsequently used with the studyforrests' movie data, collected on the same participants. For both datasets, six functional ROI masks (FFA, PPA, OFA, EBA, LOC, early visual cortex) were available to serve as labels during classification analysis. Both validating analyses were restricted to the well-explored and functionally distinct ROIs FFA and PPA as for the wealth of literature concerned with these ROIs.  
-All code used in this analysis can be found on Github\footnote{https://github.com/AdinaWagner/localizer}. 
+All code used in this analysis can be found on Github\footnote{\url{https://github.com/AdinaWagner/localizer}}. 
 
 \subsection{Analysis-specific data}
 
@@ -706,12 +706,12 @@ The envisioned localization analysis required some additional software. For a cl
 
 \subsection{Analysis-specific data}
 The localization of the FEF uses the custom preprocessed BOLD data from the movie experiment (see section \ref{section:generalmethods}) together with the eye tracking data that were obtained simultaneously. 
-In addition, several confounds were included in the analysis: For one, the motion parameters derived during motion correction and distributed along in the studyforrest publication as mcparams.txt files. Secondly, unpublished stimulus confounds consisting of computations of the framewise root mean square power (RMS) of the audio track, the left-right difference of the RMS (lrdiff), and the perceptual difference between frames (pd). The latter confounds were used to explain potential variance in BOLD data introduced by stimulus features irrelevant for the current research question. All code for this analysis can be found on Github\footnote{https://github.com/AdinaWagner/BIDSsacc}.
+In addition, several confounds were included in the analysis: For one, the motion parameters derived during motion correction and distributed along in the studyforrest publication as mcparams.txt files. Secondly, unpublished stimulus confounds consisting of computations of the framewise root mean square power (RMS) of the audio track, the left-right difference of the RMS (lrdiff), and the perceptual difference between frames (pd). The latter confounds were used to explain potential variance in BOLD data introduced by stimulus features irrelevant for the current research question. All code for this analysis can be found on Github\footnote{\url{https://github.com/AdinaWagner/BIDSsacc}}.
 
 
 \subsection{Classification of eye events with REMoDNaV}\label{c2:remodnav}
 
-In order to extract all saccadic eyemovements, the eye-tracking data was classified into different eye movements. For this, based on an adaptive, velocity-based algorithm proposed by \textcite{nystrom2010adaptive}, \textcite{dar2019} implemented a data-driven algorithm for robust eye movement detection for natural viewing (REMoDNaV) in Python\footnote{The sourcecode can be found at github.com/psychoinformatics-de/remodnav. All results of this algorithm will be made publicly available after publication at https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels}. The algorithm categorizes the raw data into the eye movement categories saccades, fixations, smooth pursuits and post-saccadic oscillations, and disregards any unclassifiable data (such as blinks). The eye events are reported together with their start- and end coordinates, their onsets and duration in seconds, their velocity and the average pupil size.
+In order to extract all saccadic eyemovements, the eye-tracking data was classified into different types of eye movements. For this, based on an adaptive, velocity-based algorithm proposed by \textcite{nystrom2010adaptive}, \textcite{dar2019} implemented a data-driven algorithm for robust eye movement detection for natural viewing (REMoDNaV) in Python\footnote{The sourcecode can be found at github.com/psychoinformatics-de/remodnav. All results of this algorithm will be made publicly available after publication at \url{https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels}}. The algorithm categorizes the raw data into the eye movement categories saccades, fixations, smooth pursuits and post-saccadic oscillations, and disregards any unclassifiable data (such as blinks). The eye events are reported together with their start- and end coordinates, their onsets and duration in seconds, their velocity and the average pupil size.
 
 \subsection{FEF localization with saccadic eye movements and fitlins}\label{c2:fitlins}
 Subject-specific localization of the frontal eye fields is performed based on each subjects saccadic eye movements throughout the movie. For the extraction of saccadic eye events, the REMoDNaV results were filtered to include only saccades. For the computation of event files following the BIDS standard (\cite{gorgolewski2016brain}), the Cartesian coordinates of the saccades were transformed into Polar coordinates (angle and length, a graphic explanation of this procedure can be found in figure \ref{fig:Polar_to_cartesian}, B). Based on their angle, saccades were classed into event types describing 12 different orientations in the visual field. Four of these quadrants corresponding to 30$^\circ$ around the horizontal and vertical axis (see figure \ref{fig:saccs}) were sub-selected to be used for localization, and the saccades onsets, durations and amplitudes were extracted from the REMoDNaV output. The resulting event file per run hence contained the columns onset, duration, amplitude and trial\_type (containing four saccade directions as strings 'UP', 'DOWN', 'LEFT', 'RIGHT').
@@ -1204,7 +1204,15 @@ An in depth investigation of stimulus properties was not within the scope of thi
 \end{figure}
 	
 
-\chapter{Code}\label{A:code}
+\chapter*{Code}\label{A:code}
+
+This part of the appendices contains the json model specification of the GLM implemented with fitlins, and an examplary design matrix. Additionally, it contains the multimatch algorithm and the studyforrest specific functions of multimatch as concise pseudocode. For all code used in any analysis or preprocessing steps, please refer to the respective Github repositories:
+\begin{itemize}
+	\item \url{https://github.com/AdinaWagner/BIDSsacc}
+	\item \url{https://github.com/AdinaWagner/localizer}
+	\item \url{https://github.com/AdinaWagner/MultiMatch}
+	\item \url{https://github.com/AdinaWagner/multimatch\_forrest}
+\end{itemize}
 
 \begin{figure} [H]
 	\includegraphics[scale = 0.7]{img/json_fitlins.png}\hfill
