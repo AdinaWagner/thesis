@@ -841,29 +841,29 @@ Following this reasoning, the comparison of scanpaths of different subjects cons
 In recent years, many approaches for scanpath comparisons were developed and implemented in various software solutions. Among them are methods based on (semantic) areas of interest (AOIs) such as the \textit{Levenshtein distance} (\cite{levenshtein1966binary}), or an improved generalization of it in \textit{ScanMatch} (\cite{cristino2010scanmatch}), methods based on attention maps such as \textit{AMAP} (\cite{ouerhani2004empirical}), methods employing machine learning algorithms such as \textit{SMAC with HMM} (\cite{coutrot2018scanpath}), or methods based on vector-geometry such as \textit{MultiMatch} (\cite{jarodzka2010vector}). The latter method is a multidimensional approach of scanpath comparison on five different measures similarity, \textbf{shape}, \textbf{length}, \textbf{position}, \textbf{direction}, and \textbf{fixation durations}. According to \textcite{jarodzka2010vector}, it has been developed specifically to overcome known shortcomings of many previous methods that limit their informative value. These shortcomings amount to a loss of information due to the use of coarse aggregate measures of eye movement, susceptibility of the results of a comparison to influential data points due to arbitrary classifications, or both. The main reason it overcomes these deficiencies is that it does not rely on AOIs, but the precise locations in pixels in two-dimensional space, which leads to a finer level of detail in scanpath comparison. \newline A number of studies used the method in evaluations or applications of scanpath comparisons. In evaluations with simulated and actual eye-tracking data, the method was found to be robust against spatial noise, sensitive to position, order and fixation duration, and outperformed the ScanMatch method in AOI border cases (\cite{dewhurst2012depends}). In a comprehensive test of eleven common scanpath comparison methods on static real-life photographies, MultiMatch was found to be robust in inter- and intra-subject comparisons of scanpaths (\cite{anderson2015comparison}). As it was also used to study mental activity involved in perceiving visual input by others (\cite{french2017evaluation}) already, the MultiMatch algortihm was employed in the current thesis to derive a measure for attentional processes of participants during movie watching. \newline
 For its computation, this attentional measure utilizes the scanpath information of all participants to obtain a common measure of attentional modulation of the stimulus in the sample. It follows a reasoning conceived by \textcite{baumgartner}: The more similar all participants scanpaths are for any given scene of a movie stimulus, the more exogenous control is exercised by this movie segment. Less exogenous control, i.e. lower scanpath similarity, would in turn correspond to a more endogenous attention mode. In a study of the contribution of visual features in dynamic scenes to gaze clustering, \textcite{mital2011} followed the same thought, and summarized it like this:
 \begin{quotation}
-	Being involuntary, exogenous control
+	{\footnotesize "Being involuntary, exogenous control
 	should be consistent across all viewers leading to a high
 	degree of coordination in where and when multiple viewers
 	attend given the same stimuli. By comparison, endogenous
 	control should result in less coordination of attention across
 	individuals as the internal cognitive states of the individual
-	and their relation to the current stimuli are less predictable.
-\end{quotation}.
+	and their relation to the current stimuli are less predictable."}
+\end{quotation}
 A comprehensive overview of the method and the attention mode measure is given the following sections.
  
 \section{Methods}
-The first part of this section is dedicated to the MultiMatch algorithm. The second part elaborates on the application of the ROI specificity analysis for the study of the frontal eye fields.
-\textbf{more more more more more...}
+The first part of this section is dedicated to the MultiMatch algorithm. It gives a comprehensive overview of how the algorithm works, and describes how it was used for the studyforrest data. The second part elaborates on the application of the ROI specificity analysis for the study of the frontal eye fields.
+
 \subsection{Analysis-specific data}
 
-This analysis uses the custom preprocessed BOLD files from the movie experiment (see section \ref{section:generalmethods}), the eye tracking classification by REMoDNaV (see section \ref{c2:remodnav}), the FEF ROI masks derived in the chapter \ref{c2}, and the annotation confounds by \textcite{hausler2016annotation}.
+This analysis uses the custom preprocessed BOLD files from the movie experiment (see section \ref{section:generalmethods}), the eye tracking classification by REMoDNaV (see section \ref{c2:remodnav}), the FEF ROI masks derived in chapter \ref{c2}, and the annotation confounds by \textcite{hausler2016annotation}.
 
 \subsection{MultiMatch}\label{section:multimatch}
 
 The MultiMatch method (\cite{jarodzka2010vector}) is a promising approach of scanpath comparison. The original implementation, however, only existed as a Matlab toolbox shared upon request by the corresponding author of the respective publication (\cite{dewhurst2012depends}). This reliance on closed-source software and barriers in retrieval of the software\footnote{While acquisition of the toolbox via e-mail was prompt and complication-free, later correspondence with several of the authors was an odyssey of expired email addresses, changed affiliations and digital communication allegedly lost in the void of the Internet.} hinder the wider usage and potential improvement of the method. A publicly available, open-source implementation would instead facilitate its usage in scientific works. Therefore, the method was ported from Matlab into Python and transformed into the pip-installable module \textit{multimatch}\footnote{The module can be installed via ``pip install multimatch``. A corresponding publication (Wagner \& Hanke) in the Journal of Open Source Software (JOSS) in currently in preparation. The sourcecode can be found at github.com/AdinaWagner/multimatch.}.
 
 \subsubsection{multimatch in Python}
-The following section gives a brief overview of the general MultiMatch method. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch}. \newline 
+The following section gives a brief overview of the general MultiMatch method. An overview in pseudocode is outlined in algorithm \ref{algo:multimatch} in the appendix. \newline 
 The method takes two n x 3 fixation vectors of two scanpaths with x-coordinates in pixel, y-coordinates in pixel, and duration of fixations as columns as its input. Based on the coordinates and durations of fixations, the scanpaths are represented as geometric vector sequences as shown in figure \ref{fig:Polar_to_cartesian}:
 
 \begin{figure}[H]
@@ -879,10 +879,10 @@ In order to find pairings of saccade vectors to compare, the simplified scanpath
 In the generic example in figure \ref{fig:directedgraph} the edge between node (1, 1) and node (1, 2) has an associated weight, or cost, of $w_2$. 
 
 
-\begin{figure}
+\begin{figure}[H]
 	\includegraphics[scale=0.4]{img/weightedgraph.png}
 	\caption[Scanpath alignment as a shortest-path problem.]
-	{\small{The elements of two hypothetical scanpaths (left) are used to compute vector differences between all possible pairings as weights $w_1, \ldots, w_6$ in a matrix $M$ (right). Green arrows indicate connection rules defined by an adjacency matrix. Taken from \textcite{jarodzka2010vector}}}
+	{\small{The elements of two hypothetical scanpaths (left) are used to compute vector differences between all possible pairings as weights $w_1, \ldots, w_6$ in a matrix $M$ (right). Green arrows indicate connection rules defined by an adjacency matrix. Taken from \textcite{jarodzka2010vector}.}}
 	\label{fig:directedgraph}
 \end{figure}
 
