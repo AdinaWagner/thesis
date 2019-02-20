@@ -895,114 +895,27 @@ A Dijkstra algorithm (\cite{dijkstra1959note}) is used to find the shortest path
 \end{figure}
 
 
-\begin{algorithm}[H]
-	\begin{small}
-		\SetKwInOut{Input}{Input}
-		\SetKwInOut{Output}{Output}
-		
-		\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
-		\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0, 1]}
-		\For{\textbf{each} fixvector}
-		{ 
-			\For{\textbf{each} fixation \textit{f} in fixvector}
-			{
-				fixation$_x$, fixation$_y$, fixation$_{dur}$ = $x, y, duration$ \;
-				saccade$_{x(y)}$ = fixation$_{x(y)}$$_{f}$ $-$ fixation$_{x(y)}$$_{f+1}$ \;
-				saccade$_{lenx(leny)}$ = fixation$_{x(y)}$ $-$ saccade$_{x(y)}$\;
-				saccade$_{rho}$, saccade$_{theta}$ = cartesian2polar(saccade$_{lenx}$, saccade$_{leny})$ \;
-				\textbf{eyedata} = [fixation$_x$, fixation$_y$, fixation$_{dur}$, saccade$_x$, saccade$_y$, \newline saccade$_{lenx}$, saccade$_{leny}$, saccade$_{rho}$, saccade$_{theta}$]
-			}
-			\While{simplification is still possible}
-			{
-				\For{\textbf{each} saccade i in eyedata}
-				{
-					\If{angle(saccade$_{i}$, saccade$_{i+1}) < TDir$ \bfseries{and} $fixation_{dur} < TDur$}
-					{combine saccades}
-					\If{saccade$_{rho}$\space$_i$, saccade$_{rho}$\space$_{i+1}$) < TAmp \textbf{and} fixation$_{dur}$ $<$ TDur}{combine saccades}
-				}
-			}
-		}
-		\For{\textbf{each} pair of (simplified) scanpaths $S1 = \{u_1, \ldots, u_m\}, S2 = \{v_1, \ldots, v_n\}$}
-		{
-			calculate M: Matrix of saccade length differences between each $i \in S1$ and  $j \in S2$\;
-			create a directed graph with elements of M as weights $w_1, \ldots, w_i$\;
-			align scanpaths with $min(\sum w)$ from $M(0,0)$ to $M(n,m)$ via Dijkstra algorithm\;
-			
-			add aligned scanpath to set of aligned scanpaths \;
-			
-			\For{\textbf{each} pair($u_i,v_i$) in aligned scanpaths}
-			{
-				angular difference = angle($u_i, v_1$)\;
-				position difference = $\sqrt{(x(u_i) - x(v_i))^2 + (y(u_i) - y(v_i))^2}$ \;
-				vector difference = $\sqrt{(len\_x(u_i) - len\_x(v_i))^2 + (len\_y(u_i) - len\_y(v_i))^2}$\;
-				length difference = $abs(rho(u_i) - rho(v_i))$\;
-				duration difference = $abs(dur(u_i)-dur(v_i))$ \;
-			}
-			normalize angular difference by $\pi$\;
-			normalize vector difference by 2x the screen diagonal (max theoretical distance)\;
-			normalize length difference, position difference by the screen diagonal\;
-			normalize duration difference by maximal duration difference in the scanpaths\;
-			\textbf{sim\_measures} = median of each similarity measure\;
-			\textbf{return} \textbf{sim\_measures}
-		}
-		\caption{multimatch}
-		\label{algo:multimatch}
-	\end{small}
-\end{algorithm}
 
 \subsubsection{multimatch usage in the studyforrest dataset}\label{sec:multimatch_forrest}
 The use of the algorithm with the eye tracking data as provided in the REMoDNaV outputs required the implementation of some additional functions.
-The extraction of eye events further included several considerations based on findings and known caveats in eye-tracking and attention research with dynamic scenes. The following section briefly describes these findings and the additional functions to accommodate them. For the main part, those functions are concerned with automatic scanpath extraction from the approximately 15 minutes spanning and several eye-movement categories containing eye-tracking event files by user-defined rules. In general, the functions ingest REMoDNaV result files as input, and output the fixation vector structure required by the MultiMatch algorithm. An overview in pseudocode can be found in algorithm \ref{algo:multimatch_forrest}. \newline
+The extraction of eye events further included several considerations based on findings and known caveats in eye-tracking and attention research with dynamic scenes. The following section briefly describes these findings and the additional functions to accommodate them. For the main part, those functions are concerned with automatic scanpath extraction from the approximately 15 minutes spanning and several eye-movement categories containing eye-tracking event files by user-defined rules. In general, the functions ingest REMoDNaV result files as input, and output the fixation vector structure required by the MultiMatch algorithm. An overview in pseudocode can be found in algorithm \ref{algo:multimatch_forrest} in the appendix. \newline
 First, as the stimulus was dynamic, the start and end of pursuit movements were relabeled as fixations. This was done to accommodate the fact that most areas of interest in a movie are in motion. Focusing on the running young Forrest for example would likely appear as a slow pursuit in the eye event data. Disregarding such pursuits would lead to a large loss in data and variability, and as such, they were included via relabeling. \newline A different consideration concerned the selection of scanpaths from the approximately 15 minute long segments, as they are unsuitably long to derive a continuous attention measure or do a scanpath comparison on. It has been shown that subjects gazes have a bias towards the center in Hollywood movies (\cite{tseng2009quantifying}). This bias can at least in part be traced back to a strong center bias directly after cuts in dynamic scenes. \textcite{carmi2006visual} found the highest degree of exogenous attentional control (i.e. maximal inter-observer similarity in gaze as recorded via eye-tracking) in a moving collage of 50 heterogeneous video clips directly after cuts to new, semantically unrelated scenes. Without isolating cuts it therefore can not be disentangled whether the contribution of visual features of the movie on scanpaths stems from exogenous control from a movie element or from the sudden occurrence of a new scene after a cut. To not introduce such a confound in the similarity measures, the data was cut into segments that did not contain cuts to different scenes, relying on the location annotation by \textcite{hausler2016annotation}. The location annotation contained a detailed description of the timing of each of the 870 \textit{shots }of the movie (defined as a movie sequence between two cuts) as well as information about the depicted location in different levels of abstraction. In a first step, all consecutive short shots to the same locale (e.g. two consecutive, short movie shots in Forrest's bedroom, without any cuts containing semantically unrelated content) were grouped together. In this analysis, a “short” shot was defined as being shorter than the median length of 4.92s. This procedure increased the median length of shots from 4.92s to 7.019s. These elongated shots are henceforth referred to as \textit{snippets}. In a next step, within the scanpath comparison, the onset and offset times of the resulting snippets were extracted for every snippet longer than 4.92s. To not introduce an influence of snippet length into the similarity results, as longer movie snippets will be more likely to be less similar than short ones, scanpath lengths were standardized to approximately 4.92s seconds (the original median length). To further evade any problems associated with the center bias, scanpaths were extracted from the end of the snippet: The last oculomotor event within the range of the snippet marked the end of a scanpath. As such, scanpaths began maximally distant to the snippet onset.
-As the eye movements of participants are interindividually different and do not correspond exactly to snippet timing, the precise onsets and resulting exact durations were computed as well, and stored for later use as regressors. The results of this computation can be found on Github\footnote{https://github.com/AdinaWagner/multimatch\_forrest} as well.\newline
+As the eye movements of participants are interindividually different and do not correspond exactly to snippet timing, the precise onsets and resulting exact durations were computed as well, and stored for later use as regressors. The results of this computation can be found on Github\footnote{\url{https://github.com/AdinaWagner/multimatch\_forrest}}.\newline
 \medskip
-
-\begin{algorithm}[H]
-	\begin{small}
-		\SetKwInOut{Input}{Input}
-		\SetKwInOut{Output}{Output}
-		
-		\Input{REMoDNaV eye movement datafiles per run, movie location annotation per run, desired length to elongate shots to \textit{ldur}, desired scanpath length \textit{dur}}
-		\Output{One n x 3 fixation vector (x, y, duration) for any snippet longer than $dur$}
-		{
-			\If{$event_{row}$ = pursuit}
-			{
-				regard start and end points of pursuit as fixation
-			}
-		}
-		\For{\textbf{each} row in REMoDNaV datafile}
-		{
-			\If{$event_{row}$ = fixation}{
-				extract x-, y-coordinate, duration}
-			\If{x, y < 0 or x > 1280 or y < 720}{discard as out-of-bound gaze}
-		}
-		\For{\textbf{each} row in annotation}
-		{
-			\If{($locale_{row} = locale_{row+1}$) and ($duration_{row}, duration_{row+1} < ldur$)}
-			{combine to one shot}
-		}
-		\For{\textbf{each} row in annotation}
-		{
-			\If{$duration_{row}$ > dur)}
-			{extract shotonset and offset time}
-		}
-		\For{ \textbf{each} i in length(onset)}
-		{fixvector$_i$ = REMoDNaV[REMoDNaV$_{onset} > onset_i$; REMoDNaV$_{onset}$ < offset$_i$]
-		}
-		return $\{$fixvector$_1$, \ldots, fixvector$_i$$\}$, onsets, durations
-		\caption{The studyforrest specific functions of multimatch}
-		\label{algo:multimatch_forrest}
-	\end{small}
-\end{algorithm}
 
 \subsection{A measure of attentional modulation from multimatch}\label{section:multimatch_attention}
 A common measure of attentional modulation was computed in a two-step procedure. First, scanpath comparisons of all scanpaths from the same shot of two subjects were calculated for all possible pairs of subject. This resulted in $C_k(n) = {N\choose k} = {15\choose 2} = 105$ combinations for N = 15 subjects. These comparisons were done without any further simplification (i.e. no use of the direction, length, and duration thresholds), as even minor differences in scanpaths obtained from a movie can correspond to major differences in attended visual stimuli. In a second step, the resulting similarities for each of the five similarity dimensions, the onsets, and durations were averaged across subject comparisons, but within snippet. Thus, for each snippet longer than 4.92s five similarity measures were computed that represented the average similarity of scanpaths of all subjects on the given dimension. For further use in the functional ROI specificity analysis, the multimatch results were z-scored.
  
 \subsection{ROI specificity of the FEF}\label{c3:FEF}
 
-To combine all previous efforts, in a first step, the movie groupdataset was extended by including the FEF masks generated in chapter \ref{c2}. In a next step, the multimatch measures were included as event regressors into the glm computation. The z-scored similarity per dimension was used as the 'amplitude' of the event. As for its previously robust results, the Gaussian Naive Bayes algorithm was used during classification. The reasoning behind the analysis is the following: Higher similarity values in multimatch indicate greater exogenous attentional control evoked from the movie stimulus. If this continuous attentional mode modulates the left and right FEF differentially, this should be visible in the sign of the beta coefficient. \textbf{combine this with the hyptothesis of chapter 1} Initially, during conceptualization of the analysis, all five similarity measures were supposed to be included. The computation of the similarity results revealed a suboptimal correlation structure within the multimatch measures, though (further explored in section \ref{sec:res_mm}). As evident in figure \ref{fig:dist_hist}(c), only a maximum of two dimensions are simultaneously mutually uncorrelated. In linear regression, multicollinearity of regressors as introduced by such high correlations is undesirable, as the resulting regression coefficients would be highly unstable (\cite{wickens2014geometry}). To prevent this, two barely correlated ($r = -.12$) dimensions were sub-selected for the analysis, duration and position.  \\
-\textbf{maybe put this into the discussion?}The position dimension indicates the similarity with regard to points of interest in the movie: Do participants fixate the same parts of the screen? The duration dimensions on the other hand may be more indicative of employed exploration strategies: Do participants fixate points of interest similarly long?
+To combine all previous efforts, in a first step, the movie groupdataset was extended by including the FEF masks generated in chapter \ref{c2}. In a next step, the multimatch measures were included as event regressors into the glm computation. The z-scored similarity per dimension was used as the 'amplitude' of the event. As for its previously robust results, the Gaussian Naive Bayes algorithm was used during classification. The reasoning behind the analysis is the following: Higher similarity values in multimatch indicate greater exogenous attentional control evoked from the movie stimulus. If this continuous attentional mode modulates the left and right FEF differentially, this should be visible in the sign of the beta coefficient. For example, if a low similarity (more endogenous control) contributes to the distinction between the left and the right FEF, the regressors should have a high beta value, indicating general importance of attentional mode in the distinction of the ROIs. In the case of the GNB classifier, the sign should further indicate which of the FEFs has a differentially higher activation at which time point, which in conjunction with the similarity value at this point in time sheds light on the question which attentional mode drives the distinction. Initially, during conceptualization of the analysis, all five similarity measures were supposed to be included. The computation of the similarity results revealed a suboptimal correlation structure within the multimatch measures, though (further explored in section \ref{sec:res_mm}). As evident in figure \ref{fig:simcor}, only a maximum of two dimensions are simultaneously mutually uncorrelated. In linear regression, multicollinearity of regressors as introduced by such high correlations is undesirable, as the resulting regression coefficients would be highly unstable (\cite{wickens2014geometry}). To prevent this, two barely correlated ($r = -.12$) dimensions were sub-selected for the analysis, duration and position.  \\
+The position dimension indicates the similarity with regard to points of interest in the movie: Do participants fixate the same parts of the screen (in the same temporal sequence)? The duration dimensions on the other hand may be more indicative of employed exploration strategies: Do participants dwell similarly long at points of interest?
 
+\begin{figure}
+	\includegraphics[scale=0.5]{img/sim_corr_v2.png}
+	\caption[Correlation structure of multimatch measures]{{\small Correlation structure of the resulting multimatch measures.}}
+	\label{fig:simcor}
+\end{figure}
 
 \section{Results}
 
@@ -1229,6 +1142,110 @@ The model specified for fitlins follows the BIDS Extension Proposal 002 concerni
 \end{figure}
 
 First level contrasts involve only the saccade directions and specify the \texttt{horizontal\_vertical} contrast. The first level transformations are \texttt{Split}, to obtain four saccade regressors and their amplitude\footnote{without this transformation, the amplitude information of the regressors would have been lost.}, and \texttt{Convolve}, to convolve the saccade regressors with spms HRF. The following analysis level, subject and dataset, carry the contrast through with fitlins \texttt{Autocontrast} function.
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+The following pages contain the pseudocode for the algorithms in chapter \ref{c3}. \\
+
+
+\begin{algorithm}[H]
+	\begin{small}
+		\SetKwInOut{Input}{Input}
+		\SetKwInOut{Output}{Output}
+		
+		\Input{nx3 fixation vectors (x, y, duration), simplification thresholds $T_{Amp}$, $T_{Dir}$, $T_{Dur}$}
+		\Output{eventfile: onset of scanpath, duration, and five similarity measures range [0, 1]}
+		\For{\textbf{each} fixvector}
+		{ 
+			\For{\textbf{each} fixation \textit{f} in fixvector}
+			{
+				fixation$_x$, fixation$_y$, fixation$_{dur}$ = $x, y, duration$ \;
+				saccade$_{x(y)}$ = fixation$_{x(y)}$$_{f}$ $-$ fixation$_{x(y)}$$_{f+1}$ \;
+				saccade$_{lenx(leny)}$ = fixation$_{x(y)}$ $-$ saccade$_{x(y)}$\;
+				saccade$_{rho}$, saccade$_{theta}$ = cartesian2polar(saccade$_{lenx}$, saccade$_{leny})$ \;
+				\textbf{eyedata} = [fixation$_x$, fixation$_y$, fixation$_{dur}$, saccade$_x$, saccade$_y$, \newline saccade$_{lenx}$, saccade$_{leny}$, saccade$_{rho}$, saccade$_{theta}$]
+			}
+			\While{simplification is still possible}
+			{
+				\For{\textbf{each} saccade i in eyedata}
+				{
+					\If{angle(saccade$_{i}$, saccade$_{i+1}) < TDir$ \bfseries{and} $fixation_{dur} < TDur$}
+					{combine saccades}
+					\If{saccade$_{rho}$\space$_i$, saccade$_{rho}$\space$_{i+1}$) < TAmp \textbf{and} fixation$_{dur}$ $<$ TDur}{combine saccades}
+				}
+			}
+		}
+		\For{\textbf{each} pair of (simplified) scanpaths $S1 = \{u_1, \ldots, u_m\}, S2 = \{v_1, \ldots, v_n\}$}
+		{
+			calculate M: Matrix of saccade length differences between each $i \in S1$ and  $j \in S2$\;
+			create a directed graph with elements of M as weights $w_1, \ldots, w_i$\;
+			align scanpaths with $min(\sum w)$ from $M(0,0)$ to $M(n,m)$ via Dijkstra algorithm\;
+			
+			add aligned scanpath to set of aligned scanpaths \;
+			
+			\For{\textbf{each} pair($u_i,v_i$) in aligned scanpaths}
+			{
+				angular difference = angle($u_i, v_1$)\;
+				position difference = $\sqrt{(x(u_i) - x(v_i))^2 + (y(u_i) - y(v_i))^2}$ \;
+				vector difference = $\sqrt{(len\_x(u_i) - len\_x(v_i))^2 + (len\_y(u_i) - len\_y(v_i))^2}$\;
+				length difference = $abs(rho(u_i) - rho(v_i))$\;
+				duration difference = $abs(dur(u_i)-dur(v_i))$ \;
+			}
+			normalize angular difference by $\pi$\;
+			normalize vector difference by 2x the screen diagonal (max theoretical distance)\;
+			normalize length difference, position difference by the screen diagonal\;
+			normalize duration difference by maximal duration difference in the scanpaths\;
+			\textbf{sim\_measures} = median of each similarity measure\;
+			\textbf{return} \textbf{sim\_measures}
+		}
+		\caption{The multimatch algorithm}
+		\label{algo:multimatch}
+	\end{small}
+\end{algorithm}
+
+\pagebreak
+
+\begin{algorithm}[H]
+	\begin{small}
+		\SetKwInOut{Input}{Input}
+		\SetKwInOut{Output}{Output}
+		\Input{REMoDNaV eye movement datafiles per run, movie location annotation per run, desired length to elongate shots to \textit{ldur}, desired scanpath length \textit{dur}}
+		\Output{One n x 3 fixation vector (x, y, duration) for any snippet longer than $dur$}
+		{
+			\If{$event_{row}$ = pursuit}
+			{
+				regard start and end points of pursuit as fixation
+			}
+		}
+		\For{\textbf{each} row in REMoDNaV datafile}
+		{
+			\If{$event_{row}$ = fixation}{
+				extract x-, y-coordinate, duration}
+			\If{x, y < 0 or x > 1280 or y < 720}{discard as out-of-bound gaze}
+		}
+		\For{\textbf{each} row in annotation}
+		{
+			\If{($locale_{row} = locale_{row+1}$) and ($duration_{row}, duration_{row+1} < ldur$)}
+			{combine to one shot}
+		}
+		\For{\textbf{each} row in annotation}
+		{
+			\If{$duration_{row}$ > dur)}
+			{extract shotonset and offset time}
+		}
+		\For{ \textbf{each} i in length(onset)}
+		{fixvector$_i$ = REMoDNaV[REMoDNaV$_{onset} > onset_i$; REMoDNaV$_{onset}$ < offset$_i$]
+		}
+		return $\{$fixvector$_1$, \ldots, fixvector$_i$$\}$, onsets, durations
+		\caption{The studyforrest specific functions of multimatch}
+		\label{algo:multimatch_forrest}
+	\end{small}
+\end{algorithm}
 
 
 
