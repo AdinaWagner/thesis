@@ -933,7 +933,7 @@ Based on the REMoDNaV output, the multimatch method was able to extract a total 
 		Length similarity	& $0.96$ $[0.01]$   & $0.96$   \\			
 		Duration similarity & $0.54$ $[0.05]$   & $0.55$  \\
 		Direction similarity	& $0.72$ $[0.05]$ 	& $0.71$  \\ \thickhline
-		\caption{Characteristics of scanpath similarity across the movie.}
+		\caption[Scanpath similarity in the movie data]{{\small Characteristics of scanpath similarity across the movie.}}
 		\label{table:sims}
 	\end{tabular} 
 \end{table}
@@ -964,18 +964,16 @@ Figure \ref{fig:dist_hist} gives an overview of some additional scanpath charact
 
 	\subfigure[Extracted scanpathlengths]{\includegraphics[width=0.5\textwidth]{img/dist_hist_v2.png}}
 	\subfigure[Distribution of similarities per dimension for the movie]{\includegraphics[width=0.49\textwidth]{img/sim_per_dimension_v2.png}}
-	\subfigure[Correlation heatmap between dimensions]{\includegraphics[width=0.49\textwidth]{img/sim_corr_v2.png}}
-	\subfigure[\textbf{TODO: one more plot for prettiness}]{\includegraphics[width=0.49\textwidth]{img/mri_all_saccades.png}}
 	\subfigure[Average onsets of scanpaths in seconds for the first run]{\includegraphics[height=50pt, width=1\textwidth]{img/scanpath_onsets_v2.png}}
-	\subfigure[Frame from movie snippet with the lowest average similarity rating of run 1, with overlaid eyegaze]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/low_sim.png}}
-	\subfigure[Frame from movie snippet with the highest average similarity rating of run 1, with overlaid eyegaze]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/max_sim.png}}
-	\caption{\small{Overview of extracted scanpaths' characteristics.}}
+	\subfigure[Frame from movie snippet with the lowest average similarity rating of run 1, with overlaid eyegaze.]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/low_sim.png}}
+	\subfigure[Frame from movie snippet with the highest average similarity rating of run 1, with overlaid eyegaze.]{\includegraphics[height=0.18\textheight, width=0.49\textwidth]{img/max_sim.png}}
+	\caption{\small{Overview of extracted scanpaths' multimatch characteristics}}
 	\label{fig:dist_hist}
 \end{figure}
 
 \subsection{ROI specificity of the FEF}
 
-Figure \ref{fig:CV_FEF} shows the classification performance of the GNB during the classification step. Depicted are classification results for a dataset in which ROIs are combined across hemispheres (bilateral ROIs), and one in which the hemisphere information is preserved (lateralized ROIs). 
+Figure \ref{fig:CV_FEF} shows the classification performance of the GNB during the classification step. Depicted are classification results for a dataset in which ROIs are combined across hemispheres (bilateral ROIs), and one in which the hemisphere information is preserved (lateralized ROIs). For the bilateral classification, accuracy amounts to 0.83. For the lateralized data, accuracy drops to 0.67.
 
 \begin{figure}[H]
 	\subfigure{\includegraphics[width=0.49\textwidth]{img/FEF_CV_lat.png}}
@@ -988,7 +986,7 @@ Figure \ref{fig:tc_FEF} shows the GLM results for the time course of sensitiviti
 
 \begin{figure}[H]
 	\includegraphics[scale=0.3]{img/tc_lFEF_rFEF.png}
-	\caption[short text]{{\small Functional specificity of left and right FEF during run 1. Black line: Sensitivities derived from classification with a linear GNB. Red line: GLM fit from regressing sensitivities onto the multimatch results. Colors correspond to the regressors, widths indicate the scanpath length. Beta values are given in brackets.}}
+	\caption[Functional specificity of left and right FEF]{{\small Functional specificity of left and right FEF during run 1. Black line: Sensitivities derived from classification with a linear GNB. Red line: GLM fit from regressing sensitivities onto the multimatch results. Colors correspond to the regressors, widths indicate the scanpath length. Beta values are given in brackets.}}
 	\label{fig:tc_FEF}	
 \end{figure}
 
