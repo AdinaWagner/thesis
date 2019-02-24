@@ -10,6 +10,8 @@
 		\nompageref{9}
   \item [{fMRI}]\begingroup Functional magnetic resonance imaging\nomeqref {0.0}
 		\nompageref{9}
+  \item [{FSL}]\begingroup FMRIB software library\nomeqref {0.0}
+		\nompageref{9}
   \item [{GLM}]\begingroup General linear model\nomeqref {0.0}
 		\nompageref{9}
   \item [{GNB}]\begingroup Gaussian Naive Bayes [classifier]\nomeqref {0.0}
@@ -41,6 +43,8 @@
   \item [{SEF}]\begingroup Supplementary eye fields\nomeqref {0.0}
 		\nompageref{9}
   \item [{SGD}]\begingroup Stochastic gradient descent [classifier]\nomeqref {0.0}
+		\nompageref{9}
+  \item [{SPM}]\begingroup Statistical parameteric mapping\nomeqref {0.0}
 		\nompageref{9}
   \item [{STG}]\begingroup Superior temporal gyrus\nomeqref {0.0}
 		\nompageref{9}
